@@ -1,0 +1,22 @@
+  .block{
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    float: left; clear: none;
+
+    box-sizing: border-box;
+  }
+
+  .block label{
+  	display: block;
+  	margin: 0; padding: 5px 0;
+  	width: 100%;
+  	float: left; clear: both;
+  }
+  .block input{
+  	padding: 5px;
+  	width: 50%;
+  	font-size: 20px;
+  	line-height: 24px;
+  	float: left; clear: both;
+  }

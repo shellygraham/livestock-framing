@@ -1,0 +1,18 @@
+{
+	"address": ["livestockframing.dev","*.livestockframing.dev"],
+	"db": {
+		"name": "livestock-framing",
+		"user": "root",
+		"password": "root",
+		"host": "localhost",
+		"charset": "utf8",
+		"collate": ""
+	},
+	"uploads": {
+		"dir": "/Users/joeyyax/Sites/livestock-framing/www/public/wp-content/uploads",
+		"url": "/wp-content/uploads"
+	},
+	"ssl": false,
+	"dev": true,
+	"use_analytics": false
+}

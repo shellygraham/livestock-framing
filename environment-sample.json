@@ -1,0 +1,18 @@
+{
+	"address": ["address.com","www.address.com"],
+	"db": {
+		"name": "",
+		"user": "",
+		"password": "",
+		"host": "",
+		"charset": "utf8",
+		"collate": ""
+	},
+	"uploads": {
+		"dir": "/var/www/domain/static",
+		"url": "http://static.domain.com"
+	},
+	"ssl": false,
+	"dev": false,
+	"use_analytics": false
+}

@@ -1,0 +1,67 @@
+/*
+* default metabox styling
+**/
+
+#livestock_team_metabox{
+	
+	margin: 20px 0 0;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+#livestock_team_metabox h3.hndle{
+	display: none;
+	padding-left: 0;
+	padding-right: 0;
+}
+#livestock_team_metabox .handlediv{
+	display: none;
+}
+
+#livestock_team_metabox .inside{
+	padding: 0;
+	border: 0;
+}
+
+#livestock_team_metabox .block{
+	display: block;
+	margin: 0 0 20px 0; padding: 0;
+	width: 100%;
+	float: left; clear: both;
+}
+
+#livestock_team_metabox label{
+	display: block;
+	width: 100%;
+	float: left; clear: both;
+}
+#livestock_team_metabox input.text{
+	width: 60%;
+	float: left; clear: both;
+}
+
+#livestock_team_metabox .help-text{
+	display: block;
+	margin: 0; padding: 0;
+	width: 100%;
+	font-size: 12px;
+	line-height: 14px;
+	color: #aaa;
+	font-style: italic;
+	clear: both;
+}
+
+#livestock_team_metabox .block.subhead input{
+	width: 100%;
+}
+
+#livestock_team_metabox .block label.sr-only{
+	display: none;
+}
+
+#edit-slug-box{
+	min-height: 0 !important;
+}

@@ -1,0 +1,44 @@
+.btn{
+  border-radius: 0;
+  font-weight: 300;
+
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+
+  &.btn-white{
+    border: 2px solid rgba( 255, 255, 255, 0.5 );
+    background: #fff;
+    color: @black;
+    text-transform: uppercase;
+    text-shadow: none !important;
+
+    &:hover,
+    &:active{
+      color: #fff !important;
+      background: @blue !important;
+      box-shadow: none;
+    }
+  }
+
+  &.btn-blue{
+    text-transform: uppercse;
+    color: #fff;
+    text-transform: uppercase;
+    background: @blue;
+
+    &:hover{
+      background: darken( @blue, 20 );
+    }
+  }
+}
+
+.tooltip{
+  @color: rgba( 0, 0, 0, 0.6 );
+  .tooltip-inner{
+    background: @color;
+  }
+  &.top .tooltip-arrow{ border-top-color: @color; }
+  &.right .tooltip-arrow{ border-right-color: @color; }
+  &.bottom .tooltip-arrow{ border-bottom-color: @color; }
+  &.left .tooltip-arrow{ border-left-color: @color; }
+}

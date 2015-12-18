@@ -1,0 +1,1450 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery-Bank\n"
+"POT-Creation-Date: 2014-10-20 09:49+0530\n"
+"PO-Revision-Date: 2014-10-20 09:50+0530\n"
+"Last-Translator: Kim Frederik Blom Semelin <kim.frederik@gmail.com>\n"
+"Language-Team: Tech-Banker <support@tech-banker.com>\n"
+"Language: da_DK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: D:\\Kiran-backup\\2014\\Gallery-Bank-Latest\\3.8.7-latest"
+"\\gallery-bank-pro-edition\\\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: assets/images/tables/gallery-bank-class.php:18
+#: assets/images/tables/gallery-bank-class.php:23
+#: assets/images/tables/gallery-bank-class.php:36
+#: assets/images/tables/gallery-bank-class.php:51
+#: assets/images/tables/gallery-bank-class.php:56
+#: assets/images/tables/gallery-bank-class.php:68
+#: assets/images/tables/gallery-bank-class.php:83
+#: assets/images/tables/gallery-bank-class.php:88
+#: assets/images/tables/gallery-bank-class.php:100
+#: assets/images/tables/gallery-bank-class.php:115
+#: assets/images/tables/gallery-bank-class.php:120
+#: assets/images/tables/gallery-bank-class.php:133
+#: assets/images/tables/gallery-bank-class.php:148
+#: assets/images/tables/gallery-bank-class.php:153
+#: assets/images/tables/gallery-bank-class.php:165
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:18
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:23
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:36
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:51
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:56
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:68
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:83
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:88
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:100
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:115
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:120
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:133
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:148
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:153
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:165
+#: assets/images/tables/gallery-bank-pro-edition/views/album-preview.php:12
+#: assets/images/tables/gallery-bank-pro-edition/views/album-sorting.php:138
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:121
+#: assets/images/tables/gallery-bank-pro-edition/views/gallery-bank-system-report.php:10
+#: assets/images/tables/gallery-bank-pro-edition/views/gallery_bank_documentation.php:7
+#: assets/images/tables/gallery-bank-pro-edition/views/images-sorting.php:181
+#: assets/images/tables/gallery-bank-pro-edition/views/licensing.php:17
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:278
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1342
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1349
+#: lib/gallery-bank-class.php:18 lib/gallery-bank-class.php:23
+#: lib/gallery-bank-class.php:36 lib/gallery-bank-class.php:51
+#: lib/gallery-bank-class.php:56 lib/gallery-bank-class.php:68
+#: lib/gallery-bank-class.php:83 lib/gallery-bank-class.php:88
+#: lib/gallery-bank-class.php:100 lib/gallery-bank-class.php:115
+#: lib/gallery-bank-class.php:120 lib/gallery-bank-class.php:133
+#: lib/gallery-bank-class.php:148 lib/gallery-bank-class.php:153
+#: lib/gallery-bank-class.php:165 views/album-preview.php:12
+#: views/album-sorting.php:138 views/edit-album.php:121
+#: views/gallery-bank-system-report.php:10
+#: views/gallery_bank_documentation.php:7 views/images-sorting.php:181
+#: views/licensing.php:17 views/settings.php:278 views/settings.php:1342
+#: views/settings.php:1349
+msgid "Gallery Bank"
+msgstr "Gallery Bank"
+
+#: assets/images/tables/gallery-bank-class.php:19
+#: assets/images/tables/gallery-bank-class.php:24
+#: assets/images/tables/gallery-bank-class.php:37
+#: assets/images/tables/gallery-bank-class.php:52
+#: assets/images/tables/gallery-bank-class.php:57
+#: assets/images/tables/gallery-bank-class.php:69
+#: assets/images/tables/gallery-bank-class.php:84
+#: assets/images/tables/gallery-bank-class.php:89
+#: assets/images/tables/gallery-bank-class.php:101
+#: assets/images/tables/gallery-bank-class.php:116
+#: assets/images/tables/gallery-bank-class.php:121
+#: assets/images/tables/gallery-bank-class.php:134
+#: assets/images/tables/gallery-bank-class.php:149
+#: assets/images/tables/gallery-bank-class.php:154
+#: assets/images/tables/gallery-bank-class.php:166
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:111
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:132
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:171
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:231
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:252
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:289
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:348
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:369
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:406
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:465
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:486
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:523
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:582
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:603
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:640
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:19
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:24
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:37
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:52
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:57
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:69
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:84
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:89
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:101
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:116
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:121
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:134
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:149
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:154
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:166
+#: gallery-bank.php:104 gallery-bank.php:125 gallery-bank.php:164
+#: gallery-bank.php:224 gallery-bank.php:245 gallery-bank.php:282
+#: gallery-bank.php:341 gallery-bank.php:362 gallery-bank.php:399
+#: gallery-bank.php:458 gallery-bank.php:479 gallery-bank.php:516
+#: gallery-bank.php:575 gallery-bank.php:596 gallery-bank.php:633
+#: lib/gallery-bank-class.php:19 lib/gallery-bank-class.php:24
+#: lib/gallery-bank-class.php:37 lib/gallery-bank-class.php:52
+#: lib/gallery-bank-class.php:57 lib/gallery-bank-class.php:69
+#: lib/gallery-bank-class.php:84 lib/gallery-bank-class.php:89
+#: lib/gallery-bank-class.php:101 lib/gallery-bank-class.php:116
+#: lib/gallery-bank-class.php:121 lib/gallery-bank-class.php:134
+#: lib/gallery-bank-class.php:149 lib/gallery-bank-class.php:154
+#: lib/gallery-bank-class.php:166
+msgid "Dashboard"
+msgstr "Kontrolpanel"
+
+#: assets/images/tables/gallery-bank-class.php:25
+#: assets/images/tables/gallery-bank-class.php:38
+#: assets/images/tables/gallery-bank-class.php:58
+#: assets/images/tables/gallery-bank-class.php:70
+#: assets/images/tables/gallery-bank-class.php:90
+#: assets/images/tables/gallery-bank-class.php:102
+#: assets/images/tables/gallery-bank-class.php:122
+#: assets/images/tables/gallery-bank-class.php:135
+#: assets/images/tables/gallery-bank-class.php:155
+#: assets/images/tables/gallery-bank-class.php:167
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:146
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:185
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:266
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:303
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:383
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:420
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:500
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:537
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:617
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:654
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:25
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:38
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:58
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:70
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:90
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:102
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:122
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:135
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:155
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:167
+#: gallery-bank.php:139 gallery-bank.php:178 gallery-bank.php:259
+#: gallery-bank.php:296 gallery-bank.php:376 gallery-bank.php:413
+#: gallery-bank.php:493 gallery-bank.php:530 gallery-bank.php:610
+#: gallery-bank.php:647 lib/gallery-bank-class.php:25
+#: lib/gallery-bank-class.php:38 lib/gallery-bank-class.php:58
+#: lib/gallery-bank-class.php:70 lib/gallery-bank-class.php:90
+#: lib/gallery-bank-class.php:102 lib/gallery-bank-class.php:122
+#: lib/gallery-bank-class.php:135 lib/gallery-bank-class.php:155
+#: lib/gallery-bank-class.php:167
+msgid "Album Sorting"
+msgstr "Album Sortering"
+
+#: assets/images/tables/gallery-bank-class.php:39
+#: assets/images/tables/gallery-bank-class.php:71
+#: assets/images/tables/gallery-bank-class.php:103
+#: assets/images/tables/gallery-bank-class.php:136
+#: assets/images/tables/gallery-bank-class.php:168
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:192
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:310
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:427
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:544
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:661
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:39
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:71
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:103
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:136
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:168
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:280
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:287
+#: gallery-bank.php:185 gallery-bank.php:303 gallery-bank.php:420
+#: gallery-bank.php:537 gallery-bank.php:654 lib/gallery-bank-class.php:39
+#: lib/gallery-bank-class.php:71 lib/gallery-bank-class.php:103
+#: lib/gallery-bank-class.php:136 lib/gallery-bank-class.php:168
+#: views/settings.php:280 views/settings.php:287
+msgid "Global Settings"
+msgstr "Globale indstillinger"
+
+#: assets/images/tables/gallery-bank-class.php:40
+#: assets/images/tables/gallery-bank-class.php:72
+#: assets/images/tables/gallery-bank-class.php:104
+#: assets/images/tables/gallery-bank-class.php:137
+#: assets/images/tables/gallery-bank-class.php:169
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:199
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:317
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:434
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:551
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:668
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:40
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:72
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:104
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:137
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:169
+#: assets/images/tables/gallery-bank-pro-edition/views/gallery-bank-system-report.php:12
+#: assets/images/tables/gallery-bank-pro-edition/views/gallery-bank-system-report.php:17
+#: gallery-bank.php:192 gallery-bank.php:310 gallery-bank.php:427
+#: gallery-bank.php:544 gallery-bank.php:661 lib/gallery-bank-class.php:40
+#: lib/gallery-bank-class.php:72 lib/gallery-bank-class.php:104
+#: lib/gallery-bank-class.php:137 lib/gallery-bank-class.php:169
+#: views/gallery-bank-system-report.php:12
+#: views/gallery-bank-system-report.php:17
+msgid "System Status"
+msgstr "systemet status"
+
+#: assets/images/tables/gallery-bank-class.php:42
+#: assets/images/tables/gallery-bank-class.php:74
+#: assets/images/tables/gallery-bank-class.php:106
+#: assets/images/tables/gallery-bank-class.php:139
+#: assets/images/tables/gallery-bank-class.php:171
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:213
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:331
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:448
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:565
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:682
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:42
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:74
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:106
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:139
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:171
+#: gallery-bank.php:206 gallery-bank.php:324 gallery-bank.php:441
+#: gallery-bank.php:558 gallery-bank.php:675 lib/gallery-bank-class.php:42
+#: lib/gallery-bank-class.php:74 lib/gallery-bank-class.php:106
+#: lib/gallery-bank-class.php:139 lib/gallery-bank-class.php:171
+msgid "Licensing"
+msgstr "Licens"
+
+#: assets/images/tables/gallery-bank-class.php:550
+#: assets/images/tables/gallery-bank-pro-edition/lib/gallery-bank-class.php:550
+#: lib/gallery-bank-class.php:550
+msgid "Add Gallery using Gallery Bank"
+msgstr "Tilføj Gallery ved hjælp Gallery Bank"
+
+#: assets/images/tables/gallery-bank-pro-edition/front_views/gallery-bank-shortcode.php:4
+#: front_views/gallery-bank-shortcode.php:4
+msgid "Insert Gallery Bank Shortcode"
+msgstr "Indsæt Gallery Bank Kortkode"
+
+#: assets/images/tables/gallery-bank-pro-edition/front_views/gallery-bank-shortcode.php:6
+#: front_views/gallery-bank-shortcode.php:6
+msgid "Select an album below to add it to your post or page."
+msgstr "Vælg et album nedenfor for at tilføje det til dit indlæg eller side."
+
+#: assets/images/tables/gallery-bank-pro-edition/front_views/gallery-bank-shortcode.php:11
+#: front_views/gallery-bank-shortcode.php:11
+msgid "Gallery Type"
+msgstr "Billedgalleri type"
+
+#: assets/images/tables/gallery-bank-pro-edition/front_views/gallery-bank-shortcode.php:13
+#: front_views/gallery-bank-shortcode.php:13
+msgid "Albums with Images"
+msgstr "Albummer med billeder"
+
+#: assets/images/tables/gallery-bank-pro-edition/front_views/gallery-bank-shortcode.php:15
+#: front_views/gallery-bank-shortcode.php:15
+msgid "Only Images"
+msgstr "Kun billeder"
+
+#: assets/images/tables/gallery-bank-pro-edition/front_views/gallery-bank-shortcode.php:18
+#: front_views/gallery-bank-shortcode.php:18
+msgid "Album Format"
+msgstr "Album Format"
+
+#: assets/images/tables/gallery-bank-pro-edition/front_views/gallery-bank-shortcode.php:20
+#: front_views/gallery-bank-shortcode.php:20
+msgid "Select Album Format"
+msgstr "Vælg Album Format"
+
+#: assets/images/tables/gallery-bank-pro-edition/front_views/gallery-bank-shortcode.php:27
+#: assets/images/tables/gallery-bank-pro-edition/lib/include_widget.php:33
+#: front_views/gallery-bank-shortcode.php:27 lib/include_widget.php:33
+msgid "Select Album"
+msgstr "Vælg album"
+
+#: assets/images/tables/gallery-bank-pro-edition/front_views/gallery-bank-shortcode.php:29
+#: front_views/gallery-bank-shortcode.php:29
+msgid "Select an Album"
+msgstr "Vælg et album"
+
+#: assets/images/tables/gallery-bank-pro-edition/front_views/gallery-bank-shortcode.php:45
+#: assets/images/tables/gallery-bank-pro-edition/lib/include_widget.php:46
+#: front_views/gallery-bank-shortcode.php:45 lib/include_widget.php:46
+msgid "Gallery Format"
+msgstr "Galleri format"
+
+#: assets/images/tables/gallery-bank-pro-edition/front_views/gallery-bank-shortcode.php:47
+#: front_views/gallery-bank-shortcode.php:47
+msgid "Select Gallery Format "
+msgstr "Vælg Galleri formatet"
+
+#: assets/images/tables/gallery-bank-pro-edition/front_views/gallery-bank-shortcode.php:56
+#: assets/images/tables/gallery-bank-pro-edition/views/album-preview.php:38
+#: assets/images/tables/gallery-bank-pro-edition/views/images-sorting.php:233
+#: front_views/gallery-bank-shortcode.php:56 views/album-preview.php:38
+#: views/images-sorting.php:233
+msgid "Images in Row"
+msgstr "Billeder i Række"
+
+#: assets/images/tables/gallery-bank-pro-edition/front_views/gallery-bank-shortcode.php:61
+#: front_views/gallery-bank-shortcode.php:61
+msgid "Image Width"
+msgstr "Billede Bredde"
+
+#: assets/images/tables/gallery-bank-pro-edition/front_views/gallery-bank-shortcode.php:66
+#: assets/images/tables/gallery-bank-pro-edition/views/album-sorting.php:184
+#: front_views/gallery-bank-shortcode.php:66 views/album-sorting.php:184
+msgid "Albums in Row"
+msgstr "Album i rækken"
+
+#: assets/images/tables/gallery-bank-pro-edition/front_views/gallery-bank-shortcode.php:71
+#: assets/images/tables/gallery-bank-pro-edition/lib/include_widget.php:62
+#: front_views/gallery-bank-shortcode.php:71 lib/include_widget.php:62
+msgid "Text Format"
+msgstr "Tekst format"
+
+#: assets/images/tables/gallery-bank-pro-edition/front_views/gallery-bank-shortcode.php:73
+#: front_views/gallery-bank-shortcode.php:73
+msgid "Select Format "
+msgstr "vælg format"
+
+#: assets/images/tables/gallery-bank-pro-edition/front_views/gallery-bank-shortcode.php:80
+#: front_views/gallery-bank-shortcode.php:80
+msgid "Special Effects"
+msgstr "Specielle Effekter"
+
+#: assets/images/tables/gallery-bank-pro-edition/front_views/gallery-bank-shortcode.php:166
+#: front_views/gallery-bank-shortcode.php:166
+msgid "Animation Effects"
+msgstr "Animationseffekter"
+
+#: assets/images/tables/gallery-bank-pro-edition/front_views/gallery-bank-shortcode.php:217
+#: front_views/gallery-bank-shortcode.php:217
+msgid "Show Responsive Gallery"
+msgstr "Vis Responsive Galleri"
+
+#: assets/images/tables/gallery-bank-pro-edition/front_views/gallery-bank-shortcode.php:221
+#: front_views/gallery-bank-shortcode.php:221
+msgid "Show Album Title"
+msgstr "Vis Album Titel"
+
+#: assets/images/tables/gallery-bank-pro-edition/front_views/gallery-bank-shortcode.php:226
+#: front_views/gallery-bank-shortcode.php:226
+msgid "Insert Album"
+msgstr "Indsæt album"
+
+#: assets/images/tables/gallery-bank-pro-edition/front_views/gallery-bank-shortcode.php:229
+#: front_views/gallery-bank-shortcode.php:229
+msgid "Cancel"
+msgstr "Annuller"
+
+#: assets/images/tables/gallery-bank-pro-edition/front_views/gallery-bank-shortcode.php:541
+#: front_views/gallery-bank-shortcode.php:541
+msgid "Please select an Album"
+msgstr "Vælg et album"
+
+#: assets/images/tables/gallery-bank-pro-edition/front_views/gallery-bank-shortcode.php:545
+#: front_views/gallery-bank-shortcode.php:545
+msgid "Please select an Album Format"
+msgstr "Vælg et album format"
+
+#: assets/images/tables/gallery-bank-pro-edition/front_views/gallery-bank-shortcode.php:549
+#: front_views/gallery-bank-shortcode.php:549
+msgid "Please select a Gallery Images Format"
+msgstr "Vælg et Format for Galleri Billeder"
+
+#: assets/images/tables/gallery-bank-pro-edition/front_views/gallery-bank-shortcode.php:553
+#: front_views/gallery-bank-shortcode.php:553
+msgid "Please select a Text Format for the Gallery"
+msgstr "venligst  Vælg et tekstformat for den Galleri"
+
+#: assets/images/tables/gallery-bank-pro-edition/front_views/includes_common_before.php:1475
+#: assets/images/tables/includes_common_before.php:1481
+#: front_views/includes_common_before.php:1478
+msgid "VIEW ALL"
+msgstr "SE ALLE"
+
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:102
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:123
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:162
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:222
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:243
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:280
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:339
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:360
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:397
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:456
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:477
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:514
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:573
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:594
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:631
+#: gallery-bank.php:95 gallery-bank.php:116 gallery-bank.php:155
+#: gallery-bank.php:215 gallery-bank.php:236 gallery-bank.php:273
+#: gallery-bank.php:332 gallery-bank.php:353 gallery-bank.php:390
+#: gallery-bank.php:449 gallery-bank.php:470 gallery-bank.php:507
+#: gallery-bank.php:566 gallery-bank.php:587 gallery-bank.php:624
+msgid "<img src=\""
+msgstr ""
+
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:104
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:125
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:164
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:224
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:245
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:282
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:341
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:362
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:399
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:458
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:479
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:516
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:575
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:596
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:633
+#: gallery-bank.php:97 gallery-bank.php:118 gallery-bank.php:157
+#: gallery-bank.php:217 gallery-bank.php:238 gallery-bank.php:275
+#: gallery-bank.php:334 gallery-bank.php:355 gallery-bank.php:392
+#: gallery-bank.php:451 gallery-bank.php:472 gallery-bank.php:509
+#: gallery-bank.php:568 gallery-bank.php:589 gallery-bank.php:626
+msgid "/wp-admin/admin.php?page=gallery_bank"
+msgstr ""
+
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:139
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:178
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:259
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:296
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:376
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:413
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:493
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:530
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:610
+#: assets/images/tables/gallery-bank-pro-edition/gallery-bank.php:647
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:137
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:146
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:157
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:166
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:177
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:186
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:197
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:206
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:217
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:226
+#: gallery-bank.php:132 gallery-bank.php:171 gallery-bank.php:252
+#: gallery-bank.php:289 gallery-bank.php:369 gallery-bank.php:406
+#: gallery-bank.php:486 gallery-bank.php:523 gallery-bank.php:603
+#: gallery-bank.php:640 views/dashboard.php:137 views/dashboard.php:146
+#: views/dashboard.php:157 views/dashboard.php:166 views/dashboard.php:177
+#: views/dashboard.php:186 views/dashboard.php:197 views/dashboard.php:206
+#: views/dashboard.php:217 views/dashboard.php:226
+msgid "Add New Album"
+msgstr "Tilføj nyt album"
+
+#: assets/images/tables/gallery-bank-pro-edition/lib/add-new-album-class.php:85
+#: assets/images/tables/gallery-bank-pro-edition/lib/add-new-album-class.php:115
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:283
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:290
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:350
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:357
+#: lib/add-new-album-class.php:85 lib/add-new-album-class.php:115
+#: views/edit-album.php:283 views/edit-album.php:290 views/edit-album.php:350
+#: views/edit-album.php:357
+msgid " Set as Album Cover"
+msgstr " Angiv som albumomslag"
+
+#: assets/images/tables/gallery-bank-pro-edition/lib/add-new-album-class.php:86
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:362
+#: lib/add-new-album-class.php:86 views/edit-album.php:362
+msgid " Rotate Image"
+msgstr "Roter billede"
+
+#: assets/images/tables/gallery-bank-pro-edition/lib/add-new-album-class.php:89
+#: assets/images/tables/gallery-bank-pro-edition/lib/add-new-album-class.php:118
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:296
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:365
+#: lib/add-new-album-class.php:89 lib/add-new-album-class.php:118
+#: views/edit-album.php:296 views/edit-album.php:365
+msgid "Enter your Title"
+msgstr "Indtast din titel"
+
+#: assets/images/tables/gallery-bank-pro-edition/lib/add-new-album-class.php:90
+#: assets/images/tables/gallery-bank-pro-edition/lib/add-new-album-class.php:119
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:301
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:370
+#: lib/add-new-album-class.php:90 lib/add-new-album-class.php:119
+#: views/edit-album.php:301 views/edit-album.php:370
+msgid "Enter your Description "
+msgstr "Indtast din beskrivelse"
+
+#: assets/images/tables/gallery-bank-pro-edition/lib/add-new-album-class.php:92
+#: assets/images/tables/gallery-bank-pro-edition/lib/add-new-album-class.php:121
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:307
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:376
+#: lib/add-new-album-class.php:92 lib/add-new-album-class.php:121
+#: views/edit-album.php:307 views/edit-album.php:376
+msgid "Enter your Tags"
+msgstr "Indtast dine Tags"
+
+#: assets/images/tables/gallery-bank-pro-edition/lib/add-new-album-class.php:96
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:397
+#: lib/add-new-album-class.php:96 views/edit-album.php:397
+msgid "Delete Image"
+msgstr "Slet Billede"
+
+#: assets/images/tables/gallery-bank-pro-edition/lib/add-new-album-class.php:123
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:317
+#: lib/add-new-album-class.php:123 views/edit-album.php:317
+msgid "Delete Video"
+msgstr "Slet Video"
+
+#: assets/images/tables/gallery-bank-pro-edition/lib/include_widget.php:24
+#: lib/include_widget.php:24
+msgid "Title"
+msgstr "Titel"
+
+#: assets/images/tables/gallery-bank-pro-edition/lib/include_widget.php:29
+#: lib/include_widget.php:29
+msgid "Select Gallery"
+msgstr "Vælg Galleri"
+
+#: assets/images/tables/gallery-bank-pro-edition/lib/include_widget.php:50
+#: lib/include_widget.php:50
+msgid "Select Gallery Format"
+msgstr "Vælg Galleri Format"
+
+#: assets/images/tables/gallery-bank-pro-edition/lib/include_widget.php:56
+#: lib/include_widget.php:56
+msgid "Images In Row"
+msgstr "Billeder I Rækken"
+
+#: assets/images/tables/gallery-bank-pro-edition/lib/include_widget.php:66
+#: lib/include_widget.php:66
+msgid "Select Text Format"
+msgstr "Vælg et Tekstformat"
+
+#: assets/images/tables/gallery-bank-pro-edition/lib/include_widget.php:73
+#: lib/include_widget.php:73
+msgid "Special Effect"
+msgstr "Specielle Efftkter"
+
+#: assets/images/tables/gallery-bank-pro-edition/lib/include_widget.php:77
+#: lib/include_widget.php:77
+msgid "Select Special Effect"
+msgstr "Vælg en Speciel Effekt"
+
+#: assets/images/tables/gallery-bank-pro-edition/lib/include_widget.php:85
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:346
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:560
+#: lib/include_widget.php:85 views/settings.php:346 views/settings.php:560
+msgid "Width"
+msgstr "Bredde"
+
+#: assets/images/tables/gallery-bank-pro-edition/lib/include_widget.php:85
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:356
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:570
+#: lib/include_widget.php:85 views/settings.php:356 views/settings.php:570
+msgid "Height"
+msgstr "Højde"
+
+#: assets/images/tables/gallery-bank-pro-edition/lib/include_widget.php:94
+#: lib/include_widget.php:94
+msgid "Animation Effect"
+msgstr "Animationseffekt"
+
+#: assets/images/tables/gallery-bank-pro-edition/lib/include_widget.php:148
+#: lib/include_widget.php:148
+msgid "Responsive Gallery"
+msgstr "Responsive Galleri"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/album-preview.php:14
+#: assets/images/tables/gallery-bank-pro-edition/views/album-preview.php:21
+#: views/album-preview.php:14 views/album-preview.php:21
+msgid "Album Preview"
+msgstr "Album Preview"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/album-preview.php:25
+#: assets/images/tables/gallery-bank-pro-edition/views/album-sorting.php:152
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:134
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:421
+#: assets/images/tables/gallery-bank-pro-edition/views/gallery_bank_documentation.php:21
+#: assets/images/tables/gallery-bank-pro-edition/views/images-sorting.php:195
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:291
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1651
+#: views/album-preview.php:25 views/album-sorting.php:152
+#: views/edit-album.php:134 views/edit-album.php:421
+#: views/gallery_bank_documentation.php:21 views/images-sorting.php:195
+#: views/settings.php:291 views/settings.php:1651
+msgid "Back to Albums"
+msgstr "Tilbage til Album"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/album-preview.php:43
+#: assets/images/tables/gallery-bank-pro-edition/views/album-sorting.php:189
+#: assets/images/tables/gallery-bank-pro-edition/views/images-sorting.php:237
+#: views/album-preview.php:43 views/album-sorting.php:189
+#: views/images-sorting.php:237
+msgid "Please Choose"
+msgstr "Vælg venligst"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/album-sorting.php:140
+#: assets/images/tables/gallery-bank-pro-edition/views/album-sorting.php:147
+#: views/album-sorting.php:140 views/album-sorting.php:147
+msgid "Re-Order Albums"
+msgstr "Omorganiser Albums"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/album-sorting.php:154
+#: assets/images/tables/gallery-bank-pro-edition/views/images-sorting.php:197
+#: views/album-sorting.php:154 views/images-sorting.php:197
+msgid "Update Order"
+msgstr "Opdatér Rækkefølge"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/album-sorting.php:157
+#: assets/images/tables/gallery-bank-pro-edition/views/images-sorting.php:200
+#: views/album-sorting.php:157 views/images-sorting.php:200
+msgid "Sorting Order has been updated."
+msgstr "Rækkefølgen er opdateret."
+
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:117
+#: views/dashboard.php:117
+msgid "Attention! A new vesion of Gallery Bank is available for download."
+msgstr "Vigtigt! En ny vesion af Gallery Bank er tilgængelig."
+
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:118
+#: views/dashboard.php:118
+msgid "Click"
+msgstr "Klik"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:118
+#: views/dashboard.php:118
+msgid "here"
+msgstr "her"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:119
+#: views/dashboard.php:119
+msgid "to upgrade your version of Gallery Bank."
+msgstr "for at opgradere din version af Gallery Bank."
+
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:127
+#: views/dashboard.php:127
+msgid "Dashboard - Gallery Bank"
+msgstr "Kontrolpanel - Gallery Bank"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:138
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:147
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:158
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:167
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:178
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:187
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:198
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:207
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:218
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:227
+#: views/dashboard.php:138 views/dashboard.php:147 views/dashboard.php:158
+#: views/dashboard.php:167 views/dashboard.php:178 views/dashboard.php:187
+#: views/dashboard.php:198 views/dashboard.php:207 views/dashboard.php:218
+#: views/dashboard.php:227
+msgid "Delete All Albums"
+msgstr "Slet Alle Album"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:139
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:148
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:159
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:168
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:179
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:188
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:199
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:208
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:219
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:228
+#: views/dashboard.php:139 views/dashboard.php:148 views/dashboard.php:159
+#: views/dashboard.php:168 views/dashboard.php:179 views/dashboard.php:188
+#: views/dashboard.php:199 views/dashboard.php:208 views/dashboard.php:219
+#: views/dashboard.php:228
+msgid "Purge Images & Albums"
+msgstr "Rens Billeder & Album"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:140
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:149
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:160
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:169
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:180
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:189
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:200
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:209
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:220
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:229
+#: views/dashboard.php:140 views/dashboard.php:149 views/dashboard.php:160
+#: views/dashboard.php:169 views/dashboard.php:180 views/dashboard.php:189
+#: views/dashboard.php:200 views/dashboard.php:209 views/dashboard.php:220
+#: views/dashboard.php:229
+msgid "Restore Factory Settings"
+msgstr "Gendan Fabriksindstillinger"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:240
+#: views/dashboard.php:240
+msgid "Existing Albums Overview"
+msgstr "Overblik over Eksisterende Album"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:246
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:240
+#: views/dashboard.php:246 views/edit-album.php:240
+msgid "Thumbnail"
+msgstr "Thumbnail"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:247
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:150
+#: views/dashboard.php:247 views/edit-album.php:150
+msgid "Album Title"
+msgstr "Album Titel"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:248
+#: views/dashboard.php:248
+msgid "Total Images"
+msgstr "Billeder i alt"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:249
+#: views/dashboard.php:249
+msgid "Date of Creation"
+msgstr "Oprettelsesdato"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:397
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:417
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:434
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:454
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:471
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:491
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:508
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:528
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:545
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:565
+#: views/dashboard.php:397 views/dashboard.php:417 views/dashboard.php:434
+#: views/dashboard.php:454 views/dashboard.php:471 views/dashboard.php:491
+#: views/dashboard.php:508 views/dashboard.php:528 views/dashboard.php:545
+#: views/dashboard.php:565
+msgid "Preview Album"
+msgstr "Preview Album"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:407
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:444
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:481
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:518
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:555
+#: views/dashboard.php:407 views/dashboard.php:444 views/dashboard.php:481
+#: views/dashboard.php:518 views/dashboard.php:555
+msgid "Edit Album"
+msgstr "Rediger Album"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:412
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:449
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:486
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:523
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:560
+#: assets/images/tables/gallery-bank-pro-edition/views/images-sorting.php:183
+#: assets/images/tables/gallery-bank-pro-edition/views/images-sorting.php:190
+#: views/dashboard.php:412 views/dashboard.php:449 views/dashboard.php:486
+#: views/dashboard.php:523 views/dashboard.php:560
+#: views/images-sorting.php:183 views/images-sorting.php:190
+msgid "Re-Order Images"
+msgstr "Omorganiser Billeder"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:422
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:459
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:496
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:533
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:570
+#: views/dashboard.php:422 views/dashboard.php:459 views/dashboard.php:496
+#: views/dashboard.php:533 views/dashboard.php:570
+msgid "Delete Album"
+msgstr "Slet Album"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:674
+#: views/dashboard.php:674
+msgid "Are you sure you want to delete this Album?"
+msgstr "Er du sikker på du vil slette dette album?"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:687
+#: views/dashboard.php:687
+msgid "Are you sure you want to delete all Albums?"
+msgstr "Er du sikker på du vil slette alle Album?"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:699
+#: views/dashboard.php:699
+msgid "Are you sure you want to Restore Factory Settings?"
+msgstr "Er du sikker på du vil Gendanne fabriksindstillinger?"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/dashboard.php:715
+#: views/dashboard.php:715
+msgid "Are you sure you want to Purge all Images & Albums?"
+msgstr "Er du sikker på du vil rense alle Billeder & Album?"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:123
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:130
+#: views/edit-album.php:123 views/edit-album.php:130
+msgid "Album"
+msgstr "Album"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:135
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:420
+#: views/edit-album.php:135 views/edit-album.php:420
+msgid "Save Album"
+msgstr "Gem album"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:139
+#: views/edit-album.php:139
+msgid "Album Saved. Kindly wait for the redirect to happen."
+msgstr "Album gemt. Vent venligst på omdirigering."
+
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:146
+#: views/edit-album.php:146
+msgid "Album Details"
+msgstr "Album Detaljer"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:155
+#: views/edit-album.php:155
+msgid "Enter your Album Title"
+msgstr "Indtast Titlen på dit Album"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:162
+#: views/edit-album.php:162
+msgid "Description"
+msgstr "Beskrivelse"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:176
+#: views/edit-album.php:176
+msgid "Upload Images"
+msgstr "Upload billeder"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:183
+#: views/edit-album.php:183
+msgid "Your browser doesn\"t have Flash, Silverlight or HTML5 support."
+msgstr "Din browser har ikke Flash, Silverlight eller HTML5 support."
+
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:191
+#: views/edit-album.php:191
+msgid "Upload Thumbnails "
+msgstr "Upload Thumbnails "
+
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:192
+#: views/edit-album.php:192
+msgid "Your Wordpress Version doesn\"t support Wp-media."
+msgstr "Din Wordpress version understøtter ikke WP-Media."
+
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:203
+#: views/edit-album.php:203
+msgid "Upload Videos"
+msgstr "Upload Videoer"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:207
+#: views/edit-album.php:207
+msgid "Video Url"
+msgstr "Video URL"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:211
+#: views/edit-album.php:211
+msgid "Enter your Video Url"
+msgstr "Indtast URL'en til din video"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:217
+#: views/edit-album.php:217
+msgid "Upload Video"
+msgstr "Upload  Video"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:228
+#: views/edit-album.php:228
+msgid "Your Gallery Bank Album"
+msgstr "Dit Gallery Bank Album"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:237
+#: views/edit-album.php:237
+msgid "Delete"
+msgstr "Slet"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:243
+#: views/edit-album.php:243
+msgid "Title & Description"
+msgstr "Titel og Beskrivelse"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:246
+#: views/edit-album.php:246
+msgid "Tags (comma separated list)"
+msgstr "Tags (kommasepareret liste)"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:249
+#: views/edit-album.php:249
+msgid "Url to Redirect on click of an Image"
+msgstr "URL til omdirigering ved klik på billedet"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:698
+#: views/edit-album.php:698
+msgid "Are you sure you want to delete this Image?"
+msgstr "Er du sikker på du vil slette dette Billede?"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/edit-album.php:753
+#: views/edit-album.php:753
+msgid "Are you sure you want to delete these Images?"
+msgstr "Er du sikker på du vil slette disse billeder?"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/gallery-bank-system-report.php:20
+#: views/gallery-bank-system-report.php:20
+msgid "Get System Report"
+msgstr "Få System Rapport"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/gallery-bank-system-report.php:24
+#: views/gallery-bank-system-report.php:24
+msgid "Close System Report"
+msgstr "Luk System Rapport"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/gallery-bank-system-report.php:115
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1367
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1374
+#: views/gallery-bank-system-report.php:115 views/settings.php:1367
+#: views/settings.php:1374
+msgid "Default"
+msgstr "Standard"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/gallery_bank_documentation.php:9
+#: assets/images/tables/gallery-bank-pro-edition/views/gallery_bank_documentation.php:16
+#: views/gallery_bank_documentation.php:9
+#: views/gallery_bank_documentation.php:16
+msgid "Gallery Bank Documentation"
+msgstr "Gallery Bank Dokumentation"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/licensing.php:19
+#: assets/images/tables/gallery-bank-pro-edition/views/licensing.php:34
+#: views/licensing.php:19 views/licensing.php:34
+msgid "Gallery Bank Licensing Module"
+msgstr "Gallery Bank Licens Modul"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/licensing.php:95
+#: views/licensing.php:95
+msgid "Update"
+msgstr "Opdater"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/licensing.php:126
+#: views/licensing.php:126
+msgid "Success! Settings have been updated."
+msgstr "Indstillinger er blevet opdateret."
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:292
+#: views/settings.php:292
+msgid "Restore Settings"
+msgstr "Gendan Indstillinger"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:293
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1649
+#: views/settings.php:293 views/settings.php:1649
+msgid "Update Settings"
+msgstr "Opdater Indstillinger"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:297
+#: views/settings.php:297
+msgid "Settings has been updated."
+msgstr "Indstillingerne er blevet opdateret."
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:302
+#: views/settings.php:302
+msgid "Success! Settings have been restored."
+msgstr "Indstillinger er blevet gendannet."
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:309
+#: views/settings.php:309
+msgid "Thumbnail Settings"
+msgstr "Thumbnail Indstillinger"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:319
+#: views/settings.php:319
+msgid "Thumbnail Size"
+msgstr "Thumbnail Størrelse"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:326
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:334
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:540
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:548
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1369
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1377
+#: views/settings.php:326 views/settings.php:334 views/settings.php:540
+#: views/settings.php:548 views/settings.php:1369 views/settings.php:1377
+msgid "Original"
+msgstr "Original"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:329
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:337
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:543
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:551
+#: views/settings.php:329 views/settings.php:337 views/settings.php:543
+#: views/settings.php:551
+msgid "Custom"
+msgstr "Brugerdefineret"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:368
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:581
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1046
+#: views/settings.php:368 views/settings.php:581 views/settings.php:1046
+msgid "Opacity"
+msgstr "Opacitet"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:380
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:593
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1057
+#: views/settings.php:380 views/settings.php:593 views/settings.php:1057
+msgid "Border Size"
+msgstr "Kantstørrelse"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:391
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:605
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1068
+#: views/settings.php:391 views/settings.php:605 views/settings.php:1068
+msgid "Border Radius"
+msgstr "Kant radius"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:402
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:617
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1093
+#: views/settings.php:402 views/settings.php:617 views/settings.php:1093
+msgid "Border Color"
+msgstr "Kantfarve"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:416
+#: views/settings.php:416
+msgid "Margin Between Images"
+msgstr "Margen Mellem Billede"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:426
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:676
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1079
+#: views/settings.php:426 views/settings.php:676 views/settings.php:1079
+msgid "Text Color"
+msgstr "Tekstfarve"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:440
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:692
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1153
+#: views/settings.php:440 views/settings.php:692 views/settings.php:1153
+msgid "Text-Align"
+msgstr "Tekst justering"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:454
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:706
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:841
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1167
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1435
+#: views/settings.php:454 views/settings.php:706 views/settings.php:841
+#: views/settings.php:1167 views/settings.php:1435
+msgid "Font-Family"
+msgstr "Skrifttype Familie"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:477
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:729
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1190
+#: views/settings.php:477 views/settings.php:729 views/settings.php:1190
+msgid "Heading Font-Size"
+msgstr "Overskrift størrelse"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:494
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:746
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1207
+#: views/settings.php:494 views/settings.php:746 views/settings.php:1207
+msgid "Text Font-Size"
+msgstr "Tekst størrelse"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:511
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:763
+#: views/settings.php:511 views/settings.php:763
+msgid "Description Length"
+msgstr "Længde på Beskrivelse"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:523
+#: views/settings.php:523
+msgid "Album Cover Settings"
+msgstr "Album Omslag Indstillinger"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:533
+#: views/settings.php:533
+msgid "Cover Size"
+msgstr "Størrelse på omslag"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:631
+#: views/settings.php:631
+msgid "Show Albums"
+msgstr "Vis Albums"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:637
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:645
+#: views/settings.php:637 views/settings.php:645
+msgid "Responsive"
+msgstr "Responsive"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:640
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:647
+#: views/settings.php:640 views/settings.php:647
+msgid "With Albums in Row"
+msgstr "Med Albums i Række"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:656
+#: views/settings.php:656
+msgid "Margin Between Albums"
+msgstr "Margen mellem Album"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:666
+#: views/settings.php:666
+msgid "Text for Album Click"
+msgstr "Tekst til album Klik"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:775
+#: views/settings.php:775
+msgid "Filter Settings"
+msgstr "Filtrer indstillingerne"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:785
+#: views/settings.php:785
+msgid "Filters"
+msgstr "Filtre"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:792
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:800
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1231
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1239
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1257
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1264
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1282
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1289
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1306
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1313
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1481
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1488
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1544
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1552
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1593
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1601
+#: views/settings.php:792 views/settings.php:800 views/settings.php:1231
+#: views/settings.php:1239 views/settings.php:1257 views/settings.php:1264
+#: views/settings.php:1282 views/settings.php:1289 views/settings.php:1306
+#: views/settings.php:1313 views/settings.php:1481 views/settings.php:1488
+#: views/settings.php:1544 views/settings.php:1552 views/settings.php:1593
+#: views/settings.php:1601
+msgid "Enable"
+msgstr "Aktivér"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:795
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:803
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1234
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1242
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1259
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1267
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1284
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1291
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1308
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1315
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1483
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1491
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1547
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1555
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1596
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1604
+#: views/settings.php:795 views/settings.php:803 views/settings.php:1234
+#: views/settings.php:1242 views/settings.php:1259 views/settings.php:1267
+#: views/settings.php:1284 views/settings.php:1291 views/settings.php:1308
+#: views/settings.php:1315 views/settings.php:1483 views/settings.php:1491
+#: views/settings.php:1547 views/settings.php:1555 views/settings.php:1596
+#: views/settings.php:1604
+msgid "Disable"
+msgstr "Deaktiver"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:813
+#: views/settings.php:813
+msgid "Filter Color"
+msgstr "Filtrer Farve"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:827
+#: views/settings.php:827
+msgid "Filter Text Color"
+msgstr "Filtrer Tekstfarve"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:864
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1458
+#: views/settings.php:864 views/settings.php:1458
+msgid "Font-Size"
+msgstr "Skriftstørrelse"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:884
+#: views/settings.php:884
+msgid "Roles & Capabilities"
+msgstr "Roller og tilladelser"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:894
+#: views/settings.php:894
+msgid "Privileges for Admin"
+msgstr "Rettigheder til Admin"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:898
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:914
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:930
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:947
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:965
+#: views/settings.php:898 views/settings.php:914 views/settings.php:930
+#: views/settings.php:947 views/settings.php:965
+msgid "Full Control"
+msgstr "Fuld Kontrol"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:901
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:917
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:933
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:950
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:968
+#: views/settings.php:901 views/settings.php:917 views/settings.php:933
+#: views/settings.php:950 views/settings.php:968
+msgid "Read"
+msgstr "Læs"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:904
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:920
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:936
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:953
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:971
+#: views/settings.php:904 views/settings.php:920 views/settings.php:936
+#: views/settings.php:953 views/settings.php:971
+msgid "Write"
+msgstr "Skriv"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:910
+#: views/settings.php:910
+msgid "Privileges for Editor"
+msgstr "Privilegier for Redaktøren"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:926
+#: views/settings.php:926
+msgid "Privileges for Author"
+msgstr "Tilladelser for Forfatteren"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:942
+#: views/settings.php:942
+msgid "Privileges for Contributor"
+msgstr "Tilladelser for Bidragyder"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:959
+#: views/settings.php:959
+msgid "Privileges for Subscriber"
+msgstr "Tilladelser for Abonnent"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:981
+#: views/settings.php:981
+msgid "Lightbox Settings"
+msgstr "Lightbox Indstillinger"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:991
+#: views/settings.php:991
+msgid "Lightbox Type"
+msgstr "Lightbox Type"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1107
+#: views/settings.php:1107
+msgid "Inline Background"
+msgstr "Indlejret Baggrund"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1121
+#: views/settings.php:1121
+msgid "Overlay Background"
+msgstr "Overlejring Baggrund"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1135
+#: views/settings.php:1135
+msgid "Fade In Time"
+msgstr "Fade In Tid"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1144
+#: views/settings.php:1144
+msgid "Fade Out Time"
+msgstr "Fade Out Tid"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1224
+#: views/settings.php:1224
+msgid "Facebook Comments"
+msgstr "Facebook Kommentarer"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1251
+#: views/settings.php:1251
+msgid "Social Sharing"
+msgstr "Social Deling"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1276
+#: views/settings.php:1276
+msgid "Image Title"
+msgstr "Billede Titel"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1300
+#: views/settings.php:1300
+msgid "Image Description"
+msgstr "Billedebeskrivelse"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1326
+#: views/settings.php:1326
+msgid "Image Uploader Settings"
+msgstr "Indstillinger for Billede Uploader"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1336
+#: views/settings.php:1336
+msgid "Uploader for Images"
+msgstr "Uploader for Billeder"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1344
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1352
+#: views/settings.php:1344 views/settings.php:1352
+msgid "WP Media"
+msgstr "WP Media"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1361
+#: views/settings.php:1361
+msgid "Change Uploading Image Name"
+msgstr "Skift Uploading Billedenavn"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1388
+#: views/settings.php:1388
+msgid "Front - End Layout Settings"
+msgstr "Front-end Layoutindstillinger"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1398
+#: views/settings.php:1398
+msgid "Text for Back Button"
+msgstr "Tekst på Tilbage-knap"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1408
+#: views/settings.php:1408
+msgid "Button Color"
+msgstr "Knap farve"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1421
+#: views/settings.php:1421
+msgid "Button Text Color"
+msgstr "Knap Tekstfarve"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1475
+#: views/settings.php:1475
+msgid "Album Seperator"
+msgstr "Album Seperator"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1500
+#: views/settings.php:1500
+msgid "Image url location"
+msgstr "Billede url placering"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1506
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1513
+#: views/settings.php:1506 views/settings.php:1513
+msgid "Open in New Window"
+msgstr "Åbn i nyt vindue"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1508
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1516
+#: views/settings.php:1508 views/settings.php:1516
+msgid "Same Window"
+msgstr "Samme Vindue"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1527
+#: views/settings.php:1527
+msgid "Pagination Settings for Images"
+msgstr "Sideskift indstillinger for billeder"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1537
+#: views/settings.php:1537
+msgid "Paging"
+msgstr "Bladre"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1564
+#: views/settings.php:1564
+msgid "No. of Images Per Page "
+msgstr "Antal billeder per side"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1576
+#: views/settings.php:1576
+msgid "Slide Show Settings"
+msgstr "Slide Show Indstillinger"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1586
+#: views/settings.php:1586
+msgid "Auto Play"
+msgstr "Auto visning"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1613
+#: views/settings.php:1613
+msgid "Interval"
+msgstr "Interval"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1626
+#: views/settings.php:1626
+msgid "Language Direction Settings"
+msgstr "Sprogretning Indstillinger"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1636
+#: views/settings.php:1636
+msgid "Language Direction"
+msgstr "Sprogretning"
+
+#: assets/images/tables/gallery-bank-pro-edition/views/settings.php:1973
+#: views/settings.php:1973
+msgid "Are you sure you want to restore settings?"
+msgstr "Er du sikker på du vil gendanne indstillinger?"
+
+#~ msgid "Save and Submit Changes"
+#~ msgstr "Gem og Udgiv ændringer"
+
+#~ msgid "Album Published. Kindly wait for the redirect to happen."
+#~ msgstr "Albummet Udgivet. Vent på at blive omdirigeret."
+
+#~ msgid "Upload Images "
+#~ msgstr "Upload Billeder"
+
+#~ msgid "Self"
+#~ msgstr "Lejligheds"
+
+#~ msgid "Documentation"
+#~ msgstr "Dokumentation"
+
+#~ msgid "Check Plugin Update"
+#~ msgstr "Tjek programudvidelse opdatering"
+
+#~ msgid "Video Thumbnails"
+#~ msgstr "videominiaturer"
+
+#~ msgid "Video Thumbnail Path"
+#~ msgstr "Videoen Miniaturebillede Sti"
+
+#~ msgid "Enter your Video Thumbnail Url"
+#~ msgstr "Indtast din Videominiature Url"
+
+#~ msgid "Thumbnail Width"
+#~ msgstr "Miniature bredde"
+
+#~ msgid "Thumbnail Height"
+#~ msgstr "Miniature højde"

@@ -1,0 +1,231 @@
+// @import url( //fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,200italic,300italic,400italic,600italic,700italic );
+
+@font-face {
+  font-family: Proxima;
+  src: url('../fonts/proxima/proximanova-regular-webfont.eot');
+  src: url('../fonts/proxima/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/proxima/proximanova-regular-webfont.woff') format('woff'),
+       url('../fonts/proxima/proximanova-regular-webfont.ttf') format('truetype'),
+       url('../fonts/proxima/proximanova-regular-webfont.svg#proxima') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: Proxima;
+  src: url('../fonts/proxima/proximanova-regitalic-webfont.eot');
+  src: url('../fonts/proxima/proximanova-regitalic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/proxima/proximanova-regitalic-webfont.woff') format('woff'),
+       url('../fonts/proxima/proximanova-regitalic-webfont.ttf') format('truetype'),
+       url('../fonts/proxima/proximanova-regitalic-webfont.svg#proximaItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: Proxima;
+  src: url('../fonts/proxima/proximanova-sbold-webfont.eot');
+  src: url('../fonts/proxima/proximanova-sbold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/proxima/proximanova-sbold-webfont.woff') format('woff'),
+       url('../fonts/proxima/proximanova-sbold-webfont.ttf') format('truetype'),
+       url('../fonts/proxima/proximanova-sbold-webfont.svg#proximaSemiBold') format('svg');
+  font-weight: bold;
+  font-style: 400;
+}
+
+
+// @font-face {
+//   font-family: Proxima;
+//   src: url('../fonts/proxima/proximanova-bold-webfont.eot');
+//   src: url('../fonts/proxima/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/proxima/proximanova-bold-webfont.woff') format('woff'),
+//        url('../fonts/proxima/proximanova-bold-webfont.ttf') format('truetype'),
+//        url('../fonts/proxima/proximanova-bold-webfont.svg#proximaBold') format('svg');
+//   font-weight: normal;
+//   font-style: 500;
+// }
+
+// .fa-facebook,
+// .fa-facebook-circle,
+// .facebook {
+// 	color: #3b5998;
+// }
+// .fa-twitter,
+// .fa-twitter-circle,
+// .twitter {
+// 	color: #55acee;
+// }
+// .fa-instragram,
+// .instragram {
+// 	color: #517fa4
+// }
+// .fa-linkedin,
+// .linkedin {
+// 	color: #007bb6;
+// }
+// .fa-pinterest,
+// .pinterest {
+// 	color: #cb2027
+// }
+// .fa-vine,
+// .vine {
+// 	color: #00bf8f
+// }
+// .fa-snapchat,
+// .snapchat {
+// 	color: #fffc00
+// }
+// .fa-youtube,
+// .fa-youtube-play-circle,
+// .youtube {
+// 	color: #bb0000;
+// }
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6{
+	color: #666;
+	font-family: @font-family;
+	font-weight: 300;
+
+	&.caps{
+		text-transform: uppercase;
+	}
+
+	// &:first-child{
+	// 	margin-top: 0;
+	// 	padding-top: 0;
+	// }
+
+	&.has-subhead{
+		margin-bottom: 0 !important;
+	}
+}
+
+h1, .h1{
+	font-size: 40px;
+	line-height: 44px;
+	margin-bottom: 20px;
+	font-weight: 300;
+	color: #333;
+
+	@media ( max-width: 1024px ) {
+		font-size: 32px;
+		line-height: 34px;
+	}
+}
+
+h2, .h2{
+	font-size: 36px;
+	line-height: 33px;
+	margin-bottom: 20px;
+	font-weight: 300;
+	color: #333;
+
+	@media ( max-width: 1024px ) {
+		font-size: 22px;
+		line-height: 24px;
+	}
+}
+
+h3, .h3{
+	font-size: 28px;
+	line-height: 26px;
+	margin-bottom: 20px;
+	font-weight: 400;
+	color: #333;
+
+	@media ( max-width: 1024px ) {
+		font-size: 20px;
+		line-height: 22px;
+	}
+}
+
+h4, .h4{
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: 10px;
+	font-weight: 400;
+
+	@media ( max-width: 1024px ) {
+		font-size: 18px;
+		line-height: 20px;
+	}
+}
+
+h5, .h5{
+	font-size: 18px;
+	line-height: 21px;
+	margin-bottom: 10px;
+	font-weight: 400;
+
+	@media ( max-width: 1024px ) {
+		font-size: 18px;
+		line-height: 20px;
+	}
+}
+
+h6, .h6{
+	font-size: 16px;
+	line-height: 21px;
+	margin-bottom: 10px;
+	font-weight: 400;
+
+	@media ( max-width: 1024px ) {
+		font-size: 18px;
+		line-height: 20px;
+	}
+}
+
+p{
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: 18px;
+	line-height: 26px;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	i{
+		margin-right: 5px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+ul,
+ol{
+
+	li{
+		margin-bottom: 7px;
+		font-size: 18px;
+		line-height: 26px;
+	}
+}
+
+a{
+	color: @blue;
+
+	&:hover{
+		color: @blue;
+		text-decoration: none;
+	}
+}
+
+.read_more{
+
+	&:after{
+		margin-left: 4px;
+		font-size: 11px;
+		line-height: 13px;
+		font-family: FontAwesome;
+		content: @fa-var-arrow-right;
+	}
+}

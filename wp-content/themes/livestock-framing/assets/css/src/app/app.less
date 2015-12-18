@@ -1,0 +1,63 @@
+// External
+
+  @import "../bootstrap/bootstrap.less";
+  @import "../font-awesome/font-awesome.less";
+  @import "../misc/waves.less";
+  @import "../misc/magnific-popup.less";
+
+.livestock-framing{
+
+  // Variables
+  @import "./variables.less";
+
+  // Mixins
+  @import "./mixins.less";
+
+  // Typography
+  @import "./typography.less";
+
+  // Parts
+  @import "./parts.less";
+
+  // WordPress Core
+  @import "./wordpress-core.less";
+
+  // Bootstrap Overrides
+  @import "./bootstrap-overrides.less";
+
+  // Animations
+  @import "./animations.less";
+
+
+
+  // disable animations in mobile
+  @media ( max-width: 480px ) {
+    * {
+     /*CSS transitions*/
+     -o-transition-property: none !important;
+     -moz-transition-property: none !important;
+     -ms-transition-property: none !important;
+     -webkit-transition-property: none !important;
+     transition-property: none !important;
+
+     /*CSS transforms*/
+     -o-transform: none !important;
+     -moz-transform: none !important;
+     -ms-transform: none !important;
+     -webkit-transform: none !important;
+     transform: none !important;
+
+     /*CSS animations*/
+     -webkit-animation: none !important;
+     -moz-animation: none !important;
+     -o-animation: none !important;
+     -ms-animation: none !important;
+     animation: none !important;
+    }
+
+    .animate,
+    .wow{
+      visibility: visible !important;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+	"address": ["livestockframing.gbsandbox.com","*.livestockframing.gbsandbox.com"],
+	"db": {
+		"name": "livestock-framing-wp",
+		"user": "livestock",
+		"password": "iaG0nEj1gham7yEw",
+		"host": "localhost",
+		"charset": "utf8",
+		"collate": ""
+	},
+	"uploads": {
+		"dir": "/var/www/sites/livestockframing/www/public/wp-content/uploads",
+		"url": "http://www.livestockframing.gbsandbox.com/wp-content/uploads"
+	},
+	"ssl": false,
+	"dev": true,
+	"use_analytics": false
+}

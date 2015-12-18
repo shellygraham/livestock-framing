@@ -1,0 +1,61 @@
+section.testimonial{
+	text-align: center;
+	// background: #41484b;
+	// background: #fff;
+	position: relative;
+	overflow: hidden;
+	
+	p{
+		text-align: center;
+		color: #666;
+		font-size: 24px;
+		line-height: 32px;
+
+		@media( max-width: @screen-sm ) {
+			font-size: 24px;
+			line-height: 32px;
+		}
+
+		span.quote-mark{
+			color: #ccc;
+			&:first-of-type{ margin-right: 3px; }
+			&:last-of-type{ margin-left: 3px; }
+		}
+	}
+
+	cite{
+		color: #aaa;
+		text-align: center;
+
+		@media( max-width: @screen-sm ) {
+			font-size: 14px;
+			line-height: 18px;
+		}
+	}
+
+	// &:before{
+	// 	.fa;
+	// 	content: @fa-var-quote-left;
+	// 	display: block;
+	// 	height: 150px; width: 150px;
+	// 	font-size: 150px;
+	// 	line-height: 150px;
+	// 	color: rgba( 0, 0, 0, 0.03 );
+	// 	position: absolute; top: 15%; left: -10px; bottom: 0;
+	// 	-webkit-transform: rotate( 5deg );
+	// }
+
+	// &:after{
+	// 	.fa;
+	// 	content: @fa-var-quote-right;
+	// 	display: block;
+	// 	height: 150px; width: 150px;
+	// 	font-size: 150px;
+	// 	line-height: 150px;
+	// 	color: rgba( 0, 0, 0, 0.03 );
+	// 	position: absolute; bottom: 15%; right: -10px; bottom: 0;
+	// 	-webkit-transform: rotate( 5deg );
+	// }
+
+
+}

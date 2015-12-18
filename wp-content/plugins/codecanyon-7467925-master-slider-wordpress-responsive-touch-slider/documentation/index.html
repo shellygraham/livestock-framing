@@ -1,0 +1,2271 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Master Slider WordPress Plugin Documentation</title>
+		
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.min.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shCore.css" media="all">
+		<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shThemeDefault.css" media="all">
+		<link rel="stylesheet" href="assets/css/main.css" type="text/css" media="screen"/>
+		
+		<link rel="icon" type="image/png" href="assets/images/fav.png" />
+	</head>
+	
+	<body>
+		
+		<header class="header">
+			<img src="assets/images/doc-title.png" class="logo" style="margin: 13px 18px;" />
+			<nav class="navbar mainnav" >
+				<ul class="nav">
+					<li><a href="http://www.masterslider.com/">HOME</a></li>
+					<li><a href="http://support.averta.net/envato/support/item/master-slider-wordpress-plugin/" target="_blank">SUPPORT FORUM</a></li>
+					<li><a href="http://support.averta.net/envato/faq/master-slider-wp/" target="_blank">FAQ</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<div id="loading">
+			Loading data ...
+		</div>
+		
+		<div id="main-container" role="main">
+			<aside id="sidebar">
+				<nav class="toc">	
+					
+					<ul class="nav nav-list">
+						<li class="nav-header">
+							Table of Contents
+						</li>
+						<li>
+							<a href="#intro">Introduction</a>
+						</li>
+						<li>
+							<a href="#installing">Installing</a>
+						</li>
+						<li>
+							<a href="#updating">Updating</a>
+						</li>
+						<li>
+							<a href="#new-slider">Create New Slider</a>
+						</li>
+						<li>
+							<a href="#slider-settings">Slider Settings</a>
+						</li>
+						<li>
+							<a href="#slides">Working with Slides</a>
+						</li>
+						<li>
+							<a href="#add-layer">Working with Layers</a>
+						</li>
+						<li>
+							<a href="#timeline">Working with Timeline</a>
+						</li>
+						<li>
+							<a href="#style-editor">Working with Style Editor</a>
+						</li>
+						<li>
+							<a href="#transition-editor">Working with Transition Editor</a>
+						</li>
+						<li>
+							<a href="#button-editor">Working with Button Editor</a>
+						</li>
+						<li>
+							<a href="#slider-controls">Adding Slider Controls</a>
+						</li>
+						<li>
+							<a href="#post-slider">Working with Post Slider</a>
+						</li>
+						<li>
+							<a href="#facebook">Working with Facebook Slider</a>
+						</li>
+						<li>
+							<a href="#flickr">Working with Flickr Slider</a>
+						</li>
+						<li>
+							<a href="#WooCommerce">Working with WooCommerce Product Slider</a>
+						</li>
+						<li>
+							<a href="#lightbox">Using Lightbox in Master Slider</a>
+						</li>
+						<li>
+							<a href="#in-wp">Using Slider in WordPress</a>
+						</li>
+						<li>
+							<a href="#slider-callbacks">Using Slider API and Callbacks</a>
+						</li>
+						<li>
+							<a href="#export-import">Export and Import</a>
+						</li>
+						<li>
+							<a href="#embed-url">YouTube/Viemo Embed URL</a>
+						</li>
+						<li>
+							<a href="#language-i18n">Language and localization</a>
+						</li>
+						<li>
+							<a href="#rate">I want to rate Master Slider</a>
+						</li>
+						<li>
+							<a href="#support">Support</a>
+						</li>
+						<li>
+							<a href="#dev-doc">Developer Documentation</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="update-cont">
+					<p class="cpr">
+						Version 2.9.8, Last update: 1/25/2015
+						<br/>
+						&copy; <a href="http://www.averta.net/" target="_blank">Averta Ltd.</a> All rights reserved.
+					</p>
+				</div>
+				<div class="toggle"> </div>
+			</aside><!-- sidebar -->
+
+			<section class="container" id="content">
+				
+				<article class="content-section" id="intro">
+					<h4>Thank you</h4>
+					<p>At first we would like to say thank you for choosing Master Slider WordPress plugin. In this documentation you will find everything you need to use Master Slider WordPress.
+					<br> If you have any questions which are not covered in this documentation, please take a look at <a href="http://support.averta.net/envato/support/" target="_blank" >support</a> section. </p>
+					<hr>
+					<h4>About the Master Slider WordPress</h4>
+					<p>Master Slider WordPress is a premium high quality designed image and content slider for WordPress, with super smooth hardware accelerated transitions. It supports touch navigation with pure swipe gesture that you have never experienced before. It’s a truly responsive and device friendly slider which works perfect in all major devices. Master Slider is an awesome layer slider as well, with the ability of adding any HTML contents (texts, images, …) in layers. It is easy to use, plus there are ready to use templates available for you. You almost have everything in Master slider which is the most complete among the best, hotspots, thumbnails, variety of effects, Video support and much more. </p>
+					<hr>
+					<h4>Master Slider developer documentation</h4>
+					<p>There is another version of Master Slider documentation specially for developers which you can find <a href="developer/index.html">Developer Documentation</a> here.</p>
+				</article>
+
+				<article class="content-section" id="installing">
+					<section class="active" style="">
+						<h4>Installing by WP plugin installer</h4>
+						<ol>
+							<li>Extract the zip file which you've downloaded from CodeCanyon.</li>
+							<li>Navigate to <code>Plugins</code> &gt; <code>Add New</code> page in your WordPress admin.</li>
+							<li>Click on the <code>Upload</code> button on the top.</li>
+							<li>Click on <code>Choose File</code> and choose <strong>"masterslider-installable.zip"</strong> file from extracted zip file. then hit the <code>Install Now</code> button.</li>
+							<li>WordPress <strong>may</strong> ask you to enter your FTP details. After entering hit the <code>Proceed</code>.</li>
+							<li>Now you should see <strong>"Master Slider WP"</strong> in plugins list. Click on the <code>Activate Plugin</code> to activate Master Slider WP.</li>
+						</ol>
+						Also WordPress codex contains <a href="http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation">instructions on how to do this here.</a>
+						<br /><br />
+						<p>
+		                    <span class="label label-info">Note</span> In this method the server that hosts your website should allow upload limits greater than 6 MB. Most hosting providers have only up to 2MB file upload limit.<br> In this case you need to upload the theme by FTP or contact your host provider to increase upload limit.
+		                </p>
+
+						<hr>
+
+						<h4>Installing by FTP</h4>
+						<div >
+							<p>First, you need a tool for uploading plugin files to your site, you can use filemanager from cPanel or any FTP clients. Some good FTP clients :</p>
+							<ul>
+								<li><a href="http://codex.wordpress.org/Using_FileZilla" target="_blank">FileZilla</a> for windows.</li>
+								<li><a href="http://cyberduck.ch/" target="_blank">Cyberduck</a> for Mac.</li>
+							</ul>
+						</div>
+						<ol>
+							<li>Extract the zip file which you've downloaded from CodeCanyon.</li>
+							<li>Open extracted folder and extract <strong>"masterslider-installable.zip"</strong> file, after extract you should see <strong>"masterslider"</strong> folder.</li>
+							<li>Connect to you server by FTP application then navigate to <code>/wp-content/plugins/</code>.</li>
+							<li>Upload the <strong>"masterslider"</strong> folder which extracted.</li>
+							<li>Login to your WordPress admin area and navigate to the <code>Plugins</code> page, then click the <code>Activate</code> below <strong>Master Slider WP</strong>.</li>
+						</ol>
+
+						<hr>
+
+						<h4>Server Minimum Requirements</h4>
+						<ul>
+							<li>WordPress 3.6 or greater</li>
+							<li>PHP version 5.2.4 or greater</li>
+							<li>MySQL version 5.0 or greater</li>
+						</ul>
+
+					</section>
+					<hr>
+				</article>
+
+				<article class="content-section" id="updating">
+					<section class="active" style="">
+						
+						<div class="row-fluid">
+							<div class="span4">
+								<h4>Auto update</h4>
+								<p>Activate the auto update simply by going to Master Slider settings and entering <code>Your Envato Username</code>, <code>Your Secret API Key</code> and <code>Master Slider Purchase Code</code> on <code>License Activation</code> tab.</p>
+							</div>
+							<div class="span8">
+								<img src="assets/images/screenshots/license-activation.png" height="393" width="746" alt="Master Slider auto update" class="img-screenshot">
+							</div>
+							<hr>
+						</div>
+
+						<hr>
+
+						<h4>Manual update</h4>
+						<ol>
+							<li>Go to your CodeCanyon account and in download page, re-download the plugin ( updates are free of charge )</li>
+							<li>Remove `/wp-content/plugins/masterslider` directory on your website using FTP</li>
+							<li>Extract the download package file and find `masterslider-installable.zip`</li>
+							<li>Extract `masterslider-installable.zip` directory to your computer and upload it to `/wp-content/plugins/` directory using a FTP</li>
+							<li>Activate the plugin in the Plugins page</li>
+						</ol>
+						<br />
+
+						<div class="alert alert-info"><strong>Attention</strong>: If you 'delete' Masterslider in plugins page by clicking on 'delete' button the uninstall proccess will trigger and it will erase all sliders and data related to Masterslider. Please pay attention and always update the plugin by two above methods.</div>
+
+					</section>
+				</article>
+
+				<article class="content-section" id="new-slider">
+					<div class="row-fluid">
+						<div class="span4">
+							<h3><strong>Creating New Slider</strong></h3>
+							<p>
+								<ul>
+									<li>Login to your wordpress admin panel and click on <code>MasterSlider</code>  link in admin sidebar menu.</li>
+									<li>In Masterslider page click on <code>Create New Slider</code> button.</li>
+									
+								</ul>
+							</p>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/add-new-slider.png" alt="Master Slider Create New Slider" class="img-screenshot">
+						</div>
+					</div>
+					
+					<hr>
+
+					<div class="row-fluid">
+						<div class="span4">
+							<p>
+								<ul>
+									<li>Now a popup window will be open as shown in screenshot.</li>
+									<li>Select slider type and press <code>CREATE</code> button.</li>
+									<li>Your request will be proceed and you will be redirected to MasterSlider's panel page.</li>
+								</ul>
+																
+							</p>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/choose-slider-type.png" alt="Master Slider Slider Types" class="img-screenshot">
+						</div>
+					</div>
+				</article>
+
+				
+				<article class="content-section" id="slider-settings">
+					<div class="row-fluid">
+						<div class="span4">
+							<h4>General Settings</h4>
+							<dl>
+								<dt>Slider name</dt>
+								<dd>Specifies a name for your slider. It only used in admin area.</dd>
+								<dt>Slider width</dt>
+								<dd>Base width of slider in pixels, slider will resize layers and other elements under this value.</dd>
+								<dt>Slider height</dt>
+								<dd>Base height of slider in pixels.</dd>
+								<span class="label label-info"> Note </span> Automatically crop and resize slider images based on above size if it is on.
+								<dt>Slider sizing method</dt>
+								<dd>The sizing method of slider, with this you can make slider <code>fullscreen</code> or <code>fullwidth</code> even if it does not supported in your theme, it also supports <code>boxed</code> and <code>visible nearby slides</code> layouts.</dd>
+								<dt>Auto-height Slider</dt>
+								<dd>Whether the slider adapts its height to each slide height.</dd>
+								<dt>Slider wrapper width</dt>
+								<dd>It will set the wrapper width of slider (slider parent) if it leaves empty slider will set it automatically (Slider uses this to align slider controls).</dd>
+							</dl>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/slider-settings-general.png" alt="Master Slider General Settings" class="img-screenshot">
+						</div>
+					</div>
+					<hr>
+					<div class="row-fluid">
+						<div class="span4">
+						<h4>Slider Template and Transition</h4>
+							<dl>
+								<dt>Template</dt>
+								<dd>Here by clicking on <code>Choose template</code> you can specify a template for your slider.</dd>
+								<dd><span class="label label-info">Note</span> Selecting template may overwrite some slider options and controls. If you want to have full control on options, select <code>Custom Template</code>.</dd>
+								<dt>Transition</dt>
+								<dd>Specifies the transition of changing slides in slider.</dd>
+								<dt>Transition speed</dt>
+								<dd>The speed amount of changing transition. Higher 50 values are not recommended.</dd>
+								<dt>Direction</dt>
+								<dd>Specifies slide changing direction, It may not supported by some templates.</dd>
+								<dt>Slide space</dt>
+								<dd>The spacing value between slides in pixels.</dd>
+							</dl>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/slider-settings-template.png" alt="Master Slider Templates Settings" class="img-screenshot">
+						</div>
+					</div>
+					<hr>
+					<div class="row-fluid">
+						<div class="span4">
+							<h4>Slider Navigation and Preloading</h4>
+							<dl>
+								<dt>Slide show</dt>
+								<dd>Enables the autoplay slideshow.</dd>
+								<dt>Loop navigation</dt>
+								<dd>Enables the continuous sliding mode.</dd>
+								<dt>Pause at the end slide</dt>
+								<dd>Whether the slider pauses slideshow when it reaches to last slide.</dd>
+								<dt>Pause on hover</dt>
+								<dd>Whether the slider temporary pause slideshow on mouse cursor moves over slider.</dd>
+								<dt>Random order</dt>
+								<dd>Whether using random slide ordering.</dd>
+								<dt>Hide layers before changing slide</dt>
+								<dd>Triggers hide transition of all layers just before changing slide. Only happens in slideshow slider. </dd>
+								<dt>Show layers before slide transition complete</dt>
+								<dd>Triggers show transition of next slide before slide transition complete.</dd>
+								<dt>Start with slide</dt>
+								<dd>Specifies the fist slide in slider.</dd>
+								<hr>
+								<h4>Slider deep linking</h4>							
+								<dt>Deeplink name</dt>
+								<dd>A unique name for the slider which will be used in browser address bar you can enter your own name otherwise slider generates a unique one.</dd>
+								<dt>Type of permalink</dt>
+								<dd>Specifies the type of displaying slider deeplinking permalink in the address bar.</dd>
+								<hr>	
+								<h4>Parallax mode</h4>
+								<dt>Move while sliding/swiping</dt>
+								<dd>It moves the layers while slider is sliding or swiping.</dd>
+								<dt>Follow mouse</dt>
+								<dd>It moves the layers while mouse is moving.</dd>
+								<dt>Follow mouse over X-axis</dt>
+								<dd>It moves the layers only on X-axis while mouse is moving (horizontally moves).</dd>
+								<dt>Follow mouse over Y-axis</dt>
+								<dd>It moves the layers only on Y-axis while mouse is moving (vertically moves).</dd>
+								<dt>Disable</dt>
+								<dd>It disable the parallax effect.</dd>
+								<hr>
+								<h4>Slider parallax move while scrolling</h4>
+								<dt>Layers parallax depth percentage</dt>
+								<dd>The Intensity of parallax effect, higher values makes the layer more sensitive. Negative values are allowed.</dd>
+								<dt>Background parallax depth percentage</dt>
+								<dd>The Intensity of parallax effect of slide background, higher values makes the background more sensitive. Negative values are allowed.</dd>
+								<hr>
+								<dt>Touch swipe navigation</dt>
+								<dd>Whether the drag/swipe navigation is enabled.</dd>
+								<dt>Mouse swipe navigation</dt>
+								<dd>Whether the user can use mouse drag navigation.</dd>
+								<dt>Use grab cursor</dt>
+								<dd>Whether the slider uses grab mouse cursor while swiping with mouse.</dd>
+								<dt>Mouse wheel</dt>
+								<dd>Enables mouse scroll wheel navigation.</dd>
+								<dt>Slide preloading</dt>
+								<dd>Here you can specify that how slider loads images, it supports three different methods: <code>Load slides in sequence</code>, <code>Load all slides before init</code> and <code>Load nearby slides</code> which takes the number of current slide's nearby slides that should loads at a same time.</dd>
+							</dl>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/slider-settings-navigation.png" alt="Master Slider Navigation Settings" class="img-screenshot">
+						</div>
+					</div>
+					<hr>
+					<div class="row-fluid">
+						<div class="span4">
+							<h4>Slider Appearance</h4>
+							<dl>
+								<dt>Skin</dt>
+								<dd>Here you can specify the skin of your slider.</dd>
+								<dd>you can take a look at all skins <a href="#skins">here..</a></dd>
+								<dt>Align center slider controls</dt>
+								<dd>Whether the slider aligns UI controls to center. This option is only effective in full width mode.</dd>
+								<dt>Background image</dt>
+								<dd>Here you can choose a background image for the slider.</dd>
+								<dt>Background color</dt>
+								<dd>Specifies the background color of slider</dd>
+								<dt>Class name</dt>
+								<dd>Here you can add custom class names to the slider main element. Multiple class names must be separated by white space.</dd>
+								<dt>Inline style</dt>
+								<dd>Here you can add custom CSS style to slider main element. For example <code>border:solid 1px red;</code> </dd>
+							</dl>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/slider-settings-appearance.png" alt="Master Slider Appearance Settings" class="img-screenshot">
+						</div>
+					</div>
+					<hr>
+				</article>
+				
+				<article class="content-section" id="slides">
+					<div class="row-fluid">
+						<div class="span4">
+							<h4>Slides</h4>
+							<p>Here you can see already added slides to the slider, you can add a new slide to slider by clicking on <code>Add Slide</code><br>
+							Also you can change the sort of slides by drag and drop each one in this list.
+							</p>
+							<dl>
+								<dt>Remove slide</dt>
+								<dd>You can remove the slide by clicking on <img src="assets/images/screenshots/remove.png" alt="remove"> icon.</dd>
+								<dt>Duplicate slide</dt>
+								<dd>For creating a duplicate from a slide you can click on <img src="assets/images/screenshots/duplicate.png" alt="duplicate"> icon.</dd>
+								<dt>Show or hide slide</dt>
+								<dd>You can show or hide each slide by clicking on <img src="assets/images/screenshots/hide.png" alt="show/hide"> icon. Slider doesn't show hidden slides in front end.</dd>
+							</dl>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/slider-slides.png" alt="Master Slider Slides" class="img-screenshot">
+						</div>
+					</div>
+					<hr>
+					<div class="row-fluid">
+						<div class="span4">
+						<h4>Slide background and thumbnail</h4>
+						<dl>
+							<dt>Background</dt>
+							<dd>Specifies current slide background.</dd>
+							<dt>Fillmode</dt>
+							<dd>Specifies the slide background scaling method.</dd>
+							<dt>Thumbnail</dt>
+							<dd>Here you can add a thumbnail for the slide. Please make sure that you have added <code>Thumblist</code> control to the slider or the selected template supports thumbs.</dd>
+						</dl>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/slide-background.png" alt="Master Slider Slide Background Settings" class="img-screenshot">
+						</div>
+					</div>
+					<hr>
+					<div class="row-fluid">
+						<div class="span4">	
+							<h4>Slide video background</h4>
+							<dl>
+								<dt>Video background paths</dt>
+								<dd>Specifies the slide background video.You can use major video types like MP4, Ogg and webm.</dd>
+								<dt>Video background fill mode</dt>
+								<dd>You can choose the fill mode of the video size.</dd>
+								<dt>Loop</dt>
+								<dd>Turn on/off background video loop.</dd>
+								<dt>Mute</dt>
+								<dd>turn on/off background video sound.</dd>
+								<dt>Pause video on slide changed</dt>
+								<dd>It pauses video when slide change and continues playing when it goes back to slide video.</dd>
+									
+							</dl>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/slide-video-bg.png" alt="Master Slider Slide Video Background Settings" class="img-screenshot">
+						</div>
+					</div>
+					<hr>
+					<div class="row-fluid">
+						<div class="span4">	
+						<h4>Slide video and link</h4>
+						<p>Here you can add Youtube or Vimeo video as a video slide and also you can make link each slide of your slider.</p>
+						<dl>
+							<dt>URL</dt>
+							<dd>You can set a URL when user click on this slide it links to URL.</dd>
+							<dt>Video embed src</dt>
+							<dd>You can add Youtube and Vimeo src to create an slide for that video.</dd>
+							<dd><span class="label label-info">Note</span> To find YouTube/Viemo Embed URL you can Open the video in YouTube/Vimeo, play video and right-click on it, select "Copy embed code" then paste the embed code in a text editor, now you can see video embed URL in embed code which specified as iframe src.</dd>
+								
+						</dl>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/slide-link.png" alt="Master Slider Slide Video Background Settings" class="img-screenshot">
+						</div>
+					</div>
+					<hr>
+					<div class="row-fluid">
+						<div class="span4">	
+							<h4>Slide misc</h4>
+							<p>Here you can add custom CSS class or id to each slide and also add alt attribute to slide background image.</p>
+							<dl>
+								<dt>Class name</dt>
+								<dd>you can add a CSS class to slide.</dd>
+								<dt>CSS id</dt>
+								<dd>you can add a CSS id to slide.</dd>
+								<dt>Background color</dt>
+								<dd>It will be used to add color to slide background.</dd>
+								<dt>Alt text</dt>
+								<dd>you can add an alt text attribute to the image in your background of slide.</dd>
+								<dt>Color overlay</dt>
+								<dd>You can add color overlay to the slide.</dd>
+								<dt>Pattern overlay</dt>
+								<dd>You can add pattern overlay to the slide.</dd>
+							</dl>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/slide-misc.png" alt="Master Slider Slide Video Background Settings" class="img-screenshot">
+						</div>
+					</div>
+					<hr>
+				</article>
+
+				<article class="content-section" id="add-layer">
+					<div class="row-fluid">
+						<h4>Working with Layers</h4>
+						<p>
+							There are 5 types of layer in Master Slider
+						</p>
+						<dl>
+							<dt>Image</dt>
+							<dd>You can add images in this type of layers.</dd>
+							<dt>Text</dt>
+							<dd>You can add texts in this type of layers.</dd>
+							<dt>Video</dt>
+							<dd>You can add Youtube and Vimeo videos in this type of layers.</dd>
+							<dt>Button</dt>
+							<dd>You can add clickable button over slider and link it or bind custom actions to it.</dd>
+							<dt>Hotspot</dt>
+							<dd>You can add hotspots in this type of layers to show the related tooltip while mouse is over that hotspot, tooltip accepts html content as well as images in any sizes.</dd>
+						</dl>
+					</div>
+					<hr>
+					<div class="row-fluid">
+						
+						<div class="span4">
+							<h4>Adding new layers</h4>
+							<p>
+								To add layer in slide first you need to choose the layer type from the dropdown menu then press "+" button, the new layer will add in timeline and you can select it by clicking on its name.
+							</p>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/add-new-layer.png" alt="Master Slider Slide Video Background Settings" class="img-screenshot">
+							<img style="display: block;" src="assets/images/screenshots/layers.png" alt="Master Slider Slide Video Background Settings" class="img-screenshot">
+						</div>
+						
+					</div>
+					<hr>
+					
+					<div class="row-fluid">
+						<div class="span4">
+							<h4>Adding content to image layers</h4>
+							<dl>
+								<dt>Select image</dt>
+								<dd>You can select the image to put in  image layer.</dd>
+								<dt>Alt text</dt>
+								<dd>You can add text for alt attribute to have a better SEO.</dd>
+								<dt>Link layer</dt>
+								<dd>You can set a URL when user click on this image layer it links to URL.</dd>
+								<dt>Layer actions</dt>
+								<dd>You can bind action the layer. Actions runs by clicking on layer by user.</dd>
+							</dl>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/image-layer-content.png" alt="Master Slider Slide Video Background Settings" class="img-screenshot">
+							
+						</div>
+						
+					</div>
+					<hr>
+					<div class="row-fluid">
+						<div class="span4">
+							<h4>Adding content to text layers</h4> 	
+							<dl>
+								<dt>Width</dt>
+								<dd>You can set the width of text layer in pixel.</dd>
+								<dt>Layer actions</dt>
+								<dd>You can bind action the layer. Actions runs by clicking on layer by user.</dd>
+							</dl>
+							<span class="label label-info">Note</span> You need to enter your text on text editor.
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/text-layer-content.png" alt="Master Slider Slide Video Background Settings" class="img-screenshot">
+							
+						</div>
+					</div>
+					<hr>
+					<div class="row-fluid">
+						
+						<div class="span4">
+							<h4>Adding content to video layers</h4>
+							<dl>
+								<dt>Src</dt>
+								<dd>You can set Youtube or Vimeo src here.</dd>
+								<dl>
+									<dd><span class="label label-info">Note</span> To find YouTube/Viemo Embed URL you can Open the video in YouTube/Vimeo, play video and right-click on it, select "Copy embed code" then paste the embed code in a text editor, now you can see video embed URL in embed code which specified as iframe src.</dd>
+								</dl>
+
+								<dt>Width</dt>
+								<dd>You can set the width of video layer in pixel.</dd>
+								<dt>Height</dt>
+								<dd>You can set the height of video layer in pixel.</dd>
+								<dt>Select image</dt>
+								<dd>You can select the image to put as video cover. It shows when video hasn't played yet.</dd>
+								<dt>Alt text</dt>
+								<dd>You can add text for alt attribute to have a better SEO.</dd>
+							</dl>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/video-layer-content.png" alt="Master Slider Slide Video Background Settings" class="img-screenshot">
+							
+						</div>
+						
+					</div>
+
+					<hr>
+					<div class="row-fluid">
+						
+						<div class="span4">
+							<h4>Using Button layers</h4>
+							<dl>
+								<dt>Label</dt>
+								<dd>Specifies the label of button</dd>
+								<dt>Link layer</dt>
+								<dd>You can set a URL when user click on this image layer it links to URL.</dd>
+								<dt>Layer actions</dt>
+								<dd>You can bind action the layer. Actions runs by clicking on layer by user. By turning this on related options apper which are:</dd>
+								<img src="assets/images/screenshots/button-bind-action.png" alt="Master Slider button bind action" class="img-screenshot" style="margin-top:10px;">
+								<dl>
+									<dt>Goto next slide</dt>
+									<dd>It goes to next slide.</dd>
+									<dt>Goto previous slide</dt>
+									<dd>It goes to previous slide.</dd>
+									<dt>Goto slide</dt>
+									<dd>It goes to the slide you specify on Slide number.</dd>
+									<dt>Pause timer</dt>
+									<dd>It pauses the  timer of slider.</dd>
+									<dt>Resume timer</dt>
+									<dd>It resumes the  timer of slider.</dd>
+									<dt>Scroll to bottom of slider</dt>
+									<dd>It scrolls to the bottom of slider.</dd>
+
+								</dl>
+								<dl>
+									<dd><span class="label label-info">Note</span> You can choose button style from preset button slides or create a new one by clicking on "New/Edit Button.." in <a href="#button-editor">Button Editor.</a></dd>
+								</dl>
+							</dl>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/button-layer-content.png" alt="Master Slider Button Layer" class="img-screenshot">
+							
+						</div>
+						
+					</div>
+
+
+					<hr>
+					<div class="row-fluid">
+						
+						<div class="span4">
+							<h4>Adding content to hotspot layers</h4>
+							<dl>
+								<dt>Tooltip align</dt>
+								<dd>You can select the place of tooltip on hotspot layer here.</dd>
+								<dt>Tooltip max width</dt>
+								<dd>You can set the max width of Tooltip here.</dd>
+								<dt>Stay tooltip on mouse over it</dt>
+								<dd>tooltip does not disappear when mouse is over it.</dd>
+								<dl>
+									<dd><span class="label label-info">Note</span> Use text editor to add the content of hotspot layer such as image, text and etc.</dd>
+								</dl>
+								<dt>Link layer</dt>
+								<dd>You can set a URL when user click on this image layer it links to URL.</dd>
+								<dt>Layer actions</dt>
+								<dd>You can bind action the layer. Actions runs by clicking on layer by user.</dd>
+								
+							</dl>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/hotspot-layer-content.png" alt="Master Slider Slide Video Background Settings" class="img-screenshot">
+							
+						</div>
+						
+					</div>
+
+					<hr>
+					<div class="row-fluid">
+						
+						<div class="span4">
+							<h4>Set layer position on slide</h4>
+							<p>
+								You can select each layer by clicking on that then you can set the place for layer simply by drag and drop.You can also use keyboard arrow keys for changing layer place to have a better control over it or use "shift" + "arrow keys" to have a better speed. 
+							</p>
+							<p>
+								You can change the depth of layers simply by dragging layer name in list of layers in timeline.
+							</p>
+							<dl>
+								<dt>Align to stage</dt>
+								<dd>Use them to align layer to top, left, bottom, right, middle and center of slide.</dd>
+								<dt>Snapping</dt>
+								<dd>If you turn it on, in short distances the layer snaps to near object such as other layers, borders of slide and etc.</dd>
+								<dt>Zoom</dt>
+								<dd>It zooms the stage to make positioning easier.</dd>
+								<dl>
+									<dd><span class="label label-info">Note</span> Zoom is only to make positioning easier and doesn't have any effect on output.</dd>
+								</dl>
+							</dl>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/layers-pos.png" alt="Master Slider Slide Video Background Settings" class="img-screenshot">
+							
+						</div>
+					</div>
+					
+					<hr>
+					<div class="row-fluid">
+						
+						<div class="span4">
+							<h4>Adding transition to layer</h4>
+							
+							<dl>
+								<dt>Parallax effect level</dt>
+								<dd>The Intensity of parallax effect, higher values makes the layer more sensitive. Negative values are allowed.</dd>
+								<dt>Transition effect</dt>
+								<dd>you can select transition effect for layer in/out or create a new transition on <a href="#replace">Transition Editor</a> for your layer.</dd>
+								<dt>Duration</dt>
+								<dd>You can set the transition time for layer here, you can set it on timeline too, please take a look at <a href="#replace">Working with timeline</a> for more information.</dd>
+								<dt>Delay</dt>
+								<dd>You can set the delay time for transition layer here, you can set it on timeline too, please take a look at  <a href="#replace">Working with timeline</a> for more information.</dd>
+								<dt>Enable transition out</dt>
+								<dd>You can enable/disable transition out for layer here.</dd>
+								<dt>Waiting</dt>
+								<dd>You can set the duration time between transition in and out for layer.</dd>
+
+								
+							</dl>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/layer-transition.png" alt="Master Slider Slide Video Background Settings" class="img-screenshot">
+							
+						</div>
+						
+					</div>
+					<hr>
+					<div class="row-fluid">
+						
+						<div class="span4">
+							<h4>Styling layer</h4>
+							
+							<dl>
+								<dt>Layer position origin</dt>
+								<dd>Choose the origin of layer from its 9 place.</dd>
+								<dt>OffsetX</dt>
+								<dd>You can set the X position of layer.</dd>
+								<dt>OffsetY</dt>
+								<dd>You can set the Y position of layer.</dd>
+								
+								<dt>Select style for your layer</dt>
+								<dd>You can select style for layer or create a new style on <a href="#replace">Style Editor</a> for your layer.</dd>
+								<dt>Resizable layer</dt>
+								<dd>If you turn it on this layer size changes by changing the window size.</dd>
+								<dt>Hide layer under width</dt>
+								<dd>You can set a minimum width for slider and if it goes less than that width this layer will be invisible.</dd>
+
+								
+							</dl>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/layer-style.png" alt="Master Slider Slide layer style" class="img-screenshot">
+							
+						</div>
+						
+					</div>
+					<hr>
+					<div class="row-fluid">
+						
+						<div class="span4">
+							<h4>Layer misc</h4>
+							
+							<dl>
+								<dt>CSS class name</dt>
+								<dd>you can add a CSS class to layer.</dd>
+								<dt>CSS id</dt>
+								<dd>you can add a CSS id to layer.</dd>
+								<dt>Title attribute</dt>
+								<dd>You can add title attribute for better SEO.</dd>
+								<dt>Rel attribute</dt>
+								<dd>You can add title attribute for better SEO.</dd>
+								
+														
+							</dl>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/layer-misc.png" alt="Master Slider Slide layer style" class="img-screenshot">
+							
+						</div>
+						
+					</div>
+				</article>
+
+								<article class="content-section" id="timeline">
+					<div class="row-fluid">
+						<div class="span4">
+							<h3><strong>Working with Timeline</strong></h3>
+							<p>
+								You can manage all the layers in timeline on left side you can see all the layers of slide which
+								<ul>
+									<li>You can rename each layer by double clicking on its name.</li>
+									<li>You can change layers order by drag and drop.</li>
+									<li>You can remove layer by clicking on <img src="assets/images/screenshots/remove-i.png" alt="remove"> icon in front of each layer.</li>
+									<li>You can duplicate each layer by clicking on <img src="assets/images/screenshots/duplicate-i.png" alt="duplicate"> icon in front of each layer.</li>
+									<li>You can show or hide each layer by clicking on button below <img src="assets/images/screenshots/hide-i.png" alt="show/hide"> icon on layer row. It doesn't have any effect on front end.</li>
+									<li>You can lock layers for keep them safe from any changes by clicking on button below <img src="assets/images/screenshots/lock-i.png" alt="show/hide"> icon in layer row.</li>
+									<li>You can select only one layer to be visible to have a better view while working on layer by clicking on button below <img src="assets/images/screenshots/solo-i.png" alt="show/hide"> icon in layer row. It doesn't have any effect on front end.</li>
+								</ul>
+							</p>
+							<p>
+								You can understand the layer type by seeing the icon before its name.
+								<ul>
+									<li>All the image layers represent by <img src="assets/images/screenshots/img-type-i.png" alt="duplicate"> icon.</li>
+									<li>All the text layers represent by <img src="assets/images/screenshots/text-type-i.png" alt="duplicate"> icon.</li>
+									<li>All the video layers represent by <img src="assets/images/screenshots/video-type-i.png" alt="duplicate"> icon.</li>
+									<li>All the hotspot layers represent by <img src="assets/images/screenshots/hotspot-type-i.png" alt="duplicate"> icon.</li>
+									
+								</ul>
+							</p>
+							<p>
+								In front of each layer there is a timebar to give you access to time information.
+								<ul>
+									<li>Gray color represent for delay time for layer.</li>
+									<li>Blue color represent for transition in time for layer.</li>
+									<li>Yellow color represent for waiting time for layer.</li>
+									<li>Red color represent for transition out time for layer.</li>
+								</ul>
+								You can see the time info of each color by overing your mouse on that timebar, also you can change the time of each color by dragging that timebar.
+							</p>
+							
+						</div>
+					
+					
+						<div class="span8">
+							<img src="assets/images/screenshots/timeline.png" alt="Master Slider layer timeline" class="img-screenshot">
+								
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span4">
+							<p>
+								You can set duration of showing slide in autoplay mode.
+							</p>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/timeline-duraition.png" alt="Master Slider layer timeline" class="img-screenshot">
+						</div>
+					</div>
+					<hr>
+					<div class="row-fluid">
+						<div class="span4">
+							<h4><strong>Working with Timeline in preview mode.</strong></h4>
+							<p>
+								In preview mode timeline starts playing and you can see the transitions of each layer on slide, you need to click on "Preview slide" to enter to preview mode.
+
+							</p>
+							<p>
+								<span class="label label-info">Note</span> Removing or editing layers is disabled in preview mode.
+							</p>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/timeline-play-preview.png" alt="Master Slider layer timeline" class="img-screenshot">
+							
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span4">
+							
+							<p>
+								In preview mode you can have a powerful control over timeline playing by using indicator <img src="assets/images/screenshots/indicator.png" alt="duplicate">. You can use indicator to pause this timeline whenever you want or use it for fast forward/backward on timeline by dragging indicator. You can exit from preview mode by clicking on "exit preview".
+							</p>
+							<p>
+								<span class="label label-info">Note</span> You can pause and resume timeline by pressing the button <img src="assets/images/screenshots/play-pause.png" alt="duplicate"> on the left of "Exit preview".
+							</p>
+								
+							
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/timeline-previewmode.png" alt="Master Slider layer timeline" class="img-screenshot">	
+						</div>
+					</div>
+					
+
+					
+					<hr>
+				</article>
+
+				<article class="content-section" id="style-editor">
+					<div class="row-fluid">
+						<div class="span4">
+							<h3><strong>Working with Style Editor</strong></h3>
+							<p>
+								You can use style editor to style layers, you can create a new style or use preset styles, also save the custom style as a preset for using it in other slider and slides.
+							</p>
+							<p>
+								There is a lot of options for you to style your layer and apply them With the option of seeing changes in preview.
+								There is an option to use 600+ Google font, adding custom CSS from "Custom style" tab and a lot more. 
+							</p>
+							<p>
+								<span class="label label-info">Note</span> If you remove a style from preset list it will affect on other sliders that use this specific preset style as well and their style would be removed.
+							</p>
+							<p>
+								<span class="label label-info">Note</span> If you have a single line text we recommend you to turn off wordwrap.
+							</p>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/Style-editor.png" alt="Master Slider layer timeline" class="img-screenshot">	
+						</div>
+					</div>
+				</article>
+
+				<article class="content-section" id="button-editor">
+					<div class="row-fluid">
+						<div class="span4">
+							<h3><strong>Working with Style Editor</strong></h3>
+							<p>
+								You can use button editor to create or edit buttons style, you can create a new style or use preset styles, also you can save the custom style as a new button for using it in other slider and slides.
+							</p>
+							<p>
+								There is a lot of options for you to style your button and apply them With the option of seeing changes in preview.
+							</p>
+							<p>
+								<span class="label label-info">Note</span> If you remove a button from list it will affect on other sliders that use this specific button as well and their style would be removed.
+							</p>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/button-editor.png" alt="Master Slider Button Editor" class="img-screenshot">	
+						</div>
+					</div>
+				</article>
+					
+				<article class="content-section" id="transition-editor">
+					<div class="row-fluid">
+						<div class="span4">
+							<h3><strong>Working with Transition Editor</strong></h3>
+							<p>
+								You can create custom transition and apply or save them as a preset transition for future usage. Also you can see your transition with having control of moving forward/backward.
+							</p>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/transition-timeline.png" style="margin-top:64px;" alt="Master Slider layer timeline" class="img-screenshot">	
+						</div>
+					</div>
+					<hr>
+					<div class="row-fluid">
+						<div class="span4">
+							<h3><strong>General transition options</strong></h3>
+							<p>
+								You can create custom transition and apply or save them as a preset transition for future usage.
+							</p>
+
+							<dl>
+								<dt>Fade</dt>
+								<dd>Whether fade your transition or not.</dd>
+								<dt>Duration</dt>
+								<dd>Specifies the time of transition in second.</dd>
+								<dt>Ease function</dt>
+								<dd>Specifies the ease function for your transition.</dd>
+								<dt>OffsetX</dt>
+								<dd>Specifies the translate over X-axis for the transition in pixel.</dd>
+								<dt>OffsetY</dt>
+								<dd>Specifies the translate over Y-axis for the transition in pixel.</dd>
+								<dt>OffsetZ</dt>
+								<dd>Specifies the translate over Z-axis for the transition in pixel.</dd>
+							</dl>	
+							
+							
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/transition-editor.png" alt="Master Slider layer timeline" class="img-screenshot">	
+						</div>
+					</div>
+					<hr>
+					<div class="row-fluid">
+						<div class="span4">
+							<h4>Transition rotation</h4>
+							<dl>
+								<dt>2D Rotate</dt>
+								<dd>Specifies clockwise rotation at a given degree.</dd>
+								<dt>Rotate X</dt>
+								<dd>Specifies rotation over X-axis.</dd>
+								<dt>Rotate Y</dt>
+								<dd>Specifies rotation over Y-axis.</dd>
+								<dt>Rotate Z</dt>
+								<dd>Specifies rotation over Z-axis.</dd>
+							</dl>	
+							
+							
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/transition-rotate.png" alt="Master Slider layer timeline" class="img-screenshot">	
+						</div>
+					</div>
+						<hr>
+					<div class="row-fluid">
+						<div class="span4">
+							<h4>Transition scale</h4>
+							<dl>
+								<dt>Scale X</dt>
+								<dd>Specifies the Scale of layer's width.</dd>
+								<dt>Scale Y</dt>
+								<dd>Specifies the Scale of layer's height.</dd>
+								<dt>Skew X</dt>
+								<dd>Specifies the Skew of layer along the X-axis.</dd>
+								<dt>Skew Y</dt>
+								<dd>Specifies the Skew of layer along the Y-axis.</dd>
+							</dl>	
+							
+							
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/transition-scale.png" alt="Master Slider layer timeline" class="img-screenshot">	
+						</div>
+					</div>
+					<hr>
+					<div class="row-fluid">
+						<div class="span4">
+							<h4>Specifying transition origin</h4>
+							<dl>
+								<dt>Origin X</dt>
+								<dd>Specifies the position of X-axis for layer in percentage.</dd>
+								<dt>Origin Y</dt>
+								<dd>Specifies the position of Y-axis for layer in percentage.</dd>
+								<dt>Origin Z</dt>
+								<dd>Specifies the position of Z-axis for layer in pixel.</dd>
+								
+							</dl>	
+							
+							
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/tranistion-origin.png" alt="Master Slider layer timeline" class="img-screenshot">	
+						</div>
+					</div>
+				</article>
+
+				<article class="content-section" id="slider-controls">
+					<div class="row-fluid">
+						<div class="span4">
+							<h4>Adding Slider Controls</h4>
+							<p>You can select one type of controller from the dropdown menu and by clicking on <img src="assets/images/screenshots/add.png" alt="Master Slider layer timeline" class="img-screenshot"> it will add to "Used control" list. You can customize each control type by clicking on that.  
+							</p>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/slider-control.png" alt="Master Slider layer timeline" class="img-screenshot">	
+						</div>
+					</div>
+					<hr>
+					<div class="row-fluid">
+						<div class="span4">
+							<h4>Arrows Control Options</h4>
+							<p>You have the abilities of hiding arrows while mouse is out of slider, showing arrows over videoplayer and hiding arrows in specific size of windows and less than that.</p>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/arrows-control.png" alt="Master Slider layer timeline" class="img-screenshot">	
+						</div>
+					</div>
+					<hr>
+					<div class="row-fluid">
+						<div class="span4">
+							<h4>Line Timer Control Options</h4>
+							<p>You have the abilities of hiding line timer while mouse is out of slider, showing line timer over videoplayer and hiding line timer in specific size of windows and less than that.</p>
+							<dl>
+								<dt>Align control</dt>
+								<dd>Specifies the place of line timer.</dd>
+								<dt>Line timer color</dt>
+								<dd>Specifies the color of line timer.</dd>
+								<dt>Line timer width</dt>
+								<dd>Set the width of line timer.</dd>
+							</dl>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/line-t-control.png" alt="Master Slider timeline" class="img-screenshot">	
+						</div>
+					</div>
+					<hr>
+					<div class="row-fluid">
+						<div class="span4">
+							<h4>Slide Info Control Options</h4>
+							<p>You have the abilities of hiding slide info while mouse is out of slider, showing slide info over videoplayer and hiding slide info in specific size of windows and less than that. Also you can insert the slide info inside of slider.</p>
+							<dl>
+								
+								<dt>Align control</dt>
+								<dd>Specifies the place of slide info.</dd>
+								<dt>slide info margin</dt>
+								<dd>Specifies the margin for slide info.</dd>
+								<dt>slide info width</dt>
+								<dd>Specifies the width for slide info in pixel.</dd>
+								<dt>slide info height</dt>
+								<dd>Specifies the height for slide info in pixel.</dd>
+							</dl>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/slide-control.PNG" alt="Master Slider layer timeline" class="img-screenshot">	
+						</div>
+					</div>
+					<hr>
+					<div class="row-fluid">
+						<div class="span4">
+							<h4>Bullets Control Options</h4>
+							<p>You have the abilities of hiding bullets while mouse is out of slider, showing bullets over videoplayer and hiding bullets in specific size of windows and less than that.</p>
+							<dl>
+								
+								<dt>Align control</dt>
+								<dd>Specifies the place of bullets.</dd>
+								<dt>slide info margin</dt>
+								<dd>Specifies the margin for bullets.</dd>
+								
+							</dl>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/bullets-control.PNG" alt="Master Slider layer timeline" class="img-screenshot">	
+						</div>
+					</div>
+					<hr>
+					<div class="row-fluid">
+						<div class="span4">
+							<h4>Circle Timer Control Options</h4>
+							<p>You have the abilities of hiding circle timer while mouse is out of slider, showing circle timer over videoplayer and hiding circle timer in specific size of windows and less than that.</p>
+							<dl>
+								
+								<dt>Circle stroke</dt>
+								<dd>Specifies the stroke of circle in pixel.</dd>
+								<dt>Circle radius</dt>
+								<dd>Specifies the radius of circle in pixel.</dd>
+								<dt>Circle color</dt>
+								<dd>Specifies the fill color of circle.</dd>
+								
+							</dl>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/circle-t-control.PNG" alt="Master Slider layer timeline" class="img-screenshot">	
+						</div>
+					</div>
+					<hr>
+					<div class="row-fluid">
+						<div class="span4">
+							<h4>Scrollbar Control Options</h4>
+							<p>You have the abilities of hiding Scrollbar while mouse is out of slider, showing Scrollbar over videoplayer and hiding Scrollbar in specific size of windows and less than that. Also you can insert the Scrollbar inside of slider.</p>
+							<dl>
+								
+								<dt>Scrollbar handle color</dt>
+								<dd>Specifies the color for Scrollbar handle.</dd>
+								<dt>Align control</dt>
+								<dd>Specifies the place of Scrollbar.</dd>
+								<dt>Scrollbar width</dt>
+								<dd>Specifies the width for Scrollbar.</dd>
+								<dt>Scrollbar margin</dt>
+								<dd>Specifies the margin for Scrollbar.</dd>
+								
+							</dl>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/scrollbar-control.PNG" alt="Master Slider layer timeline" class="img-screenshot">	
+						</div>
+					</div>
+					<hr>
+					<div class="row-fluid">
+						<div class="span4">
+							<h4>Thumblist/Tabs Control Options</h4>
+							<p>You have the abilities of hiding thumblist/tabs while mouse is out of slider, showing thumblist/tabs over videoplayer and hiding thumblist/tabs in specific size of windows and less than that. Also you can insert the thumblist/tabs inside of slider.</p>
+							<dl>
+								<dt>Thumb background fill mode</dt>
+								<dd>Specifies the background fill mode of thumblist/tabs.</dd>
+								<dt>Align control</dt>
+								<dd>Specifies the place of thumblist/tabs.</dd>
+								<dt>Thumblist/Tabs margin</dt>
+								<dd>Specifies the margin for thumblist/tabs.</dd>
+								<dt>Appearance</dt>
+								<dd>Choose thumblist or tabs.</dd>
+								<dt>Thumblist/Tabs info width</dt>
+								<dd>Specifies the width for thumblist/tabs in pixel.</dd>
+								<dt>Thumblist/Tabs info height</dt>
+								<dd>Specifies the height for thumblist/tabs in pixel.</dd>
+								<dt>Space between thumbs/tabs</dt>
+								<dd>Specifies the the space among thumbs in thumblist mode or tabs in tab mode.</dd>
+								
+							</dl>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/tabs-control.PNG" alt="Master Slider layer timeline" class="img-screenshot">	
+						</div>
+					</div>
+				</article>
+
+				<article class="content-section" id="post-slider">
+					<section class="active" style="">
+						<div class="row-fluid">
+							<div class="span4">
+								<h3>Working with Post Slider</h3>
+								<p>
+								You can create slider from your post simply by creating post slider. It uses the images and texts related to post.<br> You need to click on "Create New Slider" then from the types select "Post Slider" and click "CREATE". 
+				                </p>
+				            </div>
+				            <div class="span8">
+								<img src="assets/images/screenshots/create-post-slider.png" alt="Master Slider Create New Post Slider" class="img-screenshot">
+							</div>
+						</div>
+					</section>
+					<hr>
+					
+					<div class="row-fluid">
+						<div class="span4">
+							<h4><strong>Configuring Post Settings</strong></h4>
+							<h5>Post type</h5>
+							<p>There are two types of post slider (Posts and Pages) which you can choose and the related options to chosen type will be displayed. 
+								<dl>
+									<dt>Posts</dt>
+									<dd>It will be used to create slider from WordPress posts</dd>
+									<ul>If you select posts:
+										<li>Select the <code>Categories</code> that you want the posts fetch from.</li>
+										<li>Select the <code>Tags</code> that you want the posts fetch from.</li>
+										<span class="label label-info">Note</span> If you want to select multiple categories/tags you need to hold <code>ctrl</code>(<code>command</code> in OS X) and click on the categories you want.
+									</ul>
+									<dt>Pages</dt>
+									<dd>It will be used to create slider from WordPress pages</dd>
+								</dl>
+								<hr>
+								<ul>
+									<dt>Exclude posts</dt>
+									<dd>Enter the (post/page)'s ID that you don't want to fetch in slider</dd>
+									<span class="label label-info">Note</span> You need to separate the (post/page)'s ID by comma like <code>53,34,87,25</code>.
+									<dt>Posts number</dt>
+									<dd>Set the number of (posts/pages) that you want to have in post slider.</dd>
+									<dt>Excerpt length </dt>
+									<dd>Set the excerpt length for your (posts/pages) in post slider.</dd>
+									<dt>Number of first results to skip (offset)</dt>
+									<dd>Set the number of posts that you don't want to have in post slider, for example 3 ignores the first three (posts/pages).</dd>
+									<dt>Link slides to post's page </dt>
+									<dd>Enable the post slider links, when user clicks on th slide it goes to its post page.</dd>
+								</ul>
+								<hr>
+								<h5>Order of slides</h5>
+								In this part you can arrange the order of post slides.
+								<h5>Order by</h5>
+								<dl>
+									<dt>Date</dt>
+									<dd>Arrange the post slides based on post published date.</dd>
+									<dt>Menu Order</dt>
+									<dd>Arrange the post slides based on their orders on menu.</dd>
+									<dt>Title</dt>
+									<dd>Arrange the post slides based on their titles.</dd>
+									<dt>ID</dt>
+									<dd>Arrange the post slides based on their ID.</dd>
+									<dt>Random</dt>
+									<dd>Arrange the post slides randomly.</dd>
+									<dt>Comments</dt>
+									<dd>Arrange the post slides based on number of their comments.</dd>
+									<dt>Date Modified</dt>
+									<dd>Arrange the post slides based on post modified date.</dd>
+									<dt>Author</dt>
+									<dd>Arrange the post slides based on post's author name.</dd>
+								</dl>
+								<h5>Order direction</h5>
+								<dl>
+									<dt>Descending</dt>
+									<dd>From A to Z</dd>
+									<dt>Ascending</dt>
+									<dd>From Z to A</dd>
+								</dl>
+								<hr>
+								<h5>Post slide background image option (Grab the image from)</h5>
+								<dl>
+									<dt>Auto Select</dt>
+									<dd>It select the featured image if doesn't exist select first image in post</dd>
+									<dt>Featured Image</dt>
+									<dd>It select the featured image</dd>
+									<dt>First Image in Post</dt>
+									<dd>It select the  first image in post</dd>
+									<dt>Custom Image</dt>
+									<dd>It gives you the option to select a custom image</dd>
+									<dt>None</dt>
+									<dd>It doesn't use any image in post slides</dd>
+								</dl>
+							</p>
+							
+
+							
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/post-settings.png" alt="Master Slider Create New Slider" class="img-screenshot">
+						</div>
+					</div>
+					
+					<hr>
+
+					<section class="active" style="">
+						<div class="row-fluid">
+							
+								<div class="span4">
+									<h4><strog>Text content of Post Slider</strog></h4>
+									<p>
+										You will have a huge control on adding related post content by using <code>Insert dynamic content</code> options. There are 2 <code>Insert dynamic content</code> for Post Slider one of them placed on <code>Layer Content</code> of <code>text Layer</code> as displayed in picture, the other one <code>Slide info</code>
+						            </p>
+						         
+						            <img src="assets/images/screenshots/dynamic-content-options.png" alt="Master Slider Create New Slider" class="img-screenshot">
+						           
+						        </div>
+
+								<div class="span8">
+									 <img src="assets/images/screenshots/post-slider-inset-dynamic-content.png" alt="Master Slider Create New Slider" class="img-screenshot">
+								</div>
+						</div>
+						<hr>
+						<div class="row-fluid">
+							<div class="span4">
+								
+				                <h5>Insert dynamic content</h5>
+				                <p>
+								You can simply add text layer on each slide and add the content dynamically by using "Insert dynamic content". <br>There are a lot of option to help you add any related post information to slide which explains on below table.
+				                </p>
+			              	</div>
+			               	<div class="span8">
+				                <table class="dynamic-txt">
+				                	<tr>
+									 <th>Name</th>
+									 <th>Description</th>
+									 <th>Short code</th>
+									</tr>
+									<tr>
+									  <td>The post title</td>
+									  <td>Add the post title.</td>
+									  <td>{{title}}</td> 
+									</tr>
+									<tr>
+									  <td>The post content</td>
+									  <td>Add the post content</td> 
+									  <td>{{content}}</td>
+									</tr>
+									<tr>
+									  <td>The post excerpt</td>
+									  <td>Add the post excerpt, you can set the length of excerpt on "post settings".</td> 
+									  <td>{{excerpt}}</td>
+									</tr>
+									<tr>
+									  <td>The post link</td>
+									  <td>Add the post link.</td> 
+									  <td>{{permalink}}</td>
+									</tr>
+									<tr>
+										<td>The author name</td>
+										<td>Add the author name.</td>
+										<td>{{author}}</td>
+									</tr>
+									<tr>
+										<td>The unique ID of the post</td>
+										<td>Add the unique ID of the post.</td>
+										<td>{{post_id}}</td>
+									</tr>
+									<tr>
+										<td>Post image</td>
+										<td>Add the image of post.</td>
+										<td>{{image}}</td>
+									</tr>
+									<tr>
+										<td>Post image source</td>
+										<td>Add the image URL.</td>
+										<td>{{image-url}}</td>
+									</tr>
+									<tr>
+										<td>The year of the post</td>
+										<td>Add the year of the post.</td>
+										<td>{{year}}</td>
+									</tr>
+										<tr>
+										<td>Numeric Month</td>
+										<td>Add the numeric Month.</td>
+										<td>{{monthnum}}</td>
+									</tr>
+									<tr>
+										<td>Month name</td>
+										<td>Add the month name.</td>
+										<td>{{month}}</td>
+									</tr>
+									<tr>
+										<td>Day of the month</td>
+										<td>Add the day of the month.</td>
+										<td>{{daynum}}</td>
+									</tr>
+									<tr>
+										<td>Weekday name</td>
+										<td>Add the weekday name.</td>
+										<td>{{day}}</td>
+									</tr>
+									<tr>
+										<td>Hour:Minutes</td>
+										<td>Add the hour:minutes of published post.</td>
+										<td>{{time}}</td>
+									</tr>
+									<tr>
+										<td>The publish date</td>
+										<td>Add the date of published post.</td>
+										<td>{{date-published}}</td>
+									</tr>
+									<tr>
+										<td>The last modified date</td>
+										<td>Add the date of  last modified post.</td>
+										<td>{{date-modified}}</td>
+									</tr>
+									<tr>
+										<td>Number of comments</td>
+										<td>Add the number of comments of post.</td>
+										<td>{{commentnum}}</td>
+									</tr>
+								</table>
+							</div>
+
+						</div>
+
+					</section>
+					<hr>
+				</article>
+				
+							<article class="content-section" id="facebook">
+					<section class="active" style="">
+						<div class="row-fluid">
+							<div class="span4">
+								<h3>Working with Facebook Slider</h3>
+								<p>
+								You can create slider from Facebook images simply by creating Facebook Slider. You need to click on "Create New Slider" then from the types select "Facebook Slider" and click "CREATE". 
+				                </p>
+				            </div>
+				            <div class="span8">
+								<img src="assets/images/screenshots/create-fb-slider.png" alt="Master Slider Create New Post Slider" class="img-screenshot">
+							</div>
+						</div>
+					</section>
+					<hr>
+					<div class="row-fluid">
+						<div class="span4">
+							<h4><strong>Configuring Facebook Slider setting</strong></h4>
+								<p>There are two options to create Facebook slider, from  user public photos and from Photos in an album.</p>
+								<dl>
+									<dt>User public photos</dt>
+									<dd>It will be used to create slider from public images of user.</dd>
+									<p class="inderbox">If you select User public photos:</p>
+									<dt>Username</dt>
+									<dd>Enter the username of Facebook.</dd>
+									
+									<dt>Photos in an album</dt>
+									<dd>It will be used to create slider from images of Facebook album.</dd>
+									<p class="inderbox">If you select Photos in an album:</p>
+									<dt>Album id</dt>
+									<dd>Enter the id of Facebook album.</dd>
+									
+									<dt>Number of photos</dt>
+									<dd>The number of images to create Facebook slider.</dd>
+									<dt>Images size</dt>
+									<dd>You can choose the size of images in slider.</dd>
+									<dt>Thumbnails size</dt>
+									<dd>You can choose the size of Thumbnails in slider.</dd>
+								</dl>
+								
+							
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/fb-setting.png" alt="Master Slider Create New Slider" class="img-screenshot">
+						</div>
+					</div>
+					
+					<hr>
+
+					<div class="row-fluid">
+							<div class="span4">
+								
+				                <h5>Insert dynamic content</h5>
+				                <p>
+								You can simply add text layer on each slide and add the content dynamically by using "Insert dynamic content".
+				                </p>
+			              	</div>
+			               	<div class="span8">
+				                <table class="dynamic-txt">
+				                	<tr>
+									 <th>Name</th>
+									 <th>Description</th>
+									 <th>Short code</th>
+									</tr>
+									<tr>
+									  <td>Photo name</td>
+									  <td>Add the photo name.</td>
+									  <td>{{name}}</td> 
+									</tr>
+									<tr>
+									  <td>Photo owner name</td>
+									  <td>Add the owner name of photo</td> 
+									  <td>{{owner-name}}</td>
+									</tr>
+									<tr>
+									  <td>Photo link</td>
+									  <td>Add the post excerpt, you can set the length of excerpt on "post settings".</td> 
+									  <td>{{link}}</td>
+									</tr>
+									
+								</table>
+							</div>
+						</div>
+						<hr>
+				</article>
+
+				<article class="content-section" id="flickr">
+					<section class="active" style="">
+						<div class="row-fluid">
+							<div class="span4">
+								<h3>Working with Flickr Slider</h3>
+								<p>
+								You can create slider from Flickr images simply by creating Flickr Slider. You need to click on "Create New Slider" then from the types select "Flickr Slider" and click "CREATE". 
+				                </p>
+				            </div>
+				            <div class="span8">
+								<img src="assets/images/screenshots/create-flickr-slider.png" alt="Master Slider Create New Post Slider" class="img-screenshot">
+							</div>
+						</div>
+					</section>
+					<hr>
+					<div class="row-fluid">
+						<div class="span4">
+							<h4><strong>Configuring Flickr Slider setting</strong></h4>
+								
+								<dl>
+									<dt>API key</dt>
+									<dd>Enter the API key for your Flickr.</dd>
+									<p>There are two options to create Flickr slider, from  user public photos and from Photos in a set.</p>
+								
+									<dt>User public photos</dt>
+									<dd>It will be used to create slider from public images of user.</dd>
+									<p class="inderbox">If you select User public photos:</p>
+									<dt>User Id</dt>
+									<dd>Enter the user id of Flickr.</dd>
+									
+									<dt>Photos in a set</dt>
+									<dd>It will be used to create slider from images of a Flickr set.</dd>
+									<p class="inderbox">If you select Photos in a set:</p>
+									<dt>Photoset Id</dt>
+									<dd>Enter the id of Photoset.</dd>
+									
+									<dt>Number of photos</dt>
+									<dd>The number of images to create Flickr slider.</dd>
+									<dt>Images size</dt>
+									<dd>You can choose the size of images in slider.</dd>
+									<dt>Thumbnails size</dt>
+									<dd>You can choose the size of Thumbnails in slider.</dd>
+								</dl>
+													
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/flickr-setting.png" alt="Master Slider Create New Slider" class="img-screenshot">
+						</div>
+					</div>
+					
+					<hr>
+
+					<div class="row-fluid">
+							<div class="span4">
+								
+				                <h5>Insert dynamic content</h5>
+				                <p>
+								You can simply add text layer on each slide and add the content dynamically by using "Insert dynamic content".
+				                </p>
+			              	</div>
+			               	<div class="span8">
+				                <table class="dynamic-txt">
+				                	<tr>
+									 <th>Name</th>
+									 <th>Description</th>
+									 <th>Short code</th>
+									</tr>
+									<tr>
+									  <td>Photo name</td>
+									  <td>Add the photo name.</td>
+									  <td>{{title}}</td> 
+									</tr>
+									<tr>
+									  <td>Photo owner name</td>
+									  <td>Add the owner name of photo</td> 
+									  <td>{{owner-name}}</td>
+									</tr>
+									<tr>
+									  <td>Date taken</td>
+									  <td>Add the date that photo was taken.</td> 
+									  <td>{{date-taken}}</td>
+									</tr>
+									<tr>
+									  <td>Photo Description</td>
+									  <td>Add photo description</td> 
+									  <td>{{description}}</td>
+									</tr>
+									
+								</table>
+							</div>
+
+						</div>
+						<hr>
+				</article>
+
+				<article class="content-section" id="WooCommerce">
+					<section class="active" style="">
+						<div class="row-fluid">
+							<div class="span4">
+								<h3>Working with WooCommerce Product Slider</h3>
+								<p>
+								You can create slider from your products simply by creating WooCommerce Product Slider. You need to click on "Create New Slider" then from the types select "WooCommerce Product Slider" and click "CREATE". 
+				                </p>
+				            </div>
+				            <div class="span8">
+								<img src="assets/images/screenshots/create-woo-slider.png" alt="Master Slider Create New Post Slider" class="img-screenshot">
+							</div>
+						</div>
+					</section>
+					<hr>
+					<div class="row-fluid">
+						<div class="span4">
+							<h4><strong>Configuring WooCommerce Product Slider</strong></h4>
+								<dl>
+									<dt>Categories</dt>
+									<dd>Select the <code>Categories</code> that you want the products fetch from.</dd>
+									<dt>Tags</dt>
+									<dd>Select the <code>Tags</code> that you want the products fetch from.</dd>
+									<span class="label label-info">Note</span> If you want to select multiple categories/tags you need to hold <code>ctrl</code>(<code>command</code> in OS X) and click on the categories you want.
+									<dt>Only display in-stock products</dt>
+									<dd>It shows only the products available in-stock.</dd>
+									<dt>Only display featured products</dt>
+									<dd>It shows only the featured products.</dd>
+									<dt>Only display on sale products</dt>
+									<dd>It shows only the on sale products.</dd>
+									<dt>Exclude products</dt>
+									<dd>Enter the product's ID that you don't want to fetch in slider.</dd>
+									<dt>products number</dt>
+									<dd>Set the number of products that you want to have in product slider.</dd>
+									<dt>Excerpt length </dt>
+									<dd>Set the excerpt length for your products in product slider.</dd>
+									<dt>Number of first results to skip (offset)</dt>
+									<dd>Set the number of products that you don't want to have in post slider, for example 3 ignores the first three products.</dd>
+									<dt>Link slides to product's page </dt>
+									<dd>Enable the product slider links, when user clicks on th slide it goes to its product page.</dd>
+								</dl>
+								<hr>
+								
+								
+								<h5>Order of slides</h5>
+								In this part you can arrange the order of post slides.
+								<h5>Order by</h5>
+								<dl>
+									<dt>Date</dt>
+									<dd>Arrange the product slides based on product published date.</dd>
+									<dt>Menu Order</dt>
+									<dd>Arrange the product slides based on their orders on menu.</dd>
+									<dt>Title</dt>
+									<dd>Arrange the product slides based on their titles.</dd>
+									<dt>ID</dt>
+									<dd>Arrange the product slides based on their ID.</dd>
+									<dt>Random</dt>
+									<dd>Arrange the product slides randomly.</dd>
+									<dt>Comments</dt>
+									<dd>Arrange the product slides based on number of their comments.</dd>
+									<dt>Date Modified</dt>
+									<dd>Arrange the product slides based on product modified date.</dd>
+									<dt>Author</dt>
+									<dd>Arrange the product slides based on product's author name.</dd>
+									<dt>Popularity</dt>
+									<dd>Arrange the product slides based on popularity.</dd>
+									<dt>Average rating</dt>
+									<dd>Arrange the product slides based on average rating.</dd>
+									<dt>Price: low to high</dt>
+									<dd>Arrange the product slides based on their price.</dd>
+									<dt>Price: high to low</dt>
+									<dd>Arrange the product slides based on their price.</dd>
+								</dl>
+								<h5>Order direction</h5>
+								<dl>
+									<dt>Descending</dt>
+									<dd>From A to Z</dd>
+									<dt>Ascending</dt>
+									<dd>From Z to A</dd>
+								</dl>
+								<hr>
+								<h5>product slide background image option (Grab the image from)</h5>
+								<dl>
+									<dt>Auto Select</dt>
+									<dd>It select the featured image if doesn't exist select first image in product.</dd>
+									<dt>Featured Image</dt>
+									<dd>It select the featured image.</dd>
+									<dt>First Image in product</dt>
+									<dd>It select the  first image in product.</dd>
+									<dt>Custom Image</dt>
+									<dd>It gives you the option to select a custom image.</dd>
+									<dt>None</dt>
+									<dd>It doesn't use any image in product slides.</dd>
+								</dl>
+							</p>
+							
+
+							
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/post-settings.png" alt="Master Slider Create New Slider" class="img-screenshot">
+						</div>
+					</div>
+					
+					<hr>
+
+					<div class="row-fluid">
+							<div class="span4">
+								
+				                <h5>Insert dynamic content</h5>
+				                <p>
+								You can simply add text layer on each slide and add the content dynamically by using "Insert dynamic content".
+				                </p>
+			              	</div>
+			               	<div class="span8">
+				                <table class="dynamic-txt">
+				                	<tr>
+									 <th>Name</th>
+									 <th>Description</th>
+									 <th>Short code</th>
+									</tr>
+									<tr>
+									  <td>The post title</td>
+									  <td>Add the post title.</td>
+									  <td>{{title}}</td> 
+									</tr>
+									<tr>
+									  <td>The post content</td>
+									  <td>Add the post content</td> 
+									  <td>{{content}}</td>
+									</tr>
+									<tr>
+									  <td>The post excerpt</td>
+									  <td>Add the post excerpt, you can set the length of excerpt on "post settings".</td> 
+									  <td>{{excerpt}}</td>
+									</tr>
+									<tr>
+									  <td>The post link</td>
+									  <td>Add the post link.</td> 
+									  <td>{{permalink}}</td>
+									</tr>
+									<tr>
+										<td>The author name</td>
+										<td>Add the author name.</td>
+										<td>{{author}}</td>
+									</tr>
+									<tr>
+										<td>The unique ID of the post</td>
+										<td>Add the unique ID of the post.</td>
+										<td>{{post_id}}</td>
+									</tr>
+									<tr>
+										<td>Post image</td>
+										<td>Add the image of post.</td>
+										<td>{{image}}</td>
+									</tr>
+									<tr>
+										<td>Post image source</td>
+										<td>Add the image URL.</td>
+										<td>{{image-url}}</td>
+									</tr>
+									<tr>
+										<td>The year of the post</td>
+										<td>Add the year of the post.</td>
+										<td>{{year}}</td>
+									</tr>
+										<tr>
+										<td>Numeric Month</td>
+										<td>Add the numeric Month.</td>
+										<td>{{monthnum}}</td>
+									</tr>
+									<tr>
+										<td>Month name</td>
+										<td>Add the month name.</td>
+										<td>{{month}}</td>
+									</tr>
+									<tr>
+										<td>Day of the month</td>
+										<td>Add the day of the month.</td>
+										<td>{{daynum}}</td>
+									</tr>
+									<tr>
+										<td>Weekday name</td>
+										<td>Add the weekday name.</td>
+										<td>{{day}}</td>
+									</tr>
+									<tr>
+										<td>Hour:Minutes</td>
+										<td>Add the hour:minutes of published post.</td>
+										<td>{{time}}</td>
+									</tr>
+									<tr>
+										<td>The publish date</td>
+										<td>Add the date of published post.</td>
+										<td>{{date-published}}</td>
+									</tr>
+									<tr>
+										<td>The last modified date</td>
+										<td>Add the date of  last modified post.</td>
+										<td>{{date-modified}}</td>
+									</tr>
+									<tr>
+										<td>Number of comments</td>
+										<td>Add the number of comments of post.</td>
+										<td>{{commentnum}}</td>
+									</tr>
+									<tr>
+										<td>Price</td>
+										<td>Add the price of product.</td>
+										<td>{{wc_price}}</td>
+									</tr>
+									<tr>
+										<td>Regular Price</td>
+										<td>Add the regular price of product.</td>
+										<td>{{wc_regular_price}}</td>
+									</tr>
+									<tr>
+										<td>Sale Price</td>
+										<td>Add the sale price of product</td>
+										<td>{{wc_sale_price}}</td>
+									</tr>
+									<tr>
+										<td>In Stock Status</td>
+										<td>Add the sale price of product</td>
+										<td>{{wc_stock_status}}</td>
+									</tr>
+									<tr>
+										<td>Stock Quantity</td>
+										<td>Add the quantity of product</td>
+										<td>{{wc_stock_quantity}}</td>
+									</tr>
+									<tr>
+										<td>Weight</td>
+										<td>Add the weight of product</td>
+										<td>{{wc_weight}}</td>
+									</tr>
+									<tr>
+										<td>Product Categories</td>
+										<td>Add the categories of product</td>
+										<td>{{wc_product_cats}}</td>
+									</tr>
+									<tr>
+										<td>Product Tags</td>
+										<td>Add the tags of product</td>
+										<td>{{wc_product_tags}}</td>
+									</tr>
+									<tr>
+										<td>Total Sales</td>
+										<td>Add the total sales of product</td>
+										<td>{{wc_total_sales}}</td>
+									</tr>
+									<tr>
+										<td>Average Rating</td>
+										<td>Add the average rating of product</td>
+										<td>{{wc_average_rating}}</td>
+									</tr>
+									<tr>
+										<td>Rating Count</td>
+										<td>Add the total number of rating</td>
+										<td>{{wc_rating_count}}</td>
+									</tr>
+								</table>
+							</div>
+
+						</div>
+						<hr>
+				</article>
+				
+				<article class="content-section" id="lightbox">
+					<section class="active" style="">
+						<div class="row-fluid">
+							
+							<div class="span4">
+								<h4>Use lightbox in your slider</h4>
+								<p>
+									<span class="label label-info">Note</span> To use Lightbox in Master Slider you need to have lightbox script loaded on your website like PrettyPhoto.		
+								</p>
+								<p>You can add a layer on your slide and under its "Layer Content" tab put <code>{{slide-image-url}}</code> to URL option.</p>
+								
+							</div>
+							  <div class="span8">
+									<img src="assets/images/screenshots/lightbox-1.png" alt="Master Slider lightbox" class="img-screenshot">
+							  </div>
+							  <hr>
+						</div>
+						<hr>
+						<div class="row-fluid">
+					
+							<div class="span4">
+								<p>
+									<span class="label label-info">Note</span> Please inform you need to fill  rel attribute option based on the Lightbox you are using which you can find it from their documentation below is an example of using prettyPhoto as Lightbox.		
+								</p>
+								<p>After adding <code>{{slide-image-url}}</code> to URL option navigate to its "Misc" tab and add <code>prettyPhoto</code>	to rel attribute option.</p>
+								
+							</div>
+							<div class="span8">
+								<img src="assets/images/screenshots/lightbox-2.png" alt="Master Slider lightbox" class="img-screenshot">
+							</div>
+						</div>
+					</section>
+					<hr>
+				</article>
+
+				<article class="content-section" id="in-wp">
+					<div class="row-fluid">
+						<div class="span4">
+							<h4>Inserting the slider with shortcode</h4>
+							<p>
+								To insert the slider, edit a page or post and click on "Master Slider button" on WordPress editor, then select a slider from list. The slider shortcode will be added to WordPress editor, publish the page and you are done.
+			               </p>
+			            </div>
+			            <div class="span8">
+							<img src="assets/images/screenshots/tinymce-button.png" height="273" width="729" alt="Master Slider use shortcode" class="img-screenshot">	
+						</div>
+			        </div>
+
+					<hr>
+
+					<div class="row-fluid">
+						<div class="span4">
+							<h4>Inserting the slider with the Master Slider WP widget</h4>
+							<p>
+								MasterSlider WP supports widgets, so you can place your slider in your front-end page just by a drag n' drop. To do that, navigate to the Appearance menu on your left sidebar and select "Widgets". Grab the MasterSlider WP Widget and drop it into one of your widget area. 
+
+								Please note that some themes may not support a widget area what you need. In this case, you can create a new widget area by editing your theme files.
+			                </p>
+			            </div>
+			            <div class="span8">
+							<img src="assets/images/screenshots/slider-widget.png" alt="Master Slider WP Widget" class="img-screenshot" />	
+						</div>
+			        </div>
+					
+					<hr>
+
+					<div class="row-fluid">
+						<div >
+							<h4>Calling the slider from your theme files</h4>
+							<p>
+								Because a slider can be an integral part of your site, you may want to place it into your theme files. There are some PHP function which you can call for example from the header.php file of your theme and it inserts your slider into your home page or certail other pages. Here they are :
+							</p>
+
+							<hr>
+
+							<h5>Description</h5>
+							<p>Displays MasterSlider based on the slider id passed to.</p>
+
+							<h5>Usage :</h5>
+							<p><code>&lt;?php masterslider ( $slider_id ); ?&gt;</code></p>OR
+							<p><code>&lt;?php echo get_masterslider ( $slider_id ); ?&gt;</code></p><br />
+							
+							<h5>Parameters :</h5>
+							<dl>
+								<dt><tt>$slider_id</tt></dt>
+								<dd> (int) The slider ID that can be found on the plugin page in the slider list view at the first table column. 
+									<dl>
+										<dd> Default: <i>Null</i></dd>
+									</dl>
+								</dd>
+							</dl>
+							
+							<hr>
+
+							<p>
+								It is important when you want to insert a slider to check its ID on the MasterSlider WP slider list page. When you removes some sliders, their IDs won't be re-indexed and the sequence may broke up. This is important to keep persistent your sliders preventing unwanted changes on the already inserted ones.
+			                </p>
+			            </div>
+			        </div>
+				</article>
+
+				<article class="content-section" id="slider-callbacks">
+					<div class="row-fluid">
+						<div class="span4">
+							<h4>Using Slider API and Callbacks</h4>
+							<p>Here you can add or remove callback functions to the slider, first select one type of callback function from the dropdown menu and clicking on <img src="assets/images/screenshots/add.png" alt="Master Slider layer timeline"> to add it to slider. Each callback function is kind of event handler you can add your custom script in the function then slider will execute that when the event dispatches.</p>  
+							<p>Also you can access to the slider api by using "api" variable. </p>
+							<h5> Methods </h5>
+								<pre class="brush: javascript">
+								var api = event.target;
+								
+								api.index(); 		// returns current slide index.
+								api.count(); 		// returns total number of slides.
+								
+								api.next();			// next slide.
+								api.previous();  	// previous slide.
+								api.gotoSlide(4);	// moves to 4th slide.
+								
+								api.pause();	 	// pauses the slider timer.
+								api.resume(); 		// resumes the slider timer.
+								api.currentTime(); 	// returns the percentage of elapsed time.
+								
+								api.destroy(); 		// removes the slider. 
+							</pre>
+								<h5> Properties </h5>
+								<pre class="brush: javascript">
+								api.so					// returns the object of slider options.
+								
+								api.view				// returns the slider transition object.
+								api.view.slideList 		// returns a array of all slides.
+								api.viwe.currentSlide 	// returns the current slide object.
+							</pre>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/callback.PNG" alt="Master Slider layer timeline" class="img-screenshot">	
+						</div>
+					</div>
+				</article>
+
+				<article class="content-section" id="export-import">
+					<div class="row-fluid">
+						<div class="span4">
+							<h4><strong>Exporting Sliders:</strong></h4>
+							<p>
+								<ul>
+									<li>Navigate to MasterSlider admin page and click on <code>Import & Export</code> button.</li>
+								</ul>
+							</p>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/export-import-btn.png" alt="Master Slider Export Import Button" class="img-screenshot">
+						</div>
+					</div>
+					
+					<hr style="border:none;">
+
+					<div class="row-fluid">
+						<div class="span4">
+							<p>
+								<ul>
+									<li>Now a popup window will be open as shown in screenshot.</li>
+									<li>You can select specific sliders to export or select them all in one step and finally press export button.</li>
+									<li>Your browser will download an export file containing your sliders once you hit the "Export" button.</li>
+									<li>Keep this file at a secure location.</li>
+								</ul>
+								
+							</p>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/export-import-dialog.png" alt="Master Slider Export Import Dialog" class="img-screenshot">
+						</div>
+					</div>
+
+					<hr>
+					<br />
+					<br />
+
+					<div class="row-fluid">
+						<div class="span4">
+						<h4><strong>Importing Sliders:</strong></h4>
+							<p>
+								<ul>
+									<li>Use <code>Choose file</code> button to select the export file you previously downloaded and click the "Import" button. This will bring back your previously exported sliders immediately. </li>
+								</ul>
+							</p>
+							<br />
+							<br />
+							<p>
+								<span class="label label-info">Note</span> MasterSlider won't export the images used in your sliders. Moving sites to different servers should not affect the plugin in any way. However, if you only want to move sliders between sites you need to copy the used images from your <code>/wp-content/uploads/</code> folder into the same folder on your new installation.
+							</p>
+						</div>
+						<div class="span8">
+							<img src="assets/images/screenshots/export-import-dialog.png" alt="Master Slider Export Import Dialog" class="img-screenshot">
+						</div>
+					</div>
+
+				</article>
+
+				<article class="content-section" id="embed-url">
+					<h3><strong>Finding YouTube/Viemo Embed URL</strong></h3>
+					<p>Open the video in YouTube/Vimeo, play video and right-click on it, select <code>Copy embed code</code> then paste the embed code in a text editor</p><br />
+					<img src="assets/images/screenshots/get-embed-code.png" height="514" width="859" alt="Get YouTube/Viemo Embed Code" />
+					<hr /><br />
+					<p>Now you can see video embed URL in embed code which specified as iframe src.</p><br />
+					<img src="assets/images/screenshots/embed-url.png" height="112" width="915" alt="Get YouTube/Viemo Embed URL" />
+					<hr />
+					<p>Finally in this example your embed url is : <code>//www.youtube.com/embed/lEdC-oDYTVD</code></p><br /><br />
+				</article>
+				
+				<article class="content-section" id="language-i18n">
+					<h3><strong>How to translate Master Slider in different languages?</strong></h3>
+					<p>There is two ways of translating Master Slider. Here they are :</p>
+
+					<hr />
+
+					<h4>1 - Using our online translation service (Recommended way)</h4>
+					<p>You can start translating Master Slider by using our <a href="http://translate.averta.net/projects/masterslider/free-version" target="_blank">online translation service</a></p>
+					<br /><br />
+
+					<h4>2 - Using Poedit app</h4>
+
+					<ol>
+						<li>
+							<strong>Download Poedit</strong>
+							<p>There are several apps available to help you with translating .PO files. PoEdit is a popular one, and it's available on every major platform. You can download it from <a href="http://www.poedit.net/download.php" target="_blank">here</a>. </p>
+						</li>
+						<li>
+							<strong>Start translating</strong>
+							<p>Open the default <code>masterslider.po</code> file from your <code>/wp-content/plugins/masterslider/languages/</code> folder. When you save your work PoEdit will generate you a .MO file which will be needed to apply your work.</p>
+						</li>
+						<li>
+							<strong>Name your files properly</strong>
+							<p>WordPress recognizes your localization by a special formatting of file names. You will need to include the right <strong><a href="http://www.gnu.org/software/gettext/manual/html_chapter/gettext_16.html#Language-Codes" target="_blank">language</a></strong> and <strong><a href="http://www.gnu.org/software/gettext/manual/html_chapter/gettext_16.html#Country-Codes" target="_blank">country</a></strong> codes so it can identify what language is your work made for.</p>
+							<p>For example, a French localization would have the file names: <code>masterslider-fr_FR.po</code> and <code>masterslider-fr_FR.mo</code>. You must follow this syntax, including the dash, underscore, and lower- or uppercase letters.</p>
+						</li>
+						<li>
+							<strong>Apply your localization</strong>
+							<p>Copy your newly created .PO and .MO files into the <code>/wp-content/plugins/masterslider/languages/</code> folder. WordPress should use them immediately if you named your files properly.</p>
+						</li>
+						<br />
+						<p>Also checkout <a href="http://support.averta.net/envato/knowledgebase/can-translate-wordpress-plugin-using-translate-file/" target="_blank">More detailed article on translating WordPress plugins</a></p>
+					</ol>
+				</article>
+
+				<article class="content-section" id="rate">
+					<h3><strong>I want to rate Master Slider</strong></h3>
+					<p>Please login to your CodeCanyon account and navigate to your <a href="http://codecanyon.net/downloads" target="_blank">Downloads page</a> and rate item as shown below. <br />Thanks in advance!</p><br />
+					<img src="assets/images/screenshots/rate-master-slider.gif" alt="I want rate Master Slider" />
+					<hr />
+				</article>
+
+				<article class="content-section" id="support">
+					<h3><strong>Support</strong></h3>
+					<hr />
+
+					<h4>If you have any questions please follow these steps:</h4>
+					<ul>
+						<li>1 - Please read item's <a href="http://masterslider.com/doc/wp" target="_blank">Documentation </a> </li>
+						<li>2 - Take a look in our <a href="http://support.averta.net/envato/faq/" target="_blank">FAQ</a> page</li>
+						<li>3 - Take a look in our <a href="http://support.averta.net/envato/knowledgebase/" target="_blank">Knowledge base</a></li>
+						<li>4 - Take a look in <a href="http://support.averta.net/envato/videos/" target="_blank">Video Tutorials</a> page</li>
+						<li>5 - Still have questions(s)? <a href="http://support.averta.net/envato/wp-login.php?action=register" target="_blank" rel="nofollow">Create an Account</a> in <a href="http://support.averta.net/envato/support/" rel="nofollow">Support Forums</a> (<a href="http://i44.tinypic.com/311rr4h.jpg" rel="nofollow">Find your “Item Purchase Code”</a>)</li>
+						<li>6 - Use search field at the top of support forum for similar topics</li>
+						<li>7 - If you still didn't find your answers please post your question(s) in the item’s <a href="http://support.averta.net/envato/support/" target="_blank">support forum</a>
+						Our support staff are there to help you as soon as possible.</li>
+					</ul>
+					<br />
+
+
+					<strong>Why support forum?</strong>
+					<ul>
+						<li>You can upload images and insert code with code-highlighting.</li>
+						<li>It is organized and searchable (that makes support easier and faster)</li>
+					</ul>
+					<br />
+
+					<strong>Supporting our Items INCLUDES</strong>:
+					<ul>
+					  <li>Responding to questions or problems regarding our item and its features</li>
+					  <li>Fixing bugs and reported issues</li>
+					  <li>Providing updates to ensure compatibility with new software versions</li>
+					</ul>
+					<br/>
+
+					<strong>Item support does NOT include</strong>:
+					<ul>
+					  <li>Customization and installation services</li>
+					  <li>Support for third party software and plug-ins</li>
+					</ul>
+					<br/>
+					
+					<p><span class="label label-info">Important Note</span> We <strong>CAN NOT</strong> provide support via email.
+					Please ask your support related questions only in our <a href="http://support.averta.net/envato/support/" target="_blank">support forum</a>.</p>
+					<br />
+					<p><span class="label label-info">Important Note</span> For the fast troubleshooting, please send us detailed informations about the issue and make sure that you don't forget to send us your site url where you are using or want to use the item. Please note, that we cannot troubleshoot from screencast videos or screenshots.</p>
+
+				</article>
+
+				<article class="content-section" id="dev-doc">
+					<h4>Master Slider developer documentation</h4>
+					<p>There is another version of Master Slider documentation specially for developers which you can find <a href="developer/index.html">Developer Documentation</a> here.</p>
+				</article>
+				
+					<article class="content-section" id="skins">
+					<h3><strong>Slider Skins</strong></h3>
+					<p>
+						Here you can find a list of available skins which included in dowload package.
+						</p>
+						<p>
+						You can change the slider skin by following these steps:
+						</p>
+						<p>
+						<ol>
+							<li>Find and upload your preferred skin from "skins" folder.</li>
+							<li>
+								<p>Import "style.css" from the skin folder into your page like following:</p>
+								<pre class="brush: html">
+									&lt;link rel=&quot;stylesheet&quot; href=&quot;masterslider/skins/light-2/style.css&quot; /&gt;
+								</pre>
+							</li>
+							<li>
+								<p>Specify skin class name to your slider element.</p>
+								<pre class="brush: html">
+									&lt;!-- masterslider --&gt;
+									&lt;div class="master-slider ms-skin-light-2" id="masterslider"&gt;
+										&lt;!-- slides goes here --&gt;
+									&lt;/div&gt;
+									&lt;!-- end of masterslider --&gt;
+								</pre>
+							</li>
+						</ol>
+					</p>
+					<h4>Skins:</h4>
+					<table class="table table-striped table-bordered table-hover">
+									<thead>
+										<tr>
+											<th style="width:300px"> </th>
+											<th style="width:120px">Name</th>
+											<th>Class Name</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><img alt="skin" src="assets/images/skins/default.gif"></td>
+											<td>default</td>
+											<td>ms-skin-default</td>
+										</tr>
+										<tr>
+											<td><img alt="skin" src="assets/images/skins/l-2.gif"></td>
+											<td>Light 2</td>
+											<td>ms-skin-light-2</td>
+										</tr>
+										<tr>
+											<td><img alt="skin" src="assets/images/skins/l-3.gif"></td>
+											<td>Light 3</td>
+											<td>ms-skin-light-3</td>
+										</tr>
+										<tr>
+											<td><img alt="skin" src="assets/images/skins/l-4.gif"></td>
+											<td>Light 4</td>
+											<td>ms-skin-light-4</td>
+										</tr>
+										<tr>
+											<td><img alt="skin" src="assets/images/skins/l-5.gif"></td>
+											<td>Light 5</td>
+											<td>ms-skin-light-5</td>
+										</tr>
+										<tr>
+											<td><img alt="skin" src="assets/images/skins/l-6.gif"></td>
+											<td>Light 6</td>
+											<td>ms-skin-light-6</td>
+										</tr>
+										<tr>
+											<td><img alt="skin" src="assets/images/skins/l-6-r.gif"></td>
+											<td>Light 6 Round</td>
+											<td>ms-skin-light-6 ms-skin-round</td>
+										</tr>
+										<tr>
+											<td><img alt="skin" src="assets/images/skins/cont.gif"></td>
+											<td>Contrast</td>
+											<td>ms-skin-contrast</td>
+										</tr>
+										<tr>
+											<td><img alt="skin" src="assets/images/skins/b-1.gif"></td>
+											<td>Black 1</td>
+											<td>ms-skin-black-1</td>
+										</tr>
+										<tr>
+											<td><img alt="skin" src="assets/images/skins/b-2.gif"></td>
+											<td>Black 2</td>
+											<td>ms-skin-black-2</td>
+										</tr>
+										<tr>
+											<td><img alt="skin" src="assets/images/skins/b-2-r.gif"></td>
+											<td>Black 2 Round</td>
+											<td>ms-skin-black-2 ms-skin-round</td>
+										</tr>
+										<tr>
+											<td><img alt="skin" src="assets/images/skins/metro.gif"></td>
+											<td>Metro</td>
+											<td>ms-skin-metro</td>
+										</tr>
+									</tbody>
+								</table>
+				</article>
+
+			</section>
+		</div><!-- end div .container -->
+		
+		<script src="assets/js/jquery-1.8.2.js"></script>
+		<script src="assets/js/jquery.easing.min.js"></script>
+		<script src="assets/js/averta.csstweener.min.js"></script>
+		<script src="syntax-highlighter/scripts/shCore.js"></script>
+		<script src="syntax-highlighter/scripts/shBrushXml.js"></script>
+		<script src="syntax-highlighter/scripts/shBrushCss.js"></script>
+		<script src="syntax-highlighter/scripts/shBrushJScript.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>

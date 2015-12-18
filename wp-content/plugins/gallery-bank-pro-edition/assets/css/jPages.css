@@ -1,0 +1,275 @@
+.widget-layout-body .dataTables_info, .widget-layout-body .dataTables_paginate {
+    /*margin-top: 5px !important;*/
+    padding-bottom: 0px !important;
+    margin-bottom: -4px !important;
+}
+
+.dataTables_info {
+    padding: 0px;
+    display: block;
+    float: left;
+}
+
+.dataTables_paginate {
+    float: right;
+    margin: 0px;
+}
+
+.dataTables_paginate .last {
+    margin-right: 0 !important;
+}
+
+.holder {
+    height: 22px;
+    line-height: 22px;
+}
+
+.holder .next:active, .holder .first:active, .holder .previous:active, .holder .last:active {
+    font-weight: normal !important;
+}
+
+.holder a:active {
+    outline: none
+}
+
+.holder a:hover {
+    text-decoration: none;
+}
+
+.holder a.paginate_button, .holder a.paginate_active {
+    border: 1px solid #d3d3d3;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    padding: 5px 8px;
+    margin: 0 3px;
+    cursor: pointer;
+    *cursor: hand;
+    color: #919191;
+    font-size: 11px;
+    box-shadow: 0 1px 0 #fff inset, 0 1px 0px #eaeaea;
+    -webkit-box-shadow: 0 1px 0 #fff inset, 0 1px 0px #eaeaea;
+    -moz-box-shadow: 0 1px 0 #fff inset, 0 1px 0px #eaeaea;
+    text-decoration: none !important;
+}
+
+.holder a.paginate_button {
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #f5f5f5 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f5f5f5));
+    background: -webkit-linear-gradient(top, #ffffff 0%, #f5f5f5 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #f5f5f5 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%, #f5f5f5 100%);
+    background: linear-gradient(top, #ffffff 0%, #f5f5f5 100%);
+}
+
+.holder a.paginate_button:hover {
+    background: #fcfcfc;
+    color: #327394;
+}
+
+.holder a.paginate_active, .holder a.paginate_button:active {
+    background: #6f6f6f;
+    color: #fff;
+    border-color: #646464;
+    box-shadow: 0 1px 2px #545454 inset, 0 1px 0 #fff;
+    -webkit-box-shadow: 0 1px 2px #545454 inset, 0 1px 0 #fff;
+    -moz-box-shadow: 0 1px 2px #545454 inset, 0 1px 0 #fff;
+    font-weight: bold;
+}
+
+.paginate_button_disabled, .paginate_button_disabled:active {
+    background: none !important;
+    color: #CCC !important;
+    box-shadow: none !important;
+    font-weight: normal !important;
+    border: 1px solid #E5E5E5 !important;
+}
+
+.paginate_button_disabled:active {
+    border-color: #d3d3d3 !important;
+}
+
+.dataTables_processing {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 30px;
+    margin-left: -125px;
+    margin-top: -15px;
+    padding: 14px 0 2px 0;
+    border: 1px solid #ddd;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+    background-color: white;
+}
+
+.sorting {
+    background: url('../images/tables/sort_both.png') no-repeat 100% 8px;
+}
+
+.sorting_asc {
+    background: url('../images/tables/sort_asc.png') no-repeat 100% 8px;
+}
+
+.sorting_desc {
+    background: url('../images/tables/sort_desc.png') no-repeat 100% 8px;
+}
+
+.sorting_asc_disabled {
+    background: url('../images/tables/sort_asc_disabled.png') no-repeat 100% 8px;
+}
+
+.sorting_desc_disabled {
+    background: url('../images/tables/sort_desc_disabled.png') no-repeat 100% 8px;
+}
+
+.table.dataTable th:active {
+    outline: none;
+}
+
+.datatable-footer {
+    border-top: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.datatable-footer {
+    background: #fcfcfc;
+    background: -moz-linear-gradient(top, #fcfcfc 0%, #f5f5f5 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcfcfc), color-stop(100%, #f5f5f5));
+    background: -webkit-linear-gradient(top, #fcfcfc 0%, #f5f5f5 100%);
+    background: -o-linear-gradient(top, #fcfcfc 0%, #f5f5f5 100%);
+    background: -ms-linear-gradient(top, #fcfcfc 0%, #f5f5f5 100%);
+    background: linear-gradient(top, #fcfcfc 0%, #f5f5f5 100%);
+}
+
+.dataTables_scroll {
+    clear: both;
+}
+
+.dataTables_scrollBody {
+    *margin-top: -1px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table.dataTable th:active {
+    outline: none;
+}
+
+.datatable-footer {
+    border-top: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.datatable-footer {
+    background: #fcfcfc;
+    background: -moz-linear-gradient(top, #fcfcfc 0%, #f5f5f5 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcfcfc), color-stop(100%, #f5f5f5));
+    background: -webkit-linear-gradient(top, #fcfcfc 0%, #f5f5f5 100%);
+    background: -o-linear-gradient(top, #fcfcfc 0%, #f5f5f5 100%);
+    background: -ms-linear-gradient(top, #fcfcfc 0%, #f5f5f5 100%);
+    background: linear-gradient(top, #fcfcfc 0%, #f5f5f5 100%);
+}
+
+.jp-hidden {
+    display: none !important;
+}
+
+.holder {
+    margin: 15px 0;
+    clear: both;
+}
+
+.holder a {
+    font-size: 12px;
+    cursor: pointer;
+    margin: 0 5px;
+    color: #333;
+}
+
+.holder a:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+.holder a.jp-previous {
+    margin-right: 15px;
+}
+
+.holder a.jp-next {
+    margin-left: 15px;
+}
+
+.holder a.jp-current, a.jp-current:hover {
+    color: #FF4242;
+    font-weight: bold;
+}
+
+.holder a.jp-disabled, a.jp-disabled:hover {
+    color: #bbb;
+}
+
+.holder a.jp-current, a.jp-current:hover,
+.holder a.jp-disabled, a.jp-disabled:hover {
+    cursor: default;
+    background: none;
+}
+
+.holder span {
+    margin: 0 5px;
+}
+ul.thumbs 
+{
+	max-width: 100%;
+}
+/*ul.thumbs 
+{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	margin-top: 10px;
+	display: inline-block;
+}*/
+ul.thumbs li {
+    /*float: left;*/
+    margin: 0 10px 0 0 !important;
+    cursor: pointer;
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle !important;
+}
+
+ul.thumbs li img {
+    vertical-align: top;
+}
+
+ul.thumbs li.selected {
+    outline: 3px solid #FF4242;
+}
+
+.filmstrip_prev, .filmstrip_next {
+    width: 29px;
+    height: 29px;
+    border: none !important;
+    cursor: pointer;
+}
+
+.filmstrip_prev {
+    background-image: url('../images/back.gif');
+    display: block;
+}
+
+.filmstrip_next {
+    background-image: url('../images/next.gif');
+    display: block;
+}
+
+.jp-disabled {
+    display: none;
+}
+
+li.btns {
+    position: relative;
+}

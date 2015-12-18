@@ -1,0 +1,760 @@
+.hover_rotation {
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.hover_rotation div {
+    position: absolute;
+    /* The images have to be larger than their parent container to fill the visible area when rotating */
+    /*width:400px;
+    height:250px;*/
+    /* Margins keep the image centered */
+    top: 50%;
+    left: 50%;
+    /*	margin-top:-125px;
+        margin-left:-200px;*/
+    border: none;
+    /* Opacity */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+
+    /* Opacity & Rotation Transitions */
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    -ms-transition: all .2s;
+    transition: all .2s;
+}
+
+/* Right rotation */
+
+.hover_rotation div.hover_rotation_right:hover {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    /* Applying a 15 degrees rotation */
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+
+/* Left rotation */
+
+.hover_rotation div.hover_rotation_left:hover {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    /* Applying a -15 degrees rotation */
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
+
+/*  _______________________________________
+
+	02 OVERLAY FADE
+    _______________________________________  */
+
+.overlay_fade {
+    position: relative;
+    /* Modify the width and the height according to your images sizes */
+    overflow: hidden;
+    float: left;
+}
+
+.overlay_fade div {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.overlay_fade .overlay_zoom {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/icons/zoom.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* Opacity */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    /* Opacity Transition */
+    -webkit-transition: opacity .4s ease-in;
+    -moz-transition: opacity .4s ease-in;
+    -o-transition: opacity .4s ease-in;
+    -ms-transition: opacity .4s ease-in;
+    transition: opacity .4s ease-in;
+}
+
+.overlay_fade:hover .overlay_zoom {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+.overlay_fade .zoom_white {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.overlay_fade .zoom_black {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*  _______________________________________
+
+	03 OVERLAY SLIDE
+    _______________________________________  */
+
+.overlay_slide {
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.overlay_slide div {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.overlay_slide .overlay_zoom {
+    position: absolute;
+    top: -150px;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/icons/zoom.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* Slide Transition */
+    -webkit-transition: top 0.4s;
+    -moz-transition: top 0.4s;
+    -o-transition: top 0.4s;
+    -ms-transition: top 0.4s;
+    transition: top 0.4s;
+}
+
+.overlay_slide:hover .overlay_zoom {
+    top: 0 !important;
+}
+
+.overlay_slide .zoom_white {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.overlay_slide .zoom_black {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*  _______________________________________
+
+	04 OVERLAY SPLIT
+    _______________________________________  */
+
+.overlay_split {
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.overlay_split div {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Right and left sides */
+.overlay_split .overlay_split_left,
+.overlay_split .overlay_split_right {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+
+.overlay_split .overlay_split_right {
+    right: 0;
+    /* Slide Transition */
+    -webkit-transition: right 0.4s;
+    -moz-transition: right 0.4s;
+    -o-transition: right 0.4s;
+    -ms-transition: right 0.4s;
+    transition: right 0.4s;
+}
+
+.overlay_split .overlay_split_left {
+    left: 0 !important;
+    /* Slide Transition */
+    -webkit-transition: left 0.4s;
+    -moz-transition: left 0.4s;
+    -o-transition: left 0.4s;
+    -ms-transition: left 0.4s;
+    transition: left 0.4s;
+}
+
+/* Top and bottom sides */
+
+.overlay_split .overlay_split_top,
+.overlay_split .overlay_split_bottom {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+}
+
+.overlay_split .overlay_split_top {
+    top: 0 !important;
+    /* Slide Transition */
+    -webkit-transition: top 0.4s;
+    -moz-transition: top 0.4s;
+    -o-transition: top 0.4s;
+    -ms-transition: top 0.4s;
+    transition: top 0.4s;
+}
+
+.overlay_split .overlay_split_bottom {
+    bottom: 0 !important;
+    /* Slide Transition */
+    -webkit-transition: bottom 0.4s;
+    -moz-transition: bottom 0.4s;
+    -o-transition: bottom 0.4s;
+    -ms-transition: bottom 0.4s;
+    transition: bottom 0.4s;
+}
+
+.overlay_split:hover .overlay_split_left {
+    left: -50% !important;
+}
+
+.overlay_split:hover .overlay_split_right {
+    right: -50% !important;
+}
+
+.overlay_split:hover .overlay_split_top {
+    top: -50% !important;
+}
+
+.overlay_split:hover .overlay_split_bottom {
+    bottom: -50% !important;
+}
+
+.overlay_split .split_white {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.overlay_split .split_black {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*  _______________________________________
+
+	05 OVERLAY JOIN
+    _______________________________________  */
+
+.overlay_join {
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.overlay_join div {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Right and left sides */
+
+.overlay_join .overlay_join_left,
+.overlay_join .overlay_join_right {
+    position: absolute;
+    width: 50% !important;
+    height: 100% !important;
+}
+
+.overlay_join .overlay_join_left {
+    left: -50% !important;
+    /* Slide Transition */
+    -webkit-transition: left 0.4s;
+    -moz-transition: left 0.4s;
+    -o-transition: left 0.4s;
+    -ms-transition: left 0.4s;
+    transition: left 0.4s;
+}
+
+.overlay_join .overlay_join_right {
+    right: -50% !important;
+    /* Slide Transition */
+    -webkit-transition: right 0.4s;
+    -moz-transition: right 0.4s;
+    -o-transition: right 0.4s;
+    -ms-transition: right 0.4s;
+    transition: right 0.4s;
+}
+
+/* Top and bottom sides */
+
+.overlay_join .overlay_join_top,
+.overlay_join .overlay_join_bottom {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+}
+
+.overlay_join .overlay_join_top {
+    top: -50% !important;
+    /* Slide Transition */
+    -webkit-transition: top 0.4s;
+    -moz-transition: top 0.4s;
+    -o-transition: top 0.4s;
+    -ms-transition: top 0.4s;
+    transition: top 0.4s;
+}
+
+.overlay_join .overlay_join_bottom {
+    bottom: -50% !important;
+    /* Slide Transition */
+    -webkit-transition: bottom 0.4s;
+    -moz-transition: bottom 0.4s;
+    -o-transition: bottom 0.4s;
+    -ms-transition: bottom 0.4s;
+    transition: bottom 0.4s;
+}
+
+.overlay_join:hover .overlay_join_left {
+    left: 0 !important;
+}
+
+.overlay_join:hover .overlay_join_right {
+    right: 0 !important;
+}
+
+.overlay_join:hover .overlay_join_top {
+    top: 0 !important;
+}
+
+.overlay_join:hover .overlay_join_bottom {
+    bottom: 0 !important;
+}
+
+/* Background colors and icons */
+
+.overlay_join_left .join_zoom,
+.overlay_join_right .join_favorite,
+.overlay_join_top .join_zoom,
+.overlay_join_bottom .join_favorite {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.overlay_join .join_zoom,
+.overlay_join .join_favorite {
+    width: 100%;
+    height: 100%;
+}
+
+.overlay_join_left .join_zoom, .overlay_join_top .join_zoom {
+    background-image: url("../images/icons/zoom.png");
+}
+
+.overlay_join_right .join_favorite, .overlay_join_bottom .join_favorite {
+    background-image: url("../images/icons/favorite.png");
+}
+
+.overlay_join .join_white {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.overlay_join .join_black {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*  _______________________________________
+
+	06 CORNER RIBBONS
+    _______________________________________  */
+
+.corner_ribbon {
+    position: relative;
+
+    overflow: hidden;
+    float: left;
+}
+
+.corner_ribbon div {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Common styling to all variants */
+.corner_ribbon .corner_ribbon_top_left_white,
+.corner_ribbon .corner_ribbon_top_left_black,
+.corner_ribbon .corner_ribbon_bottom_left_white,
+.corner_ribbon .corner_ribbon_bottom_left_black,
+.corner_ribbon .corner_ribbon_top_right_white,
+.corner_ribbon .corner_ribbon_top_right_black,
+.corner_ribbon .corner_ribbon_bottom_right_white,
+.corner_ribbon .corner_ribbon_bottom_right_black {
+    position: absolute;
+    width: 0;
+    height: 0;
+    /* Slide Transition */
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.corner_ribbon .corner_zoom,
+.corner_ribbon .corner_zoom {
+    position: absolute;
+    background: url("../images/icons/zoom.png") no-repeat center center;
+}
+
+/* Top Left Ribbon */
+
+.corner_ribbon:hover .corner_ribbon_top_left_white,
+.corner_ribbon:hover .corner_ribbon_top_left_black {
+    top: 0 !important;
+    left: 0 !important;
+}
+
+/* Bottom Left Ribbon */
+
+.corner_ribbon:hover .corner_ribbon_bottom_left_white,
+.corner_ribbon:hover .corner_ribbon_bottom_left_black {
+    bottom: 0 !important;
+    left: 0 !important;
+}
+
+/* Top Right Ribbon */
+
+.corner_ribbon:hover .corner_ribbon_top_right_white,
+.corner_ribbon:hover .corner_ribbon_top_right_black {
+    top: 0 !important;
+    right: 0 !important;
+}
+
+/* Bottom Right Ribbon */
+
+.corner_ribbon:hover .corner_ribbon_bottom_right_white,
+.corner_ribbon:hover .corner_ribbon_bottom_right_black {
+    bottom: 0 !important;
+    right: 0 !important;
+}
+
+/*  _______________________________________
+
+	10 LEVITATION SHADOW
+    _______________________________________  */
+
+.levitation_shadow {
+    position: relative;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.levitation_shadow div.levitation_small,
+.levitation_shadow div.levitation_large {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    /* Animation of the effect */
+    -webkit-transition: top 0.3s;
+    -moz-transition: top 0.3s;
+    -o-transition: top 0.3s;
+    -ms-transition: top 0.3s;
+    transition: top 0.3s;
+}
+
+.levitation_shadow:hover div.levitation_small {
+    top: -5px !important;
+}
+
+.levitation_shadow:hover div.levitation_large {
+    top: -10px !important;
+}
+
+/*  _______________________________________
+
+	11 LOMO EFFECT
+    _______________________________________  */
+
+.lomo_black,
+.lomo_white,
+.lomo_black_reversed,
+.lomo_white_reversed {
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+
+.lomo_black div,
+.lomo_white div,
+.lomo_black_reversed div,
+.lomo_white_reversed div {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.lomo_black:after,
+.lomo_white:after,
+.lomo_black_reversed:after,
+.lomo_white_reversed:after {
+    /* Positionning this black glow on mouse hover */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    content: "";
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.lomo_black:after,
+.lomo_black_reversed:hover:after {
+    -webkit-box-shadow: inset 0 0 5px #000000;
+    -moz-box-shadow: inset 0 0 5px #000000;
+    box-shadow: inset 0 0 5px #000000;
+}
+
+.lomo_black:hover:after,
+.lomo_black_reversed:after {
+    -webkit-box-shadow: inset 0 0 90px #000000;
+    -moz-box-shadow: inset 0 0 90px #000000;
+    box-shadow: inset 0 0 90px #000000;
+}
+
+.lomo_white:after,
+.lomo_white_reversed:hover:after {
+    -webkit-box-shadow: inset 0 0 1px #ffffff;
+    -moz-box-shadow: inset 0 0 1px #ffffff;
+    box-shadow: inset 0 0 1px #ffffff;
+}
+
+.lomo_white:hover:after,
+.lomo_white_reversed:after {
+    -webkit-box-shadow: inset 0 0 90px #ffffff;
+    -moz-box-shadow: inset 0 0 90px #ffffff;
+    box-shadow: inset 0 0 90px #ffffff;
+}
+
+/*  _______________________________________
+
+	14 ROUNDED IMAGES
+    _______________________________________  */
+
+.rounded_image {
+    position: relative;
+    float: left;
+
+    /*margin:15px 30px 15px 15px;*/
+}
+
+.rounded_image div.rounded_img,
+.rounded_image div.squared_img {
+    /*width:100%;
+    height:100%;*/
+    display: block;
+
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+.rounded_image div.rounded_img,
+.rounded_image div.squared_img:hover {
+    -webkit-border-radius: 75% !important;
+    -moz-border-radius: 75% !important;
+    -o-border-radius: 75% !important;
+    -ms-border-radius: 75% !important;
+    -khtml-border-radius: 75% !important;
+    border-radius: 75% !important;
+}
+
+.rounded_image div.rounded_img:hover,
+.rounded_image div.squared_img {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -khtml-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
+/*  _______________________________________
+
+	17 PERSPECTIVE IMAGES
+    _______________________________________  */
+
+.perspective {
+
+    float: left;
+    /* 3D Effect - Safari and Chrome only */
+    -webkit-perspective: 600;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition-property: perspective;
+    -webkit-transition-duration: 0.5s;
+}
+
+.perspective:hover {
+    /* 3D Effect - Safari and Chrome only */
+    -webkit-perspective: 1000;
+}
+
+.perspective div.perspective_right,
+.perspective div.perspective_left {
+    width: 100%;
+    height: 100%;
+    -moz-box-shadow: 0 0 6px #666;
+    box-shadow: 0 0 6px #666;
+    -webkit-box-shadow: 0 0 6px #666;
+    /* Animation - Safari and Chrome only */
+    -webkit-transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+}
+
+.perspective div.perspective_right {
+    -webkit-transform: rotateY(30deg);
+}
+
+.perspective div.perspective_left {
+    -webkit-transform: rotateY(-30deg);
+}
+
+.perspective div:hover.perspective_right,
+.perspective div:hover.perspective_left {
+    -webkit-transform: rotateY(0deg);
+}
+
+/* Grayscale */
+
+.gallery_grayscale {
+    position: relative;
+    display:inline-block;
+    filter: gray;
+    -webkit-filter: grayscale(100%);
+
+    -webkit-backface-visibility: hidden;
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+
+}
+
+.gallery_grayscale:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+    -webkit-transition: all .6s ease !important; /* Fade to color for Chrome and Safari */
+}
+
+/* Sepia */
+
+.gallery_sepia {
+    position: relative;
+    display:inline-block;
+    -webkit-transition: all .6s ease;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'old-timey\'><feColorMatrix type=\'matrix\' values=\'0.14 0.45 0.05 0 0 0.12 0.39 0.04 0 0 0.08 0.28 0.03 0 0 0 0 0 1 0\'/></filter></svg>#old-timey");
+    -webkit-filter: sepia(1);
+    -webkit-filter: sepia(100%);
+    -moz-filter: sepia(100%);
+    -ms-filter: sepia(100%);
+    -o-filter: sepia(100%);
+    filter: sepia(100%);
+
+}
+
+.gallery_sepia:hover {
+    filter: none;
+    -webkit-filter: sepia(0);
+    -moz-filter: sepia(0);
+    -ms-filter: sepia(0);
+    -o-filter: sepia(0);
+    filter: sepia(0);
+    -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+}
+
+/* Blur */
+
+.gallery_blur {
+    position: relative;
+    display:inline-block;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+
+}
+
+.gallery_blur:hover {
+    filter: none;
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -o-filter: blur(0);
+    -ms-filter: blur(0);
+    -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+}
+
+/* Pulse */
+@-webkit-keyframes special_pulse {
+	25% {
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+	
+	75% {
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+}
+
+@keyframes special_pulse {
+	25% {
+		-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+	
+	75% {
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+}
+
+.special_pulse {
+	display: inline-block !important;
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.special_pulse:hover {
+	-webkit-animation-name: pulse;
+	animation-name: pulse;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}

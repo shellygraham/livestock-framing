@@ -1,0 +1,293 @@
+/*
+* default metabox styling
+**/
+
+#livestock_components_metabox{
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+#livestock_components_metabox h3.hndle{
+  display: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+#livestock_components_metabox .handlediv{
+  display: none;
+}
+
+#livestock_components_metabox .inside{
+  padding: 0;
+  border: 0;
+}
+
+
+#livestock_components{
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+#livestock_components h3.hndle{
+  display: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+#livestock_components .handlediv{
+  display: none;
+}
+
+#livestock_components .inside{
+  padding: 0;
+  border: 0;
+}
+
+.livestock_components{}
+
+.livestock_components{} ul.sections{
+  list-style: none;
+  display: block;
+  margin: 0 0 5px 0; padding: 5px 0;
+  width: 100%;
+  float: left; clear: both;
+  box-sizing: border-box;
+}
+
+.livestock_components ul.sections li.section{
+  display: block;
+  margin: 4px 0; padding: 0;
+  width: 100%;
+  border: 1px solid #E5E5E6;
+  background: #fff;
+  /*box-shadow: 0 1px 1px rgba( 0, 0, 0, 0.1 );*/
+  float: left; clear: both;
+  position: relative;
+  box-sizing: border-box;
+}
+
+  .livestock_components ul.sections li.movement-placeholder{
+    display: block;
+    height: 42px;
+    width: 100%;
+    background: transparent;
+    border: 2px dashed #ddd;
+    float: left; clear: both;
+  }
+
+.livestock_components li.section .handle{
+  display: block;
+  padding-top: 8px;
+  width: 32px;
+  font-size: 20px;
+  line-height: 32px;
+  color: #ccc;
+  text-align: center;
+  position: absolute; top: 0; left: 0;
+
+  cursor: grab;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+}
+
+.livestock_components li.section .handle:active{
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+}
+
+.livestock_components li.section .title{
+  padding: 10px 10px 10px 32px;
+}
+
+.livestock_components li.section .action{
+  display: block;
+  width: 32px;
+  font-size: 20px;
+  line-height: 32px;
+  color: #ccc;
+  text-align: center;
+  float: right; clear: none;
+
+  cursor: pointer;
+  outline: none;
+}
+
+.action{
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.action.flip{
+  transform: rotate( -180deg );
+  -webkit-transform: rotate( -180deg );
+}
+
+.livestock_components li.section .row{
+  display: block;
+  margin: 0; padding: 0;
+  width: 100%;
+  float: left; clear: both;
+  position: relative;
+}
+
+.livestock_components li.section .options{
+  display: block;
+  margin: 0; padding: 10px;
+  width: 100%;
+  float: left; clear: both;
+  background: #fafafa;
+  border-top: 1px solid #eee;
+  position: relative;
+  box-sizing: border-box;
+
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.livestock_components li.section .options.hidden{
+  display: block;
+  margin: 0; padding: 0;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.block{
+  display: block;
+  margin: 10px 0; padding: 10px;
+  /*background: #fff;*/
+  width: 100%;
+  border: 1px solid #eee;
+  float: left; clear: both;
+
+  box-sizing: border-box;
+}
+
+.block-title{
+  display: block;
+  margin: 0 0 10px; padding: 0;
+  width: 100%;
+  /*font-size: 16px;*/
+  text-transform: uppercase;
+  font-weight: bold;
+  float: left; clear: both;
+}
+
+.field{
+  display: block;
+  margin: 0 0 10px 0; padding: 0;
+  width: 100%;
+  float: left; clear: both;
+}
+
+.field label{
+  display: block;
+  margin: 0 0 5px 0; padding: 0;
+  width: 100%;
+  float: left; clear: both;
+  position: relative; z-index: 20;
+}
+
+.field label.inline{
+  width: auto;
+  float: none; clear: none;
+}
+
+.field input:not([type="checkbox"]):not([type="radio"]),
+.field select,
+.field textarea{
+  /*display: block;*/
+  /*margin: 0 0 5px 0;*/
+  width: 60%;
+  float: left; clear: both;
+}
+
+.field input:not([type="checkbox"]):not([type="radio"]).small,
+.field textarea.small{
+  width: 40px;
+}
+
+.field select.small{
+  width: 60px;
+}
+
+.field input:not([type="checkbox"]):not([type="radio"]).medium,
+.field select.medium
+.field textarea.medium{
+  width: 30%;
+}
+
+.field input:not([type="checkbox"]):not([type="radio"]).fill,
+.field select.fill,
+.field textarea.fill{
+  width: 100%;
+}
+
+.field textarea{
+  height: 120px;
+}
+
+.field .help-text{
+  display: block;
+  margin: 0; padding: 0;
+  width: 100%;
+  font-size: 12px;
+  line-height: 14px;
+  color: #aaa;
+  font-style: italic;
+  clear: both;
+}
+
+fieldset{
+  display: block;
+  margin: 0 0px 10px; padding: 10px 0px 0px;
+  width: 100%;
+  float: left; clear: both;
+}
+
+fieldset legend{
+  display: block;
+  margin: 0 0 10px 0; padding: 0;
+  width: 100%;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  float: left; clear: both;
+}
+
+
+.notice{
+  display: block;
+  margin: 15px 0; padding: 15px;
+  background: #ddd;
+  width: 100%;
+  color: #666;
+  text-align: center;
+  float: left; clear: both;
+
+  box-sizing: border-box;
+}
+
+/* .has-dependency{
+  display: block;
+  margin: 0; padding: 0;
+  height: 0;
+  float: left; clear: both;
+  overflow: hidden;
+
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.has-dependency.dependency-met{
+  margin-bottom: 10px;
+  height: auto;
+
+  overflow: visible;
+} */

@@ -1,0 +1,1826 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Master Slider - Premium WordPress Slider Plugin - Developer Documentation</title>
+		
+		<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+		<link rel="stylesheet" href="../bootstrap/css/bootstrap-responsive.min.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="../syntax-highlighter/styles/shCore.css" media="all">
+		<link rel="stylesheet" type="text/css" href="../syntax-highlighter/styles/shThemeDefault.css" media="all">
+		<link rel="stylesheet" href="../assets/css/main.css" type="text/css" media="screen"/>
+		
+		<link rel="icon" type="image/png" href="../assets/images/fav.png" />
+	</head>
+	
+	<body>
+		
+		<header class="header">
+			<img src="../assets/images/doc-title.png" class="logo" style="margin: 13px 18px;" />
+			<nav class="navbar mainnav" >
+				<ul class="nav">
+					<li><a href="http://www.masterslider.com/">VISIT PLUGIN SITE</a></li>
+					<li><a href="http://support.averta.net/envato/support/item/master-slider-wordpress-plugin/" target="_blank">SUPPORT FORUM</a></li>
+					<li><a href="http://support.averta.net/envato/faq/master-slider-wp/" target="_blank">FAQ</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<div id="loading">
+			Loading data ...
+		</div>
+		
+		<div id="main-container" role="main">
+			<aside id="sidebar">
+				<nav class="toc">	
+					
+					<ul class="nav nav-list">
+						<li class="nav-header">
+							Table of Contents
+						</li>
+						<li>
+							<a href="#intro">Overview</a>
+						</li>
+						<li>
+							<a href="#license">Licensing terms</a>
+						</li>
+						<li>
+							<a href="#bundling">Bundling in theme</a>
+						</li>
+						<li>
+							<a href="#shortcodes">Shortcodes</a>
+						</li>
+						<li>
+							<a href="#getting-sliders">Getting slider(s)</a>
+						</li>
+						<li>
+							<a href="#working-with-sliders">Working with Sliders & DB</a>
+						</li>
+						<li>
+							<a href="#action-hooks">Action hooks</a>
+						</li>
+						<li>
+							<a href="#filter-hooks">Filter hooks</a>
+						</li>
+						<li>
+							<a href="#add-sample-sliders">Add your sample sliders</a>
+						</li>
+						<li>
+							<a href="#include-demo-sliders">Include demo sliders</a>
+						</li>
+						<li>
+							<a href="#add-to-pagebuilder">Add Master Slider to your page builder</a>
+						</li>
+						<li>
+							<a href="#permissions">Permissions</a>
+						</li>
+						<li>
+							<a href="#post-slider">Post Slider</a>
+						</li>
+						<li>
+							<a href="#woocommerce-slider">WooCommerce Product Slider</a>
+						</li>
+						<li>
+							<a href="#custom-skin">Custom Skin</a>
+						</li>
+						<li>
+							<a href="#support">Support</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="update-cont">
+					<p class="cpr">
+						Version 2.5.0, Last update: 8/25/2014
+						<br/>
+						&copy; <a href="http://www.averta.net/" target="_blank">Averta Ltd.</a> All rights reserved.
+					</p>
+				</div>
+				<div class="toggle"> </div>
+			</aside><!-- sidebar -->
+
+			<section class="container" id="content">
+
+				<article class="content-section" id="intro">
+					<h4>Thank you</h4>
+					<p>At first we would like to say thank you for choosing Master Slider WordPress plugin.</p><br />
+
+					<h4>This documentation is for</h4>
+					<p>This documentation is made explicitly for developers to show what is going on inside of plugin. If you are NOT a programmer, please read the <a href="../index.html" >End-Users Documentation</a>, you don't need to follow any of the instructions here.
+					</p>
+					<p>
+					If you are developer, you definitely enjoy working with Master Slider because it's written in Object oriented PHP with best practices based on WordPress coding standards.</p><br />
+					
+					<div class="alert alert-info"><strong>Attention</strong>: The following manual may use programming terms without offering detailed explanations for non-programmers.</div>
+	                
+					<hr>
+					<h4>What you can expect from this documentation</h4>
+					<p>In this documentation you will find out the things you need to know about incorporating Master Slider WP in a project like WordPress theme. You will find guidelines to bundle the plugin inside project, and it explains several ways to modify/extend the features and capabilities of the plugin. </p>
+					<hr>
+				</article>
+
+				<article class="content-section" id="license">
+					<h4>Licensing terms</h4>
+					<p><ul>
+						<li>You need to purchase an extended license for each theme that includes Master Slider then change it to <a href="http://www.masterslider.com/stock-license/" target="_blank">in-stock</a> license.</li>
+						<li>You cannot redistribute the item "as-is", even if you modify it or you make a derivative version for another platform.</li>
+						<li>Please study the full license information.<a href="http://codecanyon.net/licenses/extended"> Extended license </a> and <a href="http://codecanyon.net/licenses/faq"> Licensing FAQs.</a> </li>
+					</ul></p>
+					<hr>
+					<h4>Usage terms</h4>
+					<p>Since the current licenses do not deal with re-selling Items, Envato lets authors to decide whether they grant permission for bundling Items or not. <p>We have the following conditions:</p></p><br />
+
+					<h4>You are permitted to use “Master Slider” in a larger stock item under the following conditions:</h4><br />
+
+					<h5>You cannot offer the plugin as a stand-alone item</h5>
+					<p>You can't include the plugin separately from your theme in the download package, you have to use the TGM Plugin Activation class. See the <a href="#bundling">Bundling</a> section for more information.</p>
+					<h5>You cannot provide an Item Purchase Code for your customers</h5>
+					<p>Since Envato doesn't have a "multi-use" or transferable license, your customers are not entitled to receive an Item Purchase Code with your theme and use the plugin separately from your work.</p>
+					<h5>Updating the plugin is your own responsibility</h5>
+					<p>Since your customers can't receive updates from us, you need to handle this on your own. The TGM Plugin Activation class makes it simple, and we are providing the necessary tools to make it quick as well.</p>
+					<h5>You need to handle Master Slider related support requests for your customers</h5>
+					<p>We would like to hear your thoughts and suggestions to fix issues and improve our items based on your feedback, but we cannot provide free support for your customers, this is your own responsibility.</p>
+					<h5>Use our preferred settings for TGM plugin installation</h5>
+					<p>With the above mentioned licensing terms you need to configure the plugin in TGM to automatically activate & deactivate it whenever your users are switching themes.</p>
+
+					<h5>You need to credit Master slider in your item’s profile page.</h5>
+
+					<hr>
+				</article>
+
+				<article class="content-section" id="bundling" >
+						<h4>Introduction</h4>
+						<p>As of 9th September 2013, Envato requires authors to load bundled WordPress plugins in themes with the TGM Plugin Activation class. This helps authors to include 3rd party components easily and handle their dependencies and updates automatically.</p>
+						<br />
+
+						<h4>Setting up TGM Plugin Activation class</h4>
+						<p>
+							Download the latest version of TGM Plugin Activation class from <a href="http://tgmpluginactivation.com/" target="_blank">their website</a>. Follow their guides and examples to incorporate it into your theme properly.
+						</p>
+						<br />
+
+						<h4>Example TGM plugin configuration</h4>
+						<p>Below you can see an example configuration for Master Slider. Remember, we are requiring you to set the <code>force_deactivation</code> option to true in accord our licensing and usage terms.</p>
+						<pre class="brush: javascript">
+array(
+	'name'               => 'Master Slider WP', 		// The plugin name.
+	'slug'               => 'masterslider',     		// The plugin slug (typically the folder name).
+	'source'             => get_stylesheet_directory() . '/plugins/masterslider-installable.zip', // The plugin source.
+	'required'           => false, 					// If false, the plugin is only 'recommended' instead of required.
+	'version'            => '', 						 // E.g. 1.0.0. If set, the active plugin must be this version or higher.
+	'force_activation'   => true, 					    // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+	'force_deactivation' => true 					  // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
+)
+						</pre>
+						<br />
+					
+						<h4>Disabling the auto-update feature</h4>
+						<p>You should disable the auto-update features since it  requires a valid Item Purchase Code that you can't provide to your customers. To do that, just add the following code to your theme.</p>
+						<pre class="brush: javascript">&lt;?php 
+	add_filter( 'masterslider_disable_auto_update', '__return_true' );
+?&gt;					</pre>
+						
+				</article>
+
+
+				<article class="content-section" id="getting-sliders">
+					
+					<h2>Overview</h2>
+					<p>Here are the list of functions that makes you able to retrieve the sliders data or output.</p>
+
+					<hr /><br />
+
+					<h2 id="get_masterslider">Function: get_masterslider</h2><br />
+
+					<h4>Description</h4>
+					<p>Takes a Master Slider ID and retrieves the slider markup.</p>
+
+					<h4>Usage</h4>
+					<code>&lt;?php get_masterslider( $id ); ?&gt;</code>
+					
+					<br /><br />
+					<h4>Parameters</h4>
+					<dl>
+						<dt> 
+							<tt>$id</tt>
+						</dt>
+						<dd> ( int ) The ID of the slider you'd like to get the output.</dd>
+					</dl>
+
+					<h4>Return Values</h4>
+					<p>( string ) The slider markup.</p>
+
+					<br />
+					<h4>Source File</h4>
+					<p><em>get_masterslider()</em> is located in <code>includes/msp-functions.php</code></p><br />
+
+					<hr /><br />
+
+					
+
+					<h2 id="masterslider">Function: masterslider</h2><br />
+
+					<h4>Description</h4>
+					<p>Displays master slider markup for specific slider ID. It's equal to <code>&lt;?php echo get_masterslider( $id ); ?&gt;</code></p>
+
+					<h4>Usage</h4>
+					<code>&lt;?php masterslider( $id ); ?&gt;</code>
+					
+					<br /><br />
+					<h4>Parameters</h4>
+					<dl>
+						<dt> 
+							<tt>$id</tt>
+						</dt>
+						<dd> ( int ) The ID of the slider you'd like to display the output. </dd>
+					</dl>
+
+					<br />
+					<h4>Source File</h4>
+					<p><em>masterslider()</em> is located in <code>includes/msp-functions.php</code></p><br />
+					
+					<hr /><br />
+
+
+
+					<h2 id="get_masterslider_names" >Function: get_masterslider_names</h2><br />
+
+					<h4>Description</h4>
+					<p>Get list of created slider IDs and names in an array.</p>
+
+					<h4>Usage</h4>
+					<code>&lt;?php get_masterslider_names( $id_as_key, $limit, $offset, $orderby, $sort ); ?&gt;</code>
+					
+					<br /><br />
+					<h4>Parameters</h4>
+					<dl>
+						<dt> 
+							<tt>$id_as_key</tt>
+						</dt>
+						<dd> ( bool ) ( <i>optional</i> ) if <code>true</code> returns slider ID as array key and slider name as value , reverse on <code>false</code>.
+							<dl>
+								<dd> Default: true</dd>
+							</dl>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt> 
+							<tt>$limit</tt>
+						</dt>
+						<dd> ( int ) ( <i>optional</i> ) Maximum number of sliders to return - 0 means no limit.
+							<dl>
+								<dd> Default: 0 </dd>
+							</dl>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt> 
+							<tt>$offset</tt>
+						</dt>
+						<dd> ( int ) ( <i>optional</i> ) The offset of the first row to return.
+							<dl>
+								<dd> Default: 0 </dd>
+							</dl>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt> 
+							<tt>$orderby</tt>
+						</dt>
+						<dd> ( string ) ( <i>optional</i> ) The field name to order results by.
+							<dl>
+								<dd> Default: 'ID' </dd>
+							</dl>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt> 
+							<tt>$sort</tt>
+						</dt>
+						<dd> ( string ) ( <i>optional</i> ) The sort type. 'DESC' or 'ASC'.
+							<dl>
+								<dd> Default: 'DESC' </dd>
+							</dl>
+						</dd>
+					</dl>
+
+
+					<h4>Return Values</h4>
+					<p>( array ) An array containing sliders IDs and names.</p><br />
+					
+
+					<h4>Examples</h4>
+					<pre class="brush: javascript">&lt;?php 
+	// if $id_as_key set to true
+	$master_sliders = get_masterslider_names( true ); 
+	print_r( $master_sliders );
+?&gt;</pre>
+
+<p>The output:</p>
+
+					<pre class="brush: javascript">
+array(
+	'12' => 'Slider sample title1', 
+	'13' => 'Slider sample title2',
+	'14' => 'Slider sample title3'
+)
+</pre><br />
+
+
+<pre class="brush: javascript">&lt;?php 
+	// if $id_as_key set to false
+	$master_sliders = get_masterslider_names( false ); 
+	print_r( $master_sliders );
+?&gt;</pre>
+
+<p>The output:</p>
+
+					<pre class="brush: javascript">
+array(
+	'Slider sample title1' => '12', 
+	'Slider sample title2' => '13',
+	'Slider sample title3' => '14'
+)
+</pre>
+					
+					<br />
+					<h4>Source File</h4>
+					<p><em>get_masterslider_names()</em> is located in <code>includes/msp-functions.php</code></p><br />
+
+					<hr /><br />
+
+					
+
+					<h2 id="get_mastersliders">Function: get_mastersliders</h2><br />
+
+					<h4>Description</h4>
+					<p>Retrieves an array containing row results for each slider from sliders table (with all slider table fields)</p>
+
+					<h4>Usage</h4>
+					<code>&lt;?php get_mastersliders( $limit, $offset, $orderby, $sort, $where ) ; ?&gt;</code>
+					
+					<br /><br />
+					<h4>Parameters</h4>
+
+					<dl>
+						<dt> 
+							<tt>$limit</tt>
+						</dt>
+						<dd> ( int ) ( <i>optional</i> ) Maximum number of records to return - 0 means no limit.
+							<dl>
+								<dd> Default: 0 </dd>
+							</dl>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt> 
+							<tt>$offset</tt>
+						</dt>
+						<dd> ( int ) ( <i>optional</i> ) The offset of the first row to return.
+							<dl>
+								<dd> Default: 0 </dd>
+							</dl>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt> 
+							<tt>$orderby</tt>
+						</dt>
+						<dd> ( string ) ( <i>optional</i> ) The field name to order results by.
+							<dl>
+								<dd> Default: 'ID' </dd>
+							</dl>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt> 
+							<tt>$sort</tt>
+						</dt>
+						<dd> ( string ) ( <i>optional</i> ) The sort type. 'DESC' or 'ASC'.
+							<dl>
+								<dd> Default: 'DESC' </dd>
+							</dl>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt> 
+							<tt>$where</tt>
+						</dt>
+						<dd> ( string ) ( <i>optional</i> ) The sql filter to get results by.
+							<dl>
+								<dd> Default: "status='published'" </dd>
+							</dl>
+						</dd>
+					</dl>
+
+
+					<h4>Return Values</h4>
+					<p>( array ) Returns an associative array with the sliders data.</p><br />
+					
+					
+					<h4>Examples</h4>
+					<pre class="brush: javascript">&lt;?php 
+	$master_sliders = get_mastersliders(); 
+	print_r( $master_sliders );
+?&gt;</pre>
+
+<p>The output:</p>
+
+					<pre class="brush: javascript">
+Array
+(
+    [0] => Array
+        (
+            [ID] => 2
+            [title] => Sample Slider 1
+            [type] => custom
+            [slides_num] => 4
+            [date_created] => 2014-04-22 12:26:07
+            [date_modified] => 2014-04-26 16:56:46
+            [params] => eyJtZXRhIjp7IlNldHRpbmdzIWl
+            [custom_styles] => 
+            [custom_fonts] => 
+            [status] => published
+        )
+
+    [1] => Array
+        (
+            [ID] => 3
+            [title] => Sample Slider 2
+            [type] => custom
+            [slides_num] => 7
+            [date_created] => 2014-04-11 08:50:17
+            [date_modified] => 2014-04-27 19:33:42
+            [params] => eyJtZXRhIjp7Il
+            [custom_styles] => 
+            [custom_fonts] => 
+            [status] => published
+        )
+)
+</pre>
+					
+					<br />
+					<h4>Source File</h4>
+					<p><em>get_mastersliders()</em> is located in <code>includes/msp-functions.php</code></p><br />
+
+
+					<hr /><br />
+
+
+					<h2 id="get_masterslider_parsed_data">Function: get_masterslider_parsed_data</h2><br />
+
+					<h4>Description</h4>
+					<p>Takes a slider ID and returns slider's parsed data in an array<br />You can use this function to access slider data (setting, slides, layers, styles)</p>
+
+					<h4>Usage</h4>
+					<code>&lt;?php get_masterslider_parsed_data( $id ); ?&gt;</code>
+					
+					<br /><br />
+					<h4>Parameters</h4>
+					<dl>
+						<dt> 
+							<tt>$id</tt>
+						</dt>
+						<dd> ( int ) The ID of the slider you'd like to get its parsed data.</dd>
+					</dl>
+
+					<h4>Return Values</h4>
+					<p>( string ) An array containing slider's parsed data.</p>
+
+					<br />
+					<h4>Source File</h4>
+					<p><em>get_masterslider_parsed_data()</em> is located in <code>includes/msp-functions.php</code></p><br />
+
+					<hr /><br />
+
+				</article>
+
+				<article class="content-section" id="shortcodes">
+					
+					<h2 id="shortcode/masterslider">Shortcode: masterslider</h2><br />
+
+					<h4>Description</h4>
+					<p>Takes a Master Slider ID and retrieves the slider markup.</p>
+
+					<h4>Usage</h4>
+					<code>[masterslider  id="1"]</code> or
+					<code>[master_slider id="1"]</code>
+					
+					<br /><br />
+					<h4>Parameters</h4>
+					<dl>
+						<dt> 
+							<tt>id</tt>
+						</dt>
+						<dd> ( int ) The ID of the slider you'd like to get the output.</dd>
+					</dl>
+
+					<h4>Return Values</h4>
+					<p>( string ) The slider markup.</p>
+
+					<br />
+					<h4>Source File</h4>
+					<p><em>[masterslider]</em> is located in <code>includes/msp-shortcodes.php</code></p><br />
+
+					<hr /><br />
+
+
+					<h2 id="shortcode/masterslider_pb">Shortcode: masterslider_pb</h2><br />
+
+					<h4>Description</h4>
+					<p>Returns slider markup in a section with title for section (optional). Great for using Master Slider in page builders (template builders)</p>
+
+					<h4>Usage</h4>
+					<code>[masterslider_pb  id="1" title="" class=""]</code> 					
+					<br /><br />
+					<h4>Parameters</h4>
+					<dl>
+						<dt> 
+							<tt>id</tt>
+						</dt>
+						<dd> ( int ) The ID of the slider you'd like to get the output.</dd>
+					</dl>
+
+					<dl>
+						<dt> 
+							<tt>title</tt>
+						</dt>
+						<dd> ( string ) A title for slider section element</dd>
+					</dl>
+
+					<dl>
+						<dt> 
+							<tt>class</tt>
+						</dt>
+						<dd> ( string ) A custom CSS class for section element</dd>
+					</dl>
+
+
+					<h4>Return Values</h4>
+					<p>( string ) The slider markup with a wrapper around.</p><br />
+
+					<h4>Examples</h4>
+					<pre class="brush: javascript">&lt;?php 
+	echo do_shortcode( '[masterslider_pb  id="1" title="Title For Slider Section" class="my_custom_class"]' );
+?&gt;</pre>
+
+<p>The output:</p>
+					<pre class="brush: javascript">
+<div class="avt_masterslider_el my_custom_class" >
+	<h2>Title For Slider Section</h2>
+	((SLIDER_MARKUP))
+</div>
+</pre>
+					<br />
+					<div class="alert alert-info"><strong>Note</strong> : you can change the section markup by using <a href="#filter-hooks">masterslider_pb_shortcode</a> filter</div>
+					
+
+					<h4>Source File</h4>
+					<p><em>[masterslider_pb]</em> is located in <code>includes/msp-shortcodes.php</code></p><br />
+
+					<hr /><br />
+
+				</article> 
+				
+
+				<article class="content-section" id="working-with-sliders">
+					
+					<h2 id="MSP_DB">About MSP_DB class</h2><br />
+					<p>Master Slider has two custom tables in database named "masterslider_sliders" and "masterslider_options". The MSP_DB class contains a set of functions used to interact and communicate with MasterSliders tables.</p>
+
+					<div class="alert alert-info">You almost have access to any possible data you need by <strong><a href="#getting-sliders">using these functions</a></strong>, but if you need to dig more, you can use this class to retrieve your preferred data.</div>
+					<hr />
+
+					<h3 id="">Using $mspdb Object</h3>
+					<p>Master Slider provides a global object variable, $mspdb, which is an instantiation of the MSP_DB class defined in <code>/includes/class-msp-db.php</code>. <br />By default, $mspdb is instantiated to talk to the Master Slider tables. To access $mspdb in your WordPress PHP code, declare $mspdb as a global variable using the global keyword in the following manner: </p>
+
+					<pre class="brush: javascript" >// Declaring $mspdb as global and using it to get slider data for slider ID '1'
+global $mspdb;
+$result = $mspdb->get_slider( 1 );
+</pre><br />
+
+					<hr />
+
+
+					<h3 id="mspdb-get_slider">Method: get_slider</h3><br />
+
+					<h4>Desciption</h4>
+					<p>Get slider data by slider id from slider table.</p>
+
+					<h4>Usage</h4>
+					<pre class="brush: javascript" >
+global $mspdb;
+$result = $mspdb->get_slider( $slider_id );
+</pre>
+					
+					<h4>Parameters</h4>
+					<dl>
+						<dt> 
+							<tt>$slider_id</tt>
+						</dt>
+						<dd> ( int ) The ID of the slider you'd like to get the output.</dd>
+					</dl>
+
+					<h4>Return Values</h4>
+					<p>( array|null ) slider data in array or null if no result found.</p>
+
+					<br />
+					<h4>Source File</h4>
+					<p>This method is located in <code>includes/classes/class-msp-db.php</code></p><br />
+					
+
+					<hr />
+
+
+					<h3 id="mspdb-add_slider">Method: add_slider</h3><br />
+
+					<h4>Desciption</h4>
+					<p>Adds new slider in sliders table</p>
+
+					<h4>Usage</h4>
+					<pre class="brush: javascript" >
+global $mspdb;
+$fields = array( 
+			'title' 		=> 'Untitled Slider',  // slider name
+			'type'			=> 'custom',           // custom, flickr, instagram, facebook, post
+			'date_created'	=> '',
+			'date_modified'	=> '',
+			'params'		=> array(),
+			'custom_styles' => '',
+			'custom_fonts'  => '',
+			'status'		=> 'published'
+		);
+$result = $mspdb->add_slider( $fields );
+</pre>
+					
+					<h4>Parameters</h4>
+					<dl>
+						<dt> 
+							<tt>$fields</tt>
+						</dt>
+						<dd> ( array ) array of fields for sliders table.
+							<dl>
+								<dd> Default: empty array</dd>
+							</dl>
+						</dd>
+					</dl>
+
+					<h4>Return Values</h4>
+					<p>( int|false ) ID number for new inserted row or false if the row could not be inserted.</p>
+
+					<br />
+					<h4>Source File</h4>
+					<p>This method is located in <code>includes/classes/class-msp-db.php</code></p><br />
+					
+
+					<hr />
+
+					
+					<h3 id="mspdb-update_slider">Method: update_slider</h3><br />
+
+					<h4>Desciption</h4>
+					<p>Updates a slider data in sliders table.</p>
+
+					<h4>Usage</h4>
+					<pre class="brush: javascript" >
+global $mspdb;
+$fields = array( 
+			'title' 		=> 'New Title for Slider',  // slider name
+			'status'		=> 'published'
+		);
+$result = $mspdb->update_slider( $slider_id, $fields, $format );
+</pre>
+					
+					<h4>Parameters</h4>
+					<dl>
+						<dt> 
+							<tt>$slider_id</tt>
+						</dt>
+						<dd> ( int ) The ID of the slider you'd like to get the output.</dd>
+					</dl>
+
+					<dl>
+						<dt> 
+							<tt>$fields</tt>
+						</dt>
+						<dd> ( array ) array of fields in sliders table that needs to be updated.</dd>
+					</dl>
+
+					<dl>
+						<dt> 
+							<tt>$format</tt>
+						</dt>
+						<dd> ( array|string ) (<i>optional</i>) An array of formats to be mapped to each of the values in $fields.
+							<dl>
+								<dd> Default: null</dd>
+							</dl>
+						</dd>
+					</dl>
+
+					<h4>Return Values</h4>
+					<p>( int|false ) The number of rows updated, or false on error.</p>
+
+					<br />
+					<h4>Source File</h4>
+					<p>This method is located in <code>includes/classes/class-msp-db.php</code></p><br />
+					
+
+					<hr />
+					
+
+					<h3 id="mspdb-delete_slider">Method: delete_slider</h3><br />
+
+					<h4>Desciption</h4>
+					<p>Removes a specific slider data from sliders table</p>
+
+					<h4>Usage</h4>
+					<pre class="brush: javascript" >
+global $mspdb;
+$result = $mspdb->delete_slider( $slider_id );
+</pre>
+					
+					<h4>Parameters</h4>
+					<dl>
+						<dt> 
+							<tt>$slider_id</tt>
+						</dt>
+						<dd> ( int ) The ID of the slider you'd like to be removed.</dd>
+					</dl>
+
+					<h4>Return Values</h4>
+					<p>( bool ) true on success or false on error.</p>
+
+					<br />
+					<h4>Source File</h4>
+					<p>This method is located in <code>includes/classes/class-msp-db.php</code></p><br />
+					
+
+					<hr />
+
+
+					<h3 id="mspdb-duplicate_slider">Method: duplicate_slider</h3><br />
+
+					<h4>Desciption</h4>
+					<p>Duplicates a slider in new row</p>
+
+					<h4>Usage</h4>
+					<pre class="brush: javascript" >
+global $mspdb;
+$result = $mspdb->duplicate_slider( $slider_id );
+</pre>
+					
+					<h4>Parameters</h4>
+					<dl>
+						<dt> 
+							<tt>$slider_id</tt>
+						</dt>
+						<dd> ( int ) The ID of the slider you'd like to duplicate.</dd>
+					</dl>
+
+					<h4>Return Values</h4>
+					<p>( bool ) true on success or false on error.</p>
+
+					<br />
+					<h4>Source File</h4>
+					<p>This method is located in <code>includes/classes/class-msp-db.php</code></p><br />
+
+
+					<hr />
+
+
+					<h3 id="mspdb-get_slider_field_val">Method: get_slider_field_val</h3><br />
+
+					<h4>Desciption</h4>
+					<p>Get the value of a single field for a specific slider.</p>
+
+					<h4>Usage</h4>
+					<pre class="brush: javascript" >
+global $mspdb;
+$result = $mspdb->get_slider_field_val( $slider_id, $field_name );
+</pre>
+					
+					<h4>Parameters</h4>
+					<dl>
+						<dt> 
+							<tt>$slider_id</tt>
+						</dt>
+						<dd> ( int ) The ID of the slider you'd like to get value of its field.</dd>
+					</dl>
+
+					<dl>
+						<dt> 
+							<tt>$field_name</tt>
+						</dt>
+						<dd> ( string ) The field name in slider table to get value from.</dd>
+					</dl>
+					
+
+					<h4>Return Values</h4>
+					<p>( string|null ) field value or null if no result found.</p>
+					
+					<br />
+					<h4>Source File</h4>
+					<p>This method is located in <code>includes/classes/class-msp-db.php</code></p><br />
+
+
+					<hr />
+
+
+					<h3 id="mspdb-get_sliders">Method: get_sliders</h3><br />
+
+					<h4>Description</h4>
+					<p>Retrieves an array containing row results for each slider from sliders table (with all slider table fields)</p>
+					
+					<h4>Usage</h4>
+					<pre class="brush: javascript" >
+global $mspdb;
+$result = $mspdb->get_sliders( $perpage, $offset, $orderby, $sort, $where );
+</pre>
+					
+					<br /><br />
+					<h4>Parameters</h4>
+
+					<dl>
+						<dt> 
+							<tt>$perpage</tt>
+						</dt>
+						<dd> ( int ) ( <i>optional</i> ) Maximum number of records to return - 0 means no limit.
+							<dl>
+								<dd> Default: 0 </dd>
+							</dl>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt> 
+							<tt>$offset</tt>
+						</dt>
+						<dd> ( int ) ( <i>optional</i> ) The offset of the first row to return.
+							<dl>
+								<dd> Default: 0 </dd>
+							</dl>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt> 
+							<tt>$orderby</tt>
+						</dt>
+						<dd> ( string ) ( <i>optional</i> ) The field name to order results by.
+							<dl>
+								<dd> Default: 'ID' </dd>
+							</dl>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt> 
+							<tt>$sort</tt>
+						</dt>
+						<dd> ( string ) ( <i>optional</i> ) The sort type. 'DESC' or 'ASC'.
+							<dl>
+								<dd> Default: 'DESC' </dd>
+							</dl>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt> 
+							<tt>$where</tt>
+						</dt>
+						<dd> ( string ) ( <i>optional</i> ) The sql filter to get results by.
+							<dl>
+								<dd> Default: "status='published'" </dd>
+							</dl>
+						</dd>
+					</dl>
+
+
+					<h4>Return Values</h4>
+					<p>( array|null ) Returns sliders data in an array or null if no result found.</p><br />
+					
+					
+					<h4>Examples</h4>
+					<pre class="brush: javascript">&lt;?php 
+	global $mspdb;
+	$master_sliders = $mspdb->get_sliders();
+	print_r( $master_sliders );
+?&gt;</pre>
+
+<p>The output:</p>
+
+					<pre class="brush: javascript">
+Array
+(
+    [0] => Array
+        (
+            [ID] => 2
+            [title] => Sample Slider 1
+            [type] => custom
+            [slides_num] => 4
+            [date_created] => 2014-04-22 12:26:07
+            [date_modified] => 2014-04-26 16:56:46
+            [params] => 
+            [custom_styles] => 
+            [custom_fonts] => 
+            [status] => published
+        )
+
+    [1] => Array
+        (
+            [ID] => 3
+            [title] => Sample Slider 2
+            [type] => custom
+            [slides_num] => 7
+            [date_created] => 2014-04-11 08:50:17
+            [date_modified] => 2014-04-27 19:33:42
+            [params] => 
+            [custom_styles] => 
+            [custom_fonts] => 
+            [status] => published
+        )
+)
+</pre>
+					
+					<br />
+					<h4>Source File</h4>
+					<p>This method is located in <code>includes/classes/class-msp-db.php</code></p><br />
+					
+					<hr >
+
+				</article>
+
+
+
+				<article class="content-section" id="action-hooks">
+					<h2>Action Reference</h2>
+					<p>Here is the list of action hooks that runs in Master Slider.</p>
+					<p>Read <a href="http://codex.wordpress.org/Function_Reference/add_action">WordPress Codex</a> for more information about using actions in WordPress.</p><br />
+
+					<h3>Actions Run During a Typical Request</h3>
+					<p>These actions are called when a user opens a page.</p>
+					<dl>
+						<dt> 
+							<tt>masterslider_classes_loaded</tt>
+						</dt>
+						<dd>Runs when public classes (including database class) are fully loaded.</dd>
+					</dl>
+					<dl>
+						<dt> 
+							<tt>masterslider_loaded</tt>
+						</dt>
+						<dd>Runs when Master Slider is fully loaded.</dd>
+					</dl>
+
+					<dl>
+						<dt> 
+							<tt>before_masterslider_init</tt>
+						</dt>
+						<dd>Runs on WordPress "init" before any hooks registered in Master Slider.</dd>
+					</dl>
+
+					<dl>
+						<dt> 
+							<tt>masterslider_init</tt>
+						</dt>
+						<dd>Runs on WordPress "init" after main hooks registered in Master Slider.</dd>
+					</dl>
+					<br />
+
+
+					<h3>Administrative Actions</h3>
+					<p>These actions are called when a user opens a page in admin area.</p>
+					<dl>
+						<dt> 
+							<tt>before_masterslider_admin_init</tt>
+						</dt>
+						<dd>Runs on WordPress "init" before any hooks registered in Master Slider admin.</dd>
+					</dl>
+					
+					<dl>
+						<dt> 
+							<tt>masterslider_admin_init</tt>
+						</dt>
+						<dd>Runs on WordPress "init" after main hooks registered in Master Slider admin.</dd>
+					</dl>
+					
+					<dl>
+						<dt> 
+							<tt>masterslider_admin_classes_loaded</tt>
+						</dt>
+						<dd>Runs when admin classes are fully loaded</dd>
+					</dl>
+
+					<dl>
+						<dt> 
+							<tt>masterslider_before_import_dialog_content</tt>
+						</dt>
+						<dd>Runs before import dialog interface.</dd>
+					</dl>
+
+					<dl>
+						<dt> 
+							<tt>masterslider_tables_created</tt>
+						</dt>
+						<dd>Runs when Master Slider custom tables created.</dd>
+					</dl>
+
+					<dl>
+						<dt> 
+							<tt>masterslider_updated</tt>
+						</dt>
+						<dd>Runs when the plugin was updated.</dd>
+					</dl>
+
+					<dl>
+						<dt> 
+							<tt>masterslider_activated</tt>
+						</dt>
+						<dd>Runs when the plugin was activated.</dd>
+					</dl>
+
+					<dl>
+						<dt> 
+							<tt>masterslider_deactivated</tt>
+						</dt>
+						<dd>Runs when the plugin was deactivated.</dd>
+					</dl>
+
+
+					<hr />
+				</article>
+
+
+
+
+				<article class="content-section" id="filter-hooks">
+					<h2>Filter Reference</h2>
+					<p>Here is the list of filter hooks that runs in Master Slider.</p>
+					<p>Read <a href="http://codex.wordpress.org/Function_Reference/add_filter">WordPress Codex</a> for more information about using filters in WordPress.</p><br />
+
+					
+					<p>( <i>array</i> ) <span style="font-size:1.3em; font-weight:600;">masterslider_enqueue_styles</span> ( <i>array</i> $styles_queue )</p>
+					<p>- Applied to the array of css files that master slider loads on front-end. You can hook in this filter to modify this list. </p>
+					
+					<strong>Example: </strong>
+					<pre class="brush: javascript">&lt;?php 
+	add_filter( 'masterslider_enqueue_styles', 'my_custom_masterslider_enqueue_styles', 10, 1 );
+
+	function my_custom_masterslider_enqueue_styles( $styles_queue ){
+		$styles_queue['my_new_custom_css_id'] = array(
+			'src'     => 'path/to/new/custom/css/file.css' ,
+			'deps'    => array(),
+			'version' => '1.0'
+		);
+		// make sure to return $styles_queue at the end
+		return $styles_queue;
+	}
+?&gt;</pre>
+
+					<hr />
+
+					<p>( <i>string</i> ) <span style="font-size:1.3em; font-weight:600;">masterslider_layer_shortcode_attr_rel</span> ( <i>string</i> $rel_attr, <i>string</i> $rel )</p>
+					<p>- Applied to the rel attribute for layers. You can override this attribute by using this hook.</p>
+
+					<hr />
+
+					<p>( <i>string</i> ) <span style="font-size:1.3em; font-weight:600;">masterslider_layer_shortcode_attr_link</span> ( <i>string</i> $link )</p>
+					<p>- Applied to the link attribute for layers. You can override this attribute by using this hook.</p>
+
+					<hr />
+
+					<p>( <i>string</i> ) <span style="font-size:1.3em; font-weight:600;">masterslider_slide_content</span> ( <i>string</i> $output, $slide_start_tag, $slide_content, $slide_end_tag )</p>
+					<p>- Applied to content of slide. You can override slide markup by using this filter hook.</p>
+					
+					<hr />
+					
+					<p>( <i>string</i> ) <span style="font-size:1.3em; font-weight:600;">masterslider_pb_shortcode</span> ( <i>string</i> $output, $slider_markup, $wrapper_open_tag, $the_title_tag, $wrapper_close_tag )</p>
+					<p>- Applied to the markup that masterslider_pb shortcode generates. You can override this markup by using this filter hook.</p>
+
+					<strong>Example: </strong>
+					<pre class="brush: javascript">&lt;?php 
+	function my_custom_masterslider_pb_shortcode( $output, $slider_markup, $wrapper_open_tag, $the_title_tag, $wrapper_close_tag ){
+		
+		return $wrapper_open_tag . $the_title_tag . $slider_markup . $wrapper_close_tag;
+	}
+
+	add_filter( 'masterslider_pb_shortcode', 'my_custom_masterslider_pb_shortcode', 10, 5 );
+?&gt;</pre>
+
+					
+					<hr />
+
+					<p>( <i>string</i> ) <span style="font-size:1.3em; font-weight:600;">masterslider_slider_content</span> ( <i>string</i> $slider_output )</p>
+					<p>- Applied to slider output. You can override slider markup by using this filter hook.</p>
+					<pre class="brush: javascript">&lt;?php 
+	// in this example we always add a wrapper around slider markup
+	function my_custom_masterslider_slider_content( $slider_output ){
+		
+        return '<div class="my-custom-msterslider-wrapper">'. $slider_output . '</div>';
+	}
+	add_filter( 'masterslider_slider_content', 'my_custom_masterslider_slider_content' );
+?&gt;</pre>
+
+					<hr />
+
+					<p>( <i>bool</i> ) <span style="font-size:1.3em; font-weight:600;">masterslider_admin_display_update_list</span></p>
+					<p>- Determines whether display "video tuts"/"changelog" table or not.</p>
+					<pre class="brush: javascript">&lt;?php 
+	// to hide "video tuts"/"changelog" table
+	add_filter( 'masterslider_admin_display_update_list', '__return_false' );
+?&gt;</pre>
+
+					<hr />
+
+					<p>( <i>bool</i> ) <span style="font-size:1.3em; font-weight:600;">masterslider_admin_display_export_import</span></p>
+					<p>- Determines whether display "import/export" button or not.</p>
+					<pre class="brush: javascript">&lt;?php 
+	// to hide "import/export" button
+	add_filter( 'masterslider_admin_display_export_import', '__return_false' );
+?&gt;</pre>
+					
+					<hr />
+
+					<p>( <i>bool</i> ) <span style="font-size:1.3em; font-weight:600;">masterslider_admin_display_duplicate_btn</span></p>
+					<p>- Determines whether display "duplicate" button in list view table or not.</p>
+					<pre class="brush: javascript">&lt;?php 
+	// to hide "duplicate" button
+	add_filter( 'masterslider_admin_display_duplicate_btn', '__return_false' );
+?&gt;</pre>
+					
+					<hr />
+
+					<p>( <i>bool</i> ) <span style="font-size:1.3em; font-weight:600;">masterslider_admin_display_delete_btn</span></p>
+					<p>- Determines whether display "delete" button in list view table or not.</p>
+					<pre class="brush: javascript">&lt;?php 
+	// to hide "delete" button
+	add_filter( 'masterslider_admin_display_delete_btn', '__return_false' );
+?&gt;</pre>
+					
+					<hr />
+
+					<p>( <i>int</i> ) <span style="font-size:1.3em; font-weight:600;">masterslider_admin_sliders_per_page</span> ( <i>int</i> $per_page )</p>
+					<p>- Applied to number of sliders per page on sliders list view. ( Default number is 10 )</p>
+					
+					<hr />
+
+
+					<p>( <i>array</i> ) <span style="font-size:1.3em; font-weight:600;">masterslider_starter_sections</span>( <i>array</i> $sections )</p>
+					<p>- Applied to sections of starter sliders ( when you click on "Create new slider" button, new window will be open that contains starter sliders ). You can add or modify starter sections by using this filter hook</p>
+					<pre class="brush: javascript">&lt;?php 
+	// add a section to starter sections
+	function my_custom_masterslider_starter_sections( $sections ){
+
+		$sections[] = array(
+            'id' 	=> 'new_section_id_for_starter_sliders',  // you should define unique id for each section
+            'title' => __( 'My New Custom Section title' ),
+            'desc'  => '' 
+        );
+
+        // make sure to return $sections at the end
+		return $sections;
+	}
+	add_filter( 'masterslider_starter_sections', 'my_custom_masterslider_starter_sections' );
+?&gt;</pre>
+					
+					<hr />
+
+
+					<p>( <i>array</i> ) <span style="font-size:1.3em; font-weight:600;">masterslider_starter_fields</span>( <i>array</i> $starters )</p>
+					<p>- Applied to starter sliders list ( when you click on "Create new slider" button, new window will be open that contains starter sliders ). You can add or modify starter sliders by using this filter hook</p>
+					<pre class="brush: javascript">&lt;?php 
+	// add a new sample slider to starter section
+	function my_custom_masterslider_starter_fields( $starters ){
+		
+		// 'new_section_id_for_starter_sliders' is starter section id that was defined before. see 'masterslider_starter_sections' filter hook above.
+		$starters['new_section_id_for_starter_sliders'] = array(
+            array(
+				'label' 	=> __( 'My Sample Slider 1' ),
+				'id' 		=> 'my-sample-slider1',	// an unique id for starter slider
+				'slidertype'=> 'custom',
+				'importdata'=> '',               	// the import data that you exported before (base64 string)
+				'screenshot'=> ''                	// screenshot URL for this sample slider (preferred dimension: 223x128)
+			),
+			array(
+				'label' 	=> __( 'My Sample Slider 2' ),
+				'id' 		=> 'my-sample-slider2',	// an unique id for starter slider
+				'slidertype'=> 'custom',
+				'importdata'=> '',               	// the import data that you exported before (base64 string)
+				'screenshot'=> ''                	// screenshot URL for this sample slider (preferred dimension: 223x128)
+			)
+        );
+
+        // make sure to return $starters at the end
+		return $starters;
+	}
+	add_filter( 'masterslider_starter_fields', 'my_custom_masterslider_starter_fields' );
+?&gt;</pre>		
+
+				
+				<hr />
+
+
+					<p>( <i>array</i> ) <span style="font-size:1.3em; font-weight:600;">masterslider_panel_default_setting</span>( <i>array</i> $starters )</p>
+					<p>- Applied to default values of admin panel. You can change default values by using this filter hook</p>
+					<pre class="brush: javascript">&lt;?php 
+	// Change default values of admin panel.
+	function my_custom_masterslider_panel_default_setting( $default_options ){
+		
+		// for example if you need to change default value for 'width' option do it like below
+		$default_options['width'] = 1000;
+
+        // make sure to return $default_options at the end
+		return $default_options;
+	}
+	add_filter( 'masterslider_panel_default_setting', 'my_custom_masterslider_panel_default_setting' );
+	
+?&gt;</pre>
+					
+					<p>List of all available options with defaults values is located in <code>admin/includes/classes/class-msp-admin-assets.php</code> in <code>add_panel_variables</code> method.</p><br />
+				
+				</article>
+			
+				<article class="content-section" id="add-sample-sliders">
+					<h3>What is sample slider?</h3>
+					<p>One of the great features in Master Slider is "sample slider". Sample sliders are pre-made and ready to use sliders that make the users able to create a complete and ready to use slider in one simple click.</p>
+					<p>If you are theme author, Master Slider makes it extremely easy for you to add your custom sample sliders to current samples.</p>
+					<p>One of the other cools features is you are not forced to bundle images and media files for each sample slider. Master Slider will fetch media files from origin site exactly the same way WordPress importer do.</p>
+					<p>So your theme package is always as light as possible, as soon as you dont need to bundle any media file in your theme file.</p>
+					
+					<hr />
+
+					
+					<div class="row-fluid">
+						<div class="span4">
+						<h3>How clients can access sample sliders?</h3>
+							<p>
+								You can see sample sliders by navigating to Master Slider admin page, then press "Create New Slider" button, Now a popup window will be open as shown in screenshot.
+			                </p>
+			            </div>
+			            <div class="span8">
+							<img src="../assets/images/screenshots/dev/dev-sample-sliders.png" alt="Master Slider sample sliders" class="img-screenshot">	
+						</div>
+			        </div>
+
+					<hr />
+
+					<div class="row-fluid">
+						<div class="span4">
+						<h3>About Starter sections</h3>
+							<p>
+								As you see, in this screenshot there are two sections "Slider Types" and "Sample Sliders". Each of these sections are known as "Starter section" in Master Slider.
+			                </p>
+			                <p>You can add your own section (starter section) to this page and add your sample sliders to that section. Let see how.</p>
+			            </div>
+			            <div class="span8">
+							<img src="../assets/images/screenshots/dev/dev-starter-sections.png" height="799" width="1059" alt="Master Slider Starter Sections" class="img-screenshot">	
+						</div>
+			        </div>
+
+			        <hr />
+
+					<h3>How to add new Starter section</h3>
+					<p>
+						Adding new "starter section" is very easy. You just need to use "masterslider_starter_sections" filter hook to map new starter section.
+	                </p>
+		            <pre class="brush: javascript">&lt;?php 
+// add a new section to starter sections
+function my_custom_masterslider_starter_sections( $sections ){
+
+	$sections[] = array(
+        'id' 	=> 'new_section_id_for_starter_sliders',  // you should define unique id for each section
+        'title' => __( 'My New Custom Section title' ),   // a title for starter section
+        'desc'  => '' 
+    );
+
+    // make sure to return $sections at the end
+	return $sections;
+}
+add_filter( 'masterslider_starter_sections', 'my_custom_masterslider_starter_sections' );
+?&gt;</pre>
+					<p>
+						In this example we added a "starter section" with "new_section_id_for_starter_sliders" id. Again, please note that this id should be unique, because we use this section id to append sample sliders to this section later.
+					</p>
+					
+
+					<hr />
+					
+
+					<h3>How to add your custom sample slider</h3>
+					<p>
+						Suppose that you created a home slider on your demo site and you want to include that slider as sample slider for your clients.
+	                </p>
+	                <p>Adding new sample slider is very easy in Master Slider, here are the steps :</p>
+
+	                <ul>
+	                	<li>Go to your demo site, login to admin area and in Master Slider admin page click on "Import/Export" buttom.</li>
+	                	<li>Select your preferred slider to export (Only select ONE slider)</li>
+	                	<li>Click on "Export" button, a json file will be saved on your computer. This file contains the export data that we need in next step.</li>
+	                	<li>Use 'masterslider_starter_fields' filter hook to add new field for new sample sliders like following example.
+	                </ul>
+		            <pre class="brush: javascript">&lt;?php 
+	// add a new sample slider to starter section
+	function my_custom_masterslider_starter_fields( $starters ){
+		
+		// 'new_section_id_for_starter_sliders' is starter section id that was defined before. see 'masterslider_starter_sections' filter hook above.
+		$starters['new_section_id_for_starter_sliders'] = array(
+            array(
+				'label' 	=> __( 'My Sample Slider 1' ),
+				'id' 		=> 'my-sample-slider1',	// an unique id for starter slider
+				'slidertype'=> 'custom',
+				'importdata'=> '',               	// the import data that you exported before (base64 string)
+				'screenshot'=> ''                	// screenshot URL for this sample slider (preferred dimension: 223x128)
+			),
+			array(
+				'label' 	=> __( 'My Sample Slider 2' ),
+				'id' 		=> 'my-sample-slider2',	// an unique id for starter slider
+				'slidertype'=> 'custom',
+				'importdata'=> '',               	// the import data that you exported before (base64 string)
+				'screenshot'=> ''                	// screenshot URL for this sample slider (preferred dimension: 223x128)
+			)
+        );
+
+        // make sure to return $starters at the end
+		return $starters;
+	}
+	add_filter( 'masterslider_starter_fields', 'my_custom_masterslider_starter_fields' );
+?&gt;</pre>
+					<p>
+						In this example we added two sample sliders (My Sample Slider 1, My Sample Slider 2). We added these samples to 'new_section_id_for_starter_sliders' starter section that we created before. 
+					</p>
+					<p>Finally you should open the exported file that you downloaded in previous step, copy the content (it's base64 string) and add the string to <code>importdata</code> field</p><br />
+					
+					<h5>Finally it should look something like this</h5><br />
+					<img src="../assets/images/screenshots/dev/dev-new-sample-sliders.png" />
+					
+					<br /><br />
+
+					<p>You're done! Now if a client selects one of the sample sliders you defined here and clicks on "Create" button, Master Slider will create a new slider the same as that sample slider and then fetches media files from origin website (your demo site).</p>
+
+				</article>
+
+
+
+				<article class="content-section" id="include-demo-sliders">
+					<h3>Including Demo Sliders</h3>
+					<p>Suppose that you have created some demo sliders for presenting your theme, now you want to make your clients able to import those demo sliders as well. Including demo sliders in Master Slider is extremely easy. In next section we will see how it works.</p>
+					<p>One of the cools features in Master Slider is that you are not forced to bundle images and media files for demo sliders. Master Slider will fetch media files from origin site exactly the same way WordPress importer do.</p>
+					<p>So your theme package is always as light as possible, as soon as you dont need to bundle any media file in your theme file.</p>
+					
+					<hr />
+
+					
+					<div class="row-fluid">
+
+						<h3>How to include demo sliders?</h3>
+		                <ol>
+		                	<li>Select and export your demo sliders and download the export file (the origin website should be online)</li>
+		                	<li>Create a folder name <code>sliders</code> in your theme directory and rename the exported file to <code>masterslider.json</code> and place it in <code>samples</code> folder. Finally, the export file should be in this path: <code>[your theme folder]/samples/masterslider.json</code></li>
+		                </ol>
+
+		                <br/>
+
+		                <p><strong>That's all !</strong> Now, Master Slider will check following path for exported file; If the file exist, Master Slider will generate import page for demo sliders</p>
+		                
+		                <hr />
+
+		                <strong>An example of "import demo sliders" page:</strong>
+		                <p></p>
+						<img src="../assets/images/screenshots/dev/import-demo-sliders-page.png" height="507" width="779" alt="Master Slider import demo sliders page" class="img-screenshot">	
+						<p></p>
+						<br />
+						<p>Now clients can select and import your demo sliders by simply clicking on <code>Import</code> button.</p>
+			        </div>
+
+			        <hr />
+
+					<h3>More configurations</h3>
+					<ul>
+						<li>To change label of submenu for "import demo page" you can use <code>masterslider_import_demo_sliders_menu_title</code> filter</li>
+						<li>To change title of "import demo page" you can use <code>masterslider_import_demo_sliders_page_title</code> filter</li>
+						<li>Default path for placing exported file is <code>samples/masterslider.json</code>, you can change this path to your desired one by using <code>masterslider_exported_sliders_file_path</code> filter</li>
+						<li>If you don't like to put exported file in your theme, you can pass content of exported file directly to <code>masterslider_theme_sliders_data</code> filter, instead.</li>
+					</ul>
+					<br />
+					<p>
+						for more information, you can take a look at following files : <br />
+						<code>admin/includes/map-admin-functions.php</code> in <code>msp_get_theme_sliders_data</code> function.<br />
+						<code>admin/includes/classes/class-map-import-custom-sliders.php</code> class
+					</p>
+					
+
+					<hr />
+					
+
+				</article>
+
+
+
+				<article class="content-section" id="add-to-pagebuilder">
+					<h3>How to integrate Master Slider in Page (template) Builders</h3>
+					<p>
+						The integration is so easy, as we did that for visual composer plugin since version 1.0.0
+					</p>
+					<p>
+						Master Slider has a special shortcode for integrating Master Slider in page builders and also plugin has bunch of filter hooks to let developers customize plugin's functionality to feet their needs ( that's one of the reasons we created Master Slider! )
+					</p><br />
+
+
+					<h4>Let's check out how</h4>
+					<p>
+						First of all you need to check if Master Slider is installed and activated by following condition :
+					</p>
+					<pre class="brush: javascript">&lt;?php 
+	if ( defined('MSWP_AVERTA_VERSION') ) {  }
+?&gt;</pre>
+						
+					<p>
+						Then you just need to generate this shortcode by your template builder
+					</p>
+					<pre class="brush: javascript">[masterslider_pb id="" title="" class=""]</pre>
+						
+					<p>
+						the "id" is the slider ID that you'd like to display, the "title" is title for template builder element (optional), and class is a custom CSS class for template builder element (optional).
+					</p>
+					<p>
+						Definitely you need to get the list of created sliders, the <a href="#getting-sliders">get_masterslider_names</a> function will do that for you.
+					</p>
+					<br />
+					<strong>Here is the function description :</strong>
+					<pre class="brush: javascript">&lt;?php 
+	/**
+	 * Get list of created slider IDs and names in an array.
+	 * @param  bool    $id_as_key  true : return slider ID as array key and title as value , false : reverse
+	 * @return array   containing sliders ID as array key and slider name as value
+	 *
+	 * @example   $id_as_key = true :
+	 *            array(
+	 *                '12' => 'Slider sample title1',
+	 *                '13' => 'Slider sample title2'
+	 *            )
+	 *
+	 *            $id_as_key = false :
+	 *            array(
+	 *                'Slider sample title1' => '12',
+	 *                'Slider sample title2' => '13'
+	 *            )
+	 */
+	function get_masterslider_names( $id_as_key = true );
+?&gt;</pre>
+
+					<p>That's it.</p>
+
+
+					<p>
+						As you see the <code>[masterslider_pb]</code> will generate a markup for template builder element with title, maybe you need to customize the markup, you can do that with <code>masterslider_pb_shortcode</code> filter
+					</p>
+					<br />
+					<strong>here is an example:</strong>
+
+					<pre class="brush: javascript">&lt;?php 
+	function my_custom_masterslider_pb_shortcode( $output, $slider_markup, $wrapper_open_tag, $the_title_tag, $wrapper_close_tag ) {
+	   
+	    return $wrapper_open_tag . $the_title_tag . $slider_markup . $wrapper_close_tag;
+	}
+
+	add_filter( 'masterslider_pb_shortcode', 'my_custom_masterslider_pb_shortcode' , 10, 5 );
+?&gt;</pre>		
+
+					<hr />
+				</article>
+				
+
+				<article class="content-section" id="permissions">
+					<h3>Master Slider Custom capabilities</h3>
+					<p>Master Slider has 6 custom capabilities that makes you able to manage permissions for logged-in users.</p><br />
+
+					<p>Below is the <strong>list of Master Slider custom capabilities</strong></p>
+
+					<dl>
+						<dt>access_masterslider</dt>
+						<dd>Whether user can access to master slider admin page or not.</dd>
+					</dl>
+					<dl>
+						<dt>create_masterslider</dt>
+						<dd>Whether user can create a slider or not (the slider will be saved as 'draft', if user has 'publish_masterslider' capability too then he/she can save slider as 'published' slider).</dd>
+					</dl>
+					<dl>
+						<dt>publish_masterslider</dt>
+						<dd>Whether user can publish a slider or not.</dd>
+					</dl>
+					<dl>
+						<dt>delete_masterslider</dt>
+						<dd>Whether user can delete a slider or not.</dd>
+					</dl>
+					<dl>
+						<dt>duplicate_masterslider</dt>
+						<dd>Whether user can duplicate a slider or not.</dd>
+					</dl>
+					<dl>
+						<dt>export_masterslider</dt>
+						<dd>Whether user can import/export sliders or not.</dd>
+					</dl>
+					
+					<p>
+						By default these capabilities will be assigned to "Administrative" and "Editor" role when plugin runs for first time. You can add or removed capabilities for user by using a great plugin name <a href="https://wordpress.org/plugins/members/" target="_blank">Members</a>. Mater Slider is fully compatible with this plugin too.
+					</p>
+
+				</article>
+	
+				<article class="content-section" id="post-slider">
+					<h3>Post Slider</h3>
+					<p>Masterslider is able to fetch data from post, page or any custom post type in order to display posts data in a fancy touch slider.(since version 1.5.0)</p><br />
+					
+					<hr />
+
+					<h4>How to define custom "Template Tag" in post slider</h4><br />
+					
+
+					<div class="row-fluid">
+						<div class="span6">
+							<p>In <em>Post slider</em>, users are able to add dynamic content to <em>slide info</em> and <em>layer content</em> by inserting <strong>template tags</strong>. </p>
+							<p>There are some pre-defined template tags that are shown in screenshot.</p>
+			            </div>
+			            <div class="span6">
+							<img src="../assets/images/screenshots/dev/post-slider-template-tags.png" height="536" width="502" alt="Master Slider - Template tags for post slider" class="img-screenshot">	
+						</div>
+			        </div><br />
+
+			        <p>You are able to extend or modify this list (template tags) and adding your custom template tag is very easy in Masterslider. Let's see how.</p><br />
+
+					<h5>1 - Adding new custom "Template Tag" to list</h5><br />
+					
+					<p>Suppose that you have a custom meta field on "Portfolio" post type and you want to make your clients able to display that data on post slider too.</p>
+					<p>You can add new "template tags" by using <code>masterslider_post_slider_tags_list</code> filter hook. Please take a look at following example :</p>
+
+					<pre class="brush: javascript">&lt;?php 
+function my_masterslider_post_slider_tags_list( $tags ) { 
+
+	$tags[] = array( 
+		'name' 		=> 'project_link',
+		'label'     => __( 'Project Link', 'masterslider' ),
+		'type' 		=> 'portfolio'
+	);
+	return $tags;
+}
+
+add_filter( 'masterslider_post_slider_tags_list', 'my_masterslider_post_slider_tags_list' );
+?&gt;</pre>		
+					
+					<br />
+					<div class="row-fluid">
+						<div class="span6">
+							<p>In this example we defined new template tag name "project_link" for "Portfolio" post type. By adding this code new template tag appears in "Template Tag" list for "Portfolio" post type.</p>
+
+			            </div>
+			            <div class="span6">
+							<img src="../assets/images/screenshots/dev/post-slider-new-tag.png" height="534" width="596" alt="Master Slider - Adding new template tag for post slider" class="img-screenshot">	
+						</div>
+			        </div><br />
+					
+					<h5>2 - Defining dynamic content for custom "Template tag"</h5>
+
+			        <p>Now we successfully added our new "Template tag" to list, now users are able to add this tag to content.</p>
+			        <p>Masterslider will process the content and looks for {{tag-name}} pattern, then it will pass the tag name through a filter and that's where we can replace the dynamic content with our custom template tag.</p>
+			        <p>So the second step is using <code>masterslider_get_template_tag_value</code> filter hook for replacing dynamic content with template tag (in our example it's {{project_link}})</p>
+					
+					<pre class="brush: javascript">&lt;?php 
+function my_masterslider_get_template_tag_value( $value, $tag_name, $post, $args ) { 
+
+    if( 'project_link' !== $tag_name )
+        return $value;
+
+    $tag_value = get_post_meta( $post->ID, 'project_link', true );
+    if( $tag_value )
+        $value = sprintf( '<a href="%s" target="_blank" >Visit Project</a>', $tag_value );
+
+    return $value;
+}
+
+add_filter( 'masterslider_get_template_tag_value', 'my_masterslider_get_template_tag_value' );
+?&gt;</pre>	
+				
+					<p>In this example we hook to check for 'project_link' tag (the template tag we defined in first step), if the passed tag was our custom tag then we get and return custom dynamic content for this tag. </p>
+					<p>The filter hook passes 4 arguments. $value is default value for "Template Tag", $tag_name is the "Template Tag" name (in this example is project_link), $post is post object for each post slide and $args is some extra options for displaying post slider.</p>
+					<p>In example above we tried to get tag value form post meta field ( <code>$tag_value = get_post_meta( $post->ID, 'project_link', true );</code> ). This is just an example and you can retrieve <code>$tag_value</code> as you like.</p><br/>
+
+					<p>For more information take a look at <code>includes/msp-function.php</code>( <strong>masterslider_get_template_tag_value</strong> function )</p><br />
+
+					<div class="alert alert-info"><strong>Note</strong>: By default if dynamic content is not defined for a template tag, Masterslider will assume it's a meta key, so it will try to get meta value for that meta key. So if you plan to get dynamic data for a meta key you don't need to hook for defining dynamic content, Masterslider will do that for you.</div>
+
+					<hr /><br /> 
+
+				</article>
+
+
+
+
+
+				<article class="content-section" id="woocommerce-slider">
+					<h3>WooCommerce Product Slider</h3>
+					
+					<p>Masterslider is able to fetch products data from <a href="http://wordpress.org/plugins/woocommerce/" target="_blank" >WooCommerce</a> plugin in order to display products in a fancy touch slider (since version 1.7.0)</p><br />
+					
+					<hr />
+
+					<h4>How to define custom "Template Tag" for product slider</h4><br />
+					
+
+					<div class="row-fluid">
+						<div class="span6">
+							<p>In <em>WooCommerce Product slider</em>, users are able to add dynamic content to <em>slide info</em> and <em>layer content</em> by inserting <strong>template tags</strong>. </p>
+							<p>There are some pre-defined template tags that are shown in screenshot. Some are general tags and others are specials tags for product slider.</p>
+			            </div>
+			            <div class="span6">
+							<img src="../assets/images/screenshots/dev/product-slider-template-tags.png" height="536" width="502" alt="Master Slider - Template tags for post slider" class="img-screenshot">	
+						</div>
+			        </div><br />
+
+			        <p>You are able to extend or modify this list (template tags) and adding your custom template tag is very easy in Masterslider. Let's see how.</p><br />
+
+					<h5>1 - Adding new custom "Template Tag" to list</h5><br />
+					
+					<p>You can add new "template tags" by using <code>masterslider_woocommerce_product_slider_tags_list</code> filter hook. Please take a look at following example :</p>
+
+					<pre class="brush: javascript">&lt;?php 
+function my_masterslider_woocommerce_product_slider_tags_list( $tags ) { 
+
+	$tags[] = array( 
+		'name' 		=> 'my_custom_template_tag',
+		'label'     => __( 'My Template Tag', 'masterslider' ),
+		'type' 		=> 'product'
+	);
+	return $tags;
+}
+
+add_filter( 'masterslider_woocommerce_product_slider_tags_list', 'my_masterslider_woocommerce_product_slider_tags_list' );
+?&gt;</pre>		
+					
+					<br />
+					<div class="row-fluid">
+						<div class="span6">
+							<p>In this example we defined new template tag name "my_custom_template_tag" specifically for "WooCommerce product slider". By adding this code new template tag appears in "Template Tag" list.</p>
+
+			            </div>
+			            <div class="span6">
+							<img src="../assets/images/screenshots/dev/product-slider-new-tag.png" height="536" width="554" alt="Master Slider - Adding new template tag for post slider" class="img-screenshot">	
+						</div>
+			        </div><br />
+					
+					<h5>2 - Defining dynamic content for custom "Template tag"</h5>
+
+			        <p>Now we successfully added our new "Template tag" to list, now users are able to add this tag to content.</p>
+			        <p>Masterslider will process the content and looks for {{tag-name}} pattern, then it will pass the tag name through a filter and that's where we can replace the dynamic content with our custom template tag.</p>
+			        <p>So the second step is using <code>masterslider_get_template_tag_value</code> filter hook for replacing dynamic content with template tag (in our example it's {{my_custom_template_tag}})</p>
+					
+					<pre class="brush: javascript">&lt;?php 
+function my_masterslider_get_template_tag_value( $value, $tag_name, $post, $args ) { 
+
+    if( 'my_custom_template_tag' !== $tag_name )
+        return $value;
+
+    // check if WooCommerce is installed and activated
+    if ( ! in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) )
+    	return $value;
+
+	$product = get_product( $post );
+
+    return $product->get_sale_price();
+}
+
+add_filter( 'masterslider_get_template_tag_value', 'my_masterslider_get_template_tag_value' );
+?&gt;</pre>	
+				
+					<p>In this example we hook to check for 'my_custom_template_tag' tag (the template tag we defined in first step), if the passed tag was our custom tag then we get and return custom dynamic content for this tag. </p>
+					<p>The filter hook passes 4 arguments. $value is default value for "Template Tag", $tag_name is the "Template Tag" name (in this example is my_custom_template_tag), $post is post object for each post slide and $args is some extra options for displaying product slider.</p><br />
+
+					<div class="alert alert-info"><strong>Note</strong>: By default if dynamic content is not defined for a template tag, Masterslider will assume it's a meta key, so it will try to get meta value for that meta key. So if you plan to get dynamic data for a meta key you don't need to hook for defining dynamic content, Masterslider will do that for you.</div>
+
+					<hr /><br /> 
+					
+				</article>
+
+
+
+				<article class="content-section" id="custom-skin">
+					<h3>Custom Skin</h3>
+					<p>If you are theme author or you plan to create "add-on" for Masterslider, probably you need to add a custom skin for Masterslider.</p>
+					<p>We defined proper API that makes you able to add your custom skin easily. Let's see how.</p><br />
+					
+					<h4>Adding new custom skin to "slider skin list"</h4>
+					<p>Masterslider comes with 12 skins that you can see the list of current skins below :</p>
+
+					<pre class="brush: javascript">
+$slider_skins = array(
+    array( 'class' => 'ms-skin-default', 'label' => 'Default' ),
+    array( 'class' => 'ms-skin-light-2', 'label' => 'Light 2' ),
+    array( 'class' => 'ms-skin-light-3', 'label' => 'Light 3' ),
+    array( 'class' => 'ms-skin-light-4', 'label' => 'Light 4' ),
+    array( 'class' => 'ms-skin-light-5', 'label' => 'Light 5' ),
+    array( 'class' => 'ms-skin-light-6', 'label' => 'Light 6' ),
+    array( 'class' => 'ms-skin-light-6 round-skin', 'label' => 'Light 6 Round' ),
+
+    array( 'class' => 'ms-skin-contrast', 'label' => 'Contrast' ),
+    array( 'class' => 'ms-skin-black-1' , 'label' => 'Black 1' ),
+    array( 'class' => 'ms-skin-black-2' , 'label' => 'Black 2' ),
+    array( 'class' => 'ms-skin-black-2 round-skin', 'label' => 'Black 2 Round' ),
+    array( 'class' => 'ms-skin-metro'   , 'label' => 'Metro' )
+);
+</pre>	
+					<p>Each array in <code>$slider_skins</code> represent a skin. It's consist of two part :</p>
+					<dl>
+						<dt>class</dt>
+						<dd>A unique CSS class name for the skin (i.e in metro skin it's <em>ms-skin-metro</em>)</dd>
+					</dl>
+					<dl>
+						<dt>label</dt>
+						<dd>A name for skin that appears in list (i.e in metro skin it's <em>Metro</em>)</dd>
+					</dl><br />
+
+					<p>To add new skin to list you need to use <code>masterslider_skins</code> filter hook. Please take a look at following example :</p>
+					<pre class="brush: javascript">&lt;?php 
+function my_masterslider_skins( $slider_skins ) { 
+
+    $slider_skins[] = array( 'class' => 'my_skin_class_name', 'label' => 'My Skin Name' );
+	
+    return $slider_skins;
+}
+
+add_filter( 'masterslider_skins', 'my_masterslider_skins' );
+?&gt;</pre>	
+				
+					<p>In example above we created a skin with css class name of "my_skin_class_name" and the label is "My Skin Name". Now if you refresh the slider panel and check the slider skin list, you see new skin at the end of the list.</p><br />
+
+					<p>Now we need to define proper css styles for our new custom skin.</p><br />
+
+
+					<h4>Adding CSS styles for new custom skin</h4>
+					<p>When we select a skin from list, Masterslider will add the skin class name on slider markup and that's how we can style slider elements in each skin.</p>
+					
+					<p>In our example if we select "My Skin name" (that we defined above) from skin list, Masterslider will add it's css class name (my_skin_class_name) on slider markup. </p>
+
+					<p>So all we have to do is creating a new css file for our custom skin and loading that by Masterslider.</p>
+
+					<p>To create the css file for your custom skin, in Masterslider plugin folder navigate to <code>public/assets/css/</code> folder and copy <code>ms-skin-sample.css</code> file and place in your theme or any place you prefer. If you look at the file the main class name is "ms-skin-default". You need to replace all "ms-skin-default" with your skin class name (in our example it's "my_skin_class_name")</p>
+
+					<p>Now you can change css styles to fit your skin needs (like changing backgrounds for slider controls , ..). When you finished that you have to tell Masterslider about the css file.</p>
+					<p>To do that you need to hook in <code>masterslider_enqueue_styles</code> filter. With this filter hook we tell Masterslider o load this file too. Here is how :</p>
+
+					<pre class="brush: javascript">&lt;?php 
+function my_masterslider_enqueue_styles( $enqueue_styles ) { 
+
+    $enqueue_styles[] = array(
+		'src'     => get_template_directory_uri() . '/css/my-ms-custom-skin.css' ,
+		'deps'    => array(),
+		'version' => '1.0'
+	);
+	
+    return $enqueue_styles;
+}
+
+add_filter( 'masterslider_enqueue_styles', 'my_masterslider_enqueue_styles' );
+?&gt;</pre>	
+
+					<p>In example above we assumed that you put the css file in <code>/css/my-ms-custom-skin.css</code> in your theme folder. You need to change that to correct path.</p><br />
+
+					<p>That's it. Now if you select your custom skin from skins list and save changes, Masterslider will load your custom styles from corresponding css file.</p>
+
+					<hr />
+
+				</article>
+				
+				
+				<article class="content-section" id="rate">
+					<h3><strong>I want to rate Master Slider</strong></h3>
+					<img src="../assets/images/iwr.jpg" alt="I want rate Master Slider" />
+					<hr />
+				</article>
+
+				<article class="content-section" id="support">
+					<h3><strong>Support</strong></h3>
+					<p>
+						If you can't find your answer in this document, please feel free to contact us via <a href="http://codecanyon.net/user/averta?r=ms-devdoc" target="_blank">our profile page</a>, we would be glad to help you.
+					</p>
+					<hr />
+				</article>
+				
+			</section>
+		</div><!-- end div .container -->
+		
+		<script src="../assets/js/jquery-1.8.2.js"></script>
+		<script src="../assets/js/jquery.easing.min.js"></script>
+		<script src="../assets/js/averta.csstweener.min.js"></script>
+		<script src="../syntax-highlighter/scripts/shCore.js"></script>
+		<script src="../syntax-highlighter/scripts/shBrushXml.js"></script>
+		<script src="../syntax-highlighter/scripts/shBrushCss.js"></script>
+		<script src="../syntax-highlighter/scripts/shBrushJScript.js"></script>
+		<script src="../assets/js/main.js"></script>
+	</body>
+</html>

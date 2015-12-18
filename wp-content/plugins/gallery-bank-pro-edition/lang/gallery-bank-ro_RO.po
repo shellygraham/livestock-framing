@@ -1,0 +1,865 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery Bank\n"
+"POT-Creation-Date: 2014-10-06 11:33+0530\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.6\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: D:\\Kiran-backup\\2014\\Gallery-Bank-Latest\\3.8.7-latest"
+"\\gallery-bank-pro-edition\\\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: front_views/gallery-bank-shortcode.php:4
+msgid "Insert Gallery Bank Shortcode"
+msgstr "Inserează Shortcode pentru Gallery Bank"
+
+#: front_views/gallery-bank-shortcode.php:6
+msgid "Select an album below to add it to your post or page."
+msgstr "Alege un album mai jos pentru a-l adăuga la postare sau pagină"
+
+#: front_views/gallery-bank-shortcode.php:11
+msgid "Gallery Type"
+msgstr "Tip Galerie"
+
+#: front_views/gallery-bank-shortcode.php:13
+msgid "Albums with Images"
+msgstr "Album cu imagini"
+
+#: front_views/gallery-bank-shortcode.php:15
+msgid "Only Images"
+msgstr "Doar imagini"
+
+#: front_views/gallery-bank-shortcode.php:18
+msgid "Album Format"
+msgstr "Formatul Albumului"
+
+#: front_views/gallery-bank-shortcode.php:20
+msgid "Select Album Format"
+msgstr "Alege formatul Albumului"
+
+#: front_views/gallery-bank-shortcode.php:27 lib/include_widget.php:33
+msgid "Select Album"
+msgstr "Alege Albumul"
+
+#: front_views/gallery-bank-shortcode.php:29
+msgid "Select an Album"
+msgstr "Alege un Album"
+
+#: front_views/gallery-bank-shortcode.php:45 lib/include_widget.php:46
+msgid "Gallery Format"
+msgstr "Formatul Galeriei"
+
+#: front_views/gallery-bank-shortcode.php:47
+msgid "Select Gallery Format "
+msgstr "Alege formatul Galeriei"
+
+#: front_views/gallery-bank-shortcode.php:56 views/album-preview.php:38
+#: views/images-sorting.php:233
+msgid "Images in Row"
+msgstr "Serie Imagini"
+
+#: front_views/gallery-bank-shortcode.php:61
+msgid "Image Width"
+msgstr "Lățimea Imaginii"
+
+#: front_views/gallery-bank-shortcode.php:66 views/album-sorting.php:184
+msgid "Albums in Row"
+msgstr "Serie Albume"
+
+#: front_views/gallery-bank-shortcode.php:71 lib/include_widget.php:62
+msgid "Text Format"
+msgstr "Formatul Textului"
+
+#: front_views/gallery-bank-shortcode.php:73
+msgid "Select Format "
+msgstr "Alege Formatul"
+
+#: front_views/gallery-bank-shortcode.php:80
+msgid "Special Effects"
+msgstr "Efecte Speciale"
+
+#: front_views/gallery-bank-shortcode.php:166
+msgid "Animation Effects"
+msgstr "Animații"
+
+#: front_views/gallery-bank-shortcode.php:217
+msgid "Show Responsive Gallery"
+msgstr "Arată Galeria în format Responsive"
+
+#: front_views/gallery-bank-shortcode.php:221
+msgid "Show Album Title"
+msgstr "Arată titlul Albumului"
+
+#: front_views/gallery-bank-shortcode.php:226
+msgid "Insert Album"
+msgstr "Inserează Album"
+
+#: front_views/gallery-bank-shortcode.php:229
+msgid "Cancel"
+msgstr "Anulează"
+
+#: front_views/gallery-bank-shortcode.php:541
+msgid "Please select an Album"
+msgstr "Alege un Album"
+
+#: front_views/gallery-bank-shortcode.php:545
+msgid "Please select an Album Format"
+msgstr "Alege un Format de Album"
+
+#: front_views/gallery-bank-shortcode.php:549
+msgid "Please select a Gallery Images Format"
+msgstr "Alege un Format al Imaginilor din Galerie"
+
+#: front_views/gallery-bank-shortcode.php:553
+msgid "Please select a Text Format for the Gallery"
+msgstr "Alege un Format al Textului pentru Galerie"
+
+#: front_views/includes_common_before.php:1478
+msgid "VIEW ALL"
+msgstr "VIZUALIZEAZĂ TOT"
+
+#: gallery-bank.php:95 gallery-bank.php:116 gallery-bank.php:155
+#: gallery-bank.php:215 gallery-bank.php:236 gallery-bank.php:273
+#: gallery-bank.php:332 gallery-bank.php:353 gallery-bank.php:390
+#: gallery-bank.php:449 gallery-bank.php:470 gallery-bank.php:507
+#: gallery-bank.php:566 gallery-bank.php:587 gallery-bank.php:624
+msgid "<img src=\""
+msgstr "<img src=\" "
+
+#: gallery-bank.php:97 gallery-bank.php:118 gallery-bank.php:157
+#: gallery-bank.php:217 gallery-bank.php:238 gallery-bank.php:275
+#: gallery-bank.php:334 gallery-bank.php:355 gallery-bank.php:392
+#: gallery-bank.php:451 gallery-bank.php:472 gallery-bank.php:509
+#: gallery-bank.php:568 gallery-bank.php:589 gallery-bank.php:626
+msgid "/wp-admin/admin.php?page=gallery_bank"
+msgstr "/wp-admin/admin.php?page=gallery_bank "
+
+#: gallery-bank.php:104 gallery-bank.php:125 gallery-bank.php:164
+#: gallery-bank.php:224 gallery-bank.php:245 gallery-bank.php:282
+#: gallery-bank.php:341 gallery-bank.php:362 gallery-bank.php:399
+#: gallery-bank.php:458 gallery-bank.php:479 gallery-bank.php:516
+#: gallery-bank.php:575 gallery-bank.php:596 gallery-bank.php:633
+#: lib/gallery-bank-class.php:19 lib/gallery-bank-class.php:24
+#: lib/gallery-bank-class.php:37 lib/gallery-bank-class.php:52
+#: lib/gallery-bank-class.php:57 lib/gallery-bank-class.php:69
+#: lib/gallery-bank-class.php:84 lib/gallery-bank-class.php:89
+#: lib/gallery-bank-class.php:101 lib/gallery-bank-class.php:116
+#: lib/gallery-bank-class.php:121 lib/gallery-bank-class.php:134
+#: lib/gallery-bank-class.php:149 lib/gallery-bank-class.php:154
+#: lib/gallery-bank-class.php:166
+msgid "Dashboard"
+msgstr "Panou de Control"
+
+#: gallery-bank.php:132 gallery-bank.php:171 gallery-bank.php:252
+#: gallery-bank.php:289 gallery-bank.php:369 gallery-bank.php:406
+#: gallery-bank.php:486 gallery-bank.php:523 gallery-bank.php:603
+#: gallery-bank.php:640 views/dashboard.php:137 views/dashboard.php:146
+#: views/dashboard.php:157 views/dashboard.php:166 views/dashboard.php:177
+#: views/dashboard.php:186 views/dashboard.php:197 views/dashboard.php:206
+#: views/dashboard.php:217 views/dashboard.php:226
+msgid "Add New Album"
+msgstr "Adaugă Album nou"
+
+#: gallery-bank.php:139 gallery-bank.php:178 gallery-bank.php:259
+#: gallery-bank.php:296 gallery-bank.php:376 gallery-bank.php:413
+#: gallery-bank.php:493 gallery-bank.php:530 gallery-bank.php:610
+#: gallery-bank.php:647 lib/gallery-bank-class.php:25
+#: lib/gallery-bank-class.php:38 lib/gallery-bank-class.php:58
+#: lib/gallery-bank-class.php:70 lib/gallery-bank-class.php:90
+#: lib/gallery-bank-class.php:102 lib/gallery-bank-class.php:122
+#: lib/gallery-bank-class.php:135 lib/gallery-bank-class.php:155
+#: lib/gallery-bank-class.php:167
+msgid "Album Sorting"
+msgstr "Clasificare Albume"
+
+#: gallery-bank.php:185 gallery-bank.php:303 gallery-bank.php:420
+#: gallery-bank.php:537 gallery-bank.php:654 lib/gallery-bank-class.php:39
+#: lib/gallery-bank-class.php:71 lib/gallery-bank-class.php:103
+#: lib/gallery-bank-class.php:136 lib/gallery-bank-class.php:168
+#: views/settings.php:280 views/settings.php:287
+msgid "Global Settings"
+msgstr "Setări Globale"
+
+#: gallery-bank.php:192 gallery-bank.php:310 gallery-bank.php:427
+#: gallery-bank.php:544 gallery-bank.php:661 lib/gallery-bank-class.php:40
+#: lib/gallery-bank-class.php:72 lib/gallery-bank-class.php:104
+#: lib/gallery-bank-class.php:137 lib/gallery-bank-class.php:169
+#: views/gallery-bank-system-report.php:12
+#: views/gallery-bank-system-report.php:17
+msgid "System Status"
+msgstr "Starea Sistemului"
+
+#: gallery-bank.php:206 gallery-bank.php:324 gallery-bank.php:441
+#: gallery-bank.php:558 gallery-bank.php:675 lib/gallery-bank-class.php:42
+#: lib/gallery-bank-class.php:74 lib/gallery-bank-class.php:106
+#: lib/gallery-bank-class.php:139 lib/gallery-bank-class.php:171
+msgid "Licensing"
+msgstr "Licență"
+
+#: lib/add-new-album-class.php:85 lib/add-new-album-class.php:115
+#: views/edit-album.php:283 views/edit-album.php:290 views/edit-album.php:350
+#: views/edit-album.php:357
+msgid " Set as Album Cover"
+msgstr "Setează ca și Copertă de Album"
+
+#: lib/add-new-album-class.php:86 views/edit-album.php:362
+msgid " Rotate Image"
+msgstr "Rotește Imaginea"
+
+#: lib/add-new-album-class.php:89 lib/add-new-album-class.php:118
+#: views/edit-album.php:296 views/edit-album.php:365
+msgid "Enter your Title"
+msgstr "Iserează Titlul"
+
+#: lib/add-new-album-class.php:90 lib/add-new-album-class.php:119
+#: views/edit-album.php:301 views/edit-album.php:370
+msgid "Enter your Description "
+msgstr "Inserează Descrierea"
+
+#: lib/add-new-album-class.php:92 lib/add-new-album-class.php:121
+#: views/edit-album.php:307 views/edit-album.php:376
+msgid "Enter your Tags"
+msgstr "Inserează Tagurile"
+
+#: lib/add-new-album-class.php:96 views/edit-album.php:397
+msgid "Delete Image"
+msgstr "Șterge Imaginea"
+
+#: lib/add-new-album-class.php:123 views/edit-album.php:317
+msgid "Delete Video"
+msgstr "Șterge Video"
+
+#: lib/gallery-bank-class.php:18 lib/gallery-bank-class.php:23
+#: lib/gallery-bank-class.php:36 lib/gallery-bank-class.php:51
+#: lib/gallery-bank-class.php:56 lib/gallery-bank-class.php:68
+#: lib/gallery-bank-class.php:83 lib/gallery-bank-class.php:88
+#: lib/gallery-bank-class.php:100 lib/gallery-bank-class.php:115
+#: lib/gallery-bank-class.php:120 lib/gallery-bank-class.php:133
+#: lib/gallery-bank-class.php:148 lib/gallery-bank-class.php:153
+#: lib/gallery-bank-class.php:165 views/album-preview.php:12
+#: views/album-sorting.php:138 views/edit-album.php:121
+#: views/gallery-bank-system-report.php:10
+#: views/gallery_bank_documentation.php:7 views/images-sorting.php:181
+#: views/licensing.php:17 views/settings.php:278 views/settings.php:1342
+#: views/settings.php:1349
+msgid "Gallery Bank"
+msgstr "Gallery Bank"
+
+#: lib/gallery-bank-class.php:550
+msgid "Add Gallery using Gallery Bank"
+msgstr "Adaugă Galerie folosind Gallery Bank"
+
+#: lib/include_widget.php:24
+msgid "Title"
+msgstr "Titlu"
+
+#: lib/include_widget.php:29
+msgid "Select Gallery"
+msgstr "Alege Galeria"
+
+#: lib/include_widget.php:50
+msgid "Select Gallery Format"
+msgstr "Alege Formatul Galeriei"
+
+#: lib/include_widget.php:56
+msgid "Images In Row"
+msgstr "Imagini în Serie"
+
+#: lib/include_widget.php:66
+msgid "Select Text Format"
+msgstr "Alege Formatul Textului"
+
+#: lib/include_widget.php:73
+msgid "Special Effect"
+msgstr "Efect Special"
+
+#: lib/include_widget.php:77
+msgid "Select Special Effect"
+msgstr "Alege Efectul Special"
+
+#: lib/include_widget.php:85 views/settings.php:346 views/settings.php:560
+msgid "Width"
+msgstr "Lățime"
+
+#: lib/include_widget.php:85 views/settings.php:356 views/settings.php:570
+msgid "Height"
+msgstr "Înălțime"
+
+#: lib/include_widget.php:94
+msgid "Animation Effect"
+msgstr "Animația"
+
+#: lib/include_widget.php:148
+msgid "Responsive Gallery"
+msgstr "Galerie Responsive"
+
+#: views/album-preview.php:14 views/album-preview.php:21
+msgid "Album Preview"
+msgstr "Previzualizare Album"
+
+#: views/album-preview.php:25 views/album-sorting.php:152
+#: views/edit-album.php:134 views/edit-album.php:421
+#: views/gallery_bank_documentation.php:21 views/images-sorting.php:195
+#: views/settings.php:291 views/settings.php:1651
+msgid "Back to Albums"
+msgstr "Înapoi la Albume"
+
+#: views/album-preview.php:43 views/album-sorting.php:189
+#: views/images-sorting.php:237
+msgid "Please Choose"
+msgstr "Alege, te rog"
+
+#: views/album-sorting.php:140 views/album-sorting.php:147
+msgid "Re-Order Albums"
+msgstr "Reordonează Albume"
+
+#: views/album-sorting.php:154 views/images-sorting.php:197
+msgid "Update Order"
+msgstr "Actualizare Ordine"
+
+#: views/album-sorting.php:157 views/images-sorting.php:200
+msgid "Sorting Order has been updated."
+msgstr "Ordinea de Sortare a fost actualizată"
+
+#: views/dashboard.php:117
+msgid "Attention! A new vesion of Gallery Bank is available for download."
+msgstr "ATENȚIE! O versiune nouă a Gallery Bank este disponibilă!"
+
+#: views/dashboard.php:118
+msgid "Click"
+msgstr "Click"
+
+#: views/dashboard.php:118
+msgid "here"
+msgstr "aici"
+
+#: views/dashboard.php:119
+msgid "to upgrade your version of Gallery Bank."
+msgstr "pentru a-ți upgrada versiunea de Gallery Bank"
+
+#: views/dashboard.php:127
+msgid "Dashboard - Gallery Bank"
+msgstr "Panou de control - Gallery Bank"
+
+#: views/dashboard.php:138 views/dashboard.php:147 views/dashboard.php:158
+#: views/dashboard.php:167 views/dashboard.php:178 views/dashboard.php:187
+#: views/dashboard.php:198 views/dashboard.php:207 views/dashboard.php:218
+#: views/dashboard.php:227
+msgid "Delete All Albums"
+msgstr "Șterge toate Albumele"
+
+#: views/dashboard.php:139 views/dashboard.php:148 views/dashboard.php:159
+#: views/dashboard.php:168 views/dashboard.php:179 views/dashboard.php:188
+#: views/dashboard.php:199 views/dashboard.php:208 views/dashboard.php:219
+#: views/dashboard.php:228
+msgid "Purge Images & Albums"
+msgstr "Curăță Imaginile și Albumele"
+
+#: views/dashboard.php:140 views/dashboard.php:149 views/dashboard.php:160
+#: views/dashboard.php:169 views/dashboard.php:180 views/dashboard.php:189
+#: views/dashboard.php:200 views/dashboard.php:209 views/dashboard.php:220
+#: views/dashboard.php:229
+msgid "Restore Factory Settings"
+msgstr "Restaurează Setările din Fabrică"
+
+#: views/dashboard.php:240
+msgid "Existing Albums Overview"
+msgstr "Privire de ansamblu a Albumelor existente"
+
+#: views/dashboard.php:246 views/edit-album.php:240
+msgid "Thumbnail"
+msgstr "Miniatură"
+
+#: views/dashboard.php:247 views/edit-album.php:150
+msgid "Album Title"
+msgstr "TItlul Albumului"
+
+#: views/dashboard.php:248
+msgid "Total Images"
+msgstr "Totalul Imaginilor"
+
+#: views/dashboard.php:249
+msgid "Date of Creation"
+msgstr "Data de creație"
+
+#: views/dashboard.php:397 views/dashboard.php:417 views/dashboard.php:434
+#: views/dashboard.php:454 views/dashboard.php:471 views/dashboard.php:491
+#: views/dashboard.php:508 views/dashboard.php:528 views/dashboard.php:545
+#: views/dashboard.php:565
+msgid "Preview Album"
+msgstr "Previzualizează Album"
+
+#: views/dashboard.php:407 views/dashboard.php:444 views/dashboard.php:481
+#: views/dashboard.php:518 views/dashboard.php:555
+msgid "Edit Album"
+msgstr "Editează Album"
+
+#: views/dashboard.php:412 views/dashboard.php:449 views/dashboard.php:486
+#: views/dashboard.php:523 views/dashboard.php:560
+#: views/images-sorting.php:183 views/images-sorting.php:190
+msgid "Re-Order Images"
+msgstr "Reordonează Imagini"
+
+#: views/dashboard.php:422 views/dashboard.php:459 views/dashboard.php:496
+#: views/dashboard.php:533 views/dashboard.php:570
+msgid "Delete Album"
+msgstr "Șterge Album"
+
+#: views/dashboard.php:674
+msgid "Are you sure you want to delete this Album?"
+msgstr "Ești sigur că vrei să ștergi Albumul?"
+
+#: views/dashboard.php:687
+msgid "Are you sure you want to delete all Albums?"
+msgstr "Ești sigur că vrei să ștergi toate Albumele?"
+
+#: views/dashboard.php:699
+msgid "Are you sure you want to Restore Factory Settings?"
+msgstr "Ești sigur că vrei să Resetezi Setările din Fabrică?"
+
+#: views/dashboard.php:715
+msgid "Are you sure you want to Purge all Images & Albums?"
+msgstr "Ești sigur că vrei să Cureși toate Imaginile și Albumele?"
+
+#: views/edit-album.php:123 views/edit-album.php:130
+msgid "Album"
+msgstr "Album"
+
+#: views/edit-album.php:135 views/edit-album.php:420
+msgid "Save Album"
+msgstr "Salvează Album"
+
+#: views/edit-album.php:139
+msgid "Album Saved. Kindly wait for the redirect to happen."
+msgstr "Album Salvat. Așteaptă, te rog redirectul"
+
+#: views/edit-album.php:146
+msgid "Album Details"
+msgstr "Detaliile Albumului"
+
+#: views/edit-album.php:155
+msgid "Enter your Album Title"
+msgstr "Inserează Titlul Albumului"
+
+#: views/edit-album.php:162
+msgid "Description"
+msgstr "Descrierea"
+
+#: views/edit-album.php:176
+msgid "Upload Images"
+msgstr "Încarcă Imagini"
+
+#: views/edit-album.php:183
+msgid "Your browser doesn\"t have Flash, Silverlight or HTML5 support."
+msgstr "Browser-ul tău nu are suport Flash, Silverlight sau HTML5"
+
+#: views/edit-album.php:191
+msgid "Upload Thumbnails "
+msgstr "Încarcă Miniaturi"
+
+#: views/edit-album.php:192
+msgid "Your Wordpress Version doesn\"t support Wp-media."
+msgstr "Versiunea ta de Wordpress nu suportă Wp-media"
+
+#: views/edit-album.php:203
+msgid "Upload Videos"
+msgstr "Uploadează Videoclipuri"
+
+#: views/edit-album.php:207
+msgid "Video Url"
+msgstr "URL Videoclip"
+
+#: views/edit-album.php:211
+msgid "Enter your Video Url"
+msgstr "Inserează URL-ul Videoclipului"
+
+#: views/edit-album.php:217
+msgid "Upload Video"
+msgstr "Încarcă Videoclip"
+
+#: views/edit-album.php:228
+msgid "Your Gallery Bank Album"
+msgstr "Albumul tău Gallery Bank"
+
+#: views/edit-album.php:237
+msgid "Delete"
+msgstr "Șterge"
+
+#: views/edit-album.php:243
+msgid "Title & Description"
+msgstr "Titlu și Descriere"
+
+#: views/edit-album.php:246
+msgid "Tags (comma separated list)"
+msgstr "Tag-uri (separate prin virgulă)"
+
+#: views/edit-album.php:249
+msgid "Url to Redirect on click of an Image"
+msgstr "URL pentru a Redirecționa la click-ul pe Imagine"
+
+#: views/edit-album.php:698
+msgid "Are you sure you want to delete this Image?"
+msgstr "Ești sigur că vrei să ștergi Imaginea?"
+
+#: views/edit-album.php:753
+msgid "Are you sure you want to delete these Images?"
+msgstr "Ești sigur că vrei să ștergi Imaginile?"
+
+#: views/gallery-bank-system-report.php:20
+msgid "Get System Report"
+msgstr "Vizualizează Raportul de Sistem"
+
+#: views/gallery-bank-system-report.php:24
+msgid "Close System Report"
+msgstr "închide Raportul de Sistem"
+
+#: views/gallery-bank-system-report.php:115 views/settings.php:1367
+#: views/settings.php:1374
+msgid "Default"
+msgstr "Default"
+
+#: views/gallery_bank_documentation.php:9
+#: views/gallery_bank_documentation.php:16
+msgid "Gallery Bank Documentation"
+msgstr "Documentație Gallery Bank"
+
+#: views/licensing.php:19 views/licensing.php:34
+msgid "Gallery Bank Licensing Module"
+msgstr "Modul Licență Gallery Bank"
+
+#: views/licensing.php:95
+msgid "Update"
+msgstr "Actualizare"
+
+#: views/licensing.php:126
+msgid "Success! Settings have been updated."
+msgstr "Succes! Setările au fost actualizate"
+
+#: views/settings.php:292
+msgid "Restore Settings"
+msgstr "Restaurează Setările"
+
+#: views/settings.php:293 views/settings.php:1649
+msgid "Update Settings"
+msgstr "Actualizează Setările"
+
+#: views/settings.php:297
+msgid "Settings has been updated."
+msgstr "Setările au fost updatate"
+
+#: views/settings.php:302
+msgid "Success! Settings have been restored."
+msgstr "Succes! Setările au fost restaurate."
+
+#: views/settings.php:309
+msgid "Thumbnail Settings"
+msgstr "Setări Miniatură"
+
+#: views/settings.php:319
+msgid "Thumbnail Size"
+msgstr "Mărime Miniatură"
+
+#: views/settings.php:326 views/settings.php:334 views/settings.php:540
+#: views/settings.php:548 views/settings.php:1369 views/settings.php:1377
+msgid "Original"
+msgstr "Original"
+
+#: views/settings.php:329 views/settings.php:337 views/settings.php:543
+#: views/settings.php:551
+msgid "Custom"
+msgstr "Personalizat"
+
+#: views/settings.php:368 views/settings.php:581 views/settings.php:1046
+msgid "Opacity"
+msgstr "Opacitate"
+
+#: views/settings.php:380 views/settings.php:593 views/settings.php:1057
+msgid "Border Size"
+msgstr "Mărime Margine"
+
+#: views/settings.php:391 views/settings.php:605 views/settings.php:1068
+msgid "Border Radius"
+msgstr "Rază Margine"
+
+#: views/settings.php:402 views/settings.php:617 views/settings.php:1093
+msgid "Border Color"
+msgstr "Culoare Margine"
+
+#: views/settings.php:416
+msgid "Margin Between Images"
+msgstr "Spațiu intre imagini"
+
+#: views/settings.php:426 views/settings.php:676 views/settings.php:1079
+msgid "Text Color"
+msgstr "Culoare Text"
+
+#: views/settings.php:440 views/settings.php:692 views/settings.php:1153
+msgid "Text-Align"
+msgstr "Aliniere Text"
+
+#: views/settings.php:454 views/settings.php:706 views/settings.php:841
+#: views/settings.php:1167 views/settings.php:1435
+msgid "Font-Family"
+msgstr "Familie Font"
+
+#: views/settings.php:477 views/settings.php:729 views/settings.php:1190
+msgid "Heading Font-Size"
+msgstr "Mărime Font Titlu"
+
+#: views/settings.php:494 views/settings.php:746 views/settings.php:1207
+msgid "Text Font-Size"
+msgstr "Mărime Font Text"
+
+#: views/settings.php:511 views/settings.php:763
+msgid "Description Length"
+msgstr "Lungimea descrierii"
+
+#: views/settings.php:523
+msgid "Album Cover Settings"
+msgstr "Setările Coperții de Album"
+
+#: views/settings.php:533
+msgid "Cover Size"
+msgstr "Mărime Copertă"
+
+#: views/settings.php:631
+msgid "Show Albums"
+msgstr "Arată Albume"
+
+#: views/settings.php:637 views/settings.php:645
+msgid "Responsive"
+msgstr "Responsiv"
+
+#: views/settings.php:640 views/settings.php:647
+msgid "With Albums in Row"
+msgstr "Cu Albume în Rând"
+
+#: views/settings.php:656
+msgid "Margin Between Albums"
+msgstr "Spațiu între albume"
+
+#: views/settings.php:666
+msgid "Text for Album Click"
+msgstr "Text pentru click pe Album"
+
+#: views/settings.php:775
+msgid "Filter Settings"
+msgstr "Setările Filtrului"
+
+#: views/settings.php:785
+msgid "Filters"
+msgstr "Filtre"
+
+#: views/settings.php:792 views/settings.php:800 views/settings.php:1231
+#: views/settings.php:1239 views/settings.php:1257 views/settings.php:1264
+#: views/settings.php:1282 views/settings.php:1289 views/settings.php:1306
+#: views/settings.php:1313 views/settings.php:1481 views/settings.php:1488
+#: views/settings.php:1544 views/settings.php:1552 views/settings.php:1593
+#: views/settings.php:1601
+msgid "Enable"
+msgstr "Activează"
+
+#: views/settings.php:795 views/settings.php:803 views/settings.php:1234
+#: views/settings.php:1242 views/settings.php:1259 views/settings.php:1267
+#: views/settings.php:1284 views/settings.php:1291 views/settings.php:1308
+#: views/settings.php:1315 views/settings.php:1483 views/settings.php:1491
+#: views/settings.php:1547 views/settings.php:1555 views/settings.php:1596
+#: views/settings.php:1604
+msgid "Disable"
+msgstr "Dezactivează"
+
+#: views/settings.php:813
+msgid "Filter Color"
+msgstr "Culoare Filtru"
+
+#: views/settings.php:827
+msgid "Filter Text Color"
+msgstr "Culoare Text Filtru"
+
+#: views/settings.php:864 views/settings.php:1458
+msgid "Font-Size"
+msgstr "Mărime Font"
+
+#: views/settings.php:884
+msgid "Roles & Capabilities"
+msgstr "Roluri și Capabilități"
+
+#: views/settings.php:894
+msgid "Privileges for Admin"
+msgstr "Privilegii pentru Admin"
+
+#: views/settings.php:898 views/settings.php:914 views/settings.php:930
+#: views/settings.php:947 views/settings.php:965
+msgid "Full Control"
+msgstr "Control Total"
+
+#: views/settings.php:901 views/settings.php:917 views/settings.php:933
+#: views/settings.php:950 views/settings.php:968
+msgid "Read"
+msgstr "Citire"
+
+#: views/settings.php:904 views/settings.php:920 views/settings.php:936
+#: views/settings.php:953 views/settings.php:971
+msgid "Write"
+msgstr "Scriere"
+
+#: views/settings.php:910
+msgid "Privileges for Editor"
+msgstr "Privilegii pentru Editor"
+
+#: views/settings.php:926
+msgid "Privileges for Author"
+msgstr "Privilegii pentru Autor"
+
+#: views/settings.php:942
+msgid "Privileges for Contributor"
+msgstr "Privilegii pentru Contribuitor"
+
+#: views/settings.php:959
+msgid "Privileges for Subscriber"
+msgstr "Privilegii pentru Abonat"
+
+#: views/settings.php:981
+msgid "Lightbox Settings"
+msgstr "Setări de Lightbox"
+
+#: views/settings.php:991
+msgid "Lightbox Type"
+msgstr "Tip de Lightbox"
+
+#: views/settings.php:1107
+msgid "Inline Background"
+msgstr "Fundal Inline"
+
+#: views/settings.php:1121
+msgid "Overlay Background"
+msgstr "Fundal Strat"
+
+#: views/settings.php:1135
+msgid "Fade In Time"
+msgstr "Fade in Timp"
+
+#: views/settings.php:1144
+msgid "Fade Out Time"
+msgstr "Fade out Timp"
+
+#: views/settings.php:1224
+msgid "Facebook Comments"
+msgstr "Comentarii de Facebook"
+
+#: views/settings.php:1251
+msgid "Social Sharing"
+msgstr "Partajare Socială"
+
+#: views/settings.php:1276
+msgid "Image Title"
+msgstr "Titlu Imagine"
+
+#: views/settings.php:1300
+msgid "Image Description"
+msgstr "Descriere Imagine"
+
+#: views/settings.php:1326
+msgid "Image Uploader Settings"
+msgstr "Setările de Încărcare ale Imaginilor"
+
+#: views/settings.php:1336
+msgid "Uploader for Images"
+msgstr "Încărcător pentru Imagini"
+
+#: views/settings.php:1344 views/settings.php:1352
+msgid "WP Media"
+msgstr "Media WP"
+
+#: views/settings.php:1361
+msgid "Change Uploading Image Name"
+msgstr "Schimbă Numele Imaginii care se Încarcă"
+
+#: views/settings.php:1388
+msgid "Front - End Layout Settings"
+msgstr "Față - Setări de Aspect"
+
+#: views/settings.php:1398
+msgid "Text for Back Button"
+msgstr "Textul pentru Butonul Înapoi"
+
+#: views/settings.php:1408
+msgid "Button Color"
+msgstr "Culoarea Butonului"
+
+#: views/settings.php:1421
+msgid "Button Text Color"
+msgstr "Culoarea Textului din Buton"
+
+#: views/settings.php:1475
+msgid "Album Seperator"
+msgstr "Separator de Album"
+
+#: views/settings.php:1500
+msgid "Image url location"
+msgstr "Locația URL a Imaginii"
+
+#: views/settings.php:1506 views/settings.php:1513
+msgid "Open in New Window"
+msgstr "Deschide într-o fereastră nouă"
+
+#: views/settings.php:1508 views/settings.php:1516
+msgid "Same Window"
+msgstr "Aceeași fereastră"
+
+#: views/settings.php:1527
+msgid "Pagination Settings for Images"
+msgstr "Setări de Paginare pentru Imagini"
+
+#: views/settings.php:1537
+msgid "Paging"
+msgstr "Paginare"
+
+#: views/settings.php:1564
+msgid "No. of Images Per Page "
+msgstr "Nr. de Imagini pe Pagini"
+
+#: views/settings.php:1576
+msgid "Slide Show Settings"
+msgstr "Setări de Slide Show"
+
+#: views/settings.php:1586
+msgid "Auto Play"
+msgstr "Auto Redare"
+
+#: views/settings.php:1613
+msgid "Interval"
+msgstr "Interval"
+
+#: views/settings.php:1626
+msgid "Language Direction Settings"
+msgstr "Setările de Direcție a Limbii"
+
+#: views/settings.php:1636
+msgid "Language Direction"
+msgstr "Direcția Limbii"
+
+#: views/settings.php:1973
+msgid "Are you sure you want to restore settings?"
+msgstr "Ești sigur că vrei să restaurezi setările?"
+
+#~ msgid "Save and Submit Changes"
+#~ msgstr "Salvează și Implementează Schimbările"
+
+#~ msgid "Album Published. Kindly wait for the redirect to happen."
+#~ msgstr "Album Publicat. Te rog așteaptă redirectul."
+
+#~ msgid "Update Album"
+#~ msgstr "Updatează Album"
+
+#~ msgid "Album Updated. Kindly wait for the redirect to happen."
+#~ msgstr "Album Updatat. Vă rog așteptați redirectul"
+
+#~ msgid "Upload Images "
+#~ msgstr "Încarcă Imagini"

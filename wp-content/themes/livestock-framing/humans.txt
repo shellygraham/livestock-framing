@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+	
+	Lindsay Yale -- Account Director
+	Joey Yax -- Developer -- @joeyyax
+
+# THANKS
+
+    The internet
+
+# TECHNOLOGY COLOPHON
+
+    PHP, Node.js, Grunt, HTML5, CSS3, Bootstrap, jQuery, Modernizr

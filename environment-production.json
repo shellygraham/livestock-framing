@@ -1,0 +1,18 @@
+{
+	"address": ["livestockframing.com","*.livestockframing.com"],
+	"db": {
+		"name": "db196294_livestock_wp",
+		"user": "db196294_wp",
+		"password": "hzzusq4EHrQskm#6",
+		"host": "internal-db.s196294.gridserver.com",
+		"charset": "utf8",
+		"collate": ""
+	},
+	"uploads": {
+		"dir": "/nfs/c11/h01/mnt/196294/domains/livestockframing.com/html/wp-content/uploads",
+		"url": "http://livestockframing.com/wp-content/uploads"
+	},
+	"ssl": false,
+	"dev": false,
+	"use_analytics": true
+}
